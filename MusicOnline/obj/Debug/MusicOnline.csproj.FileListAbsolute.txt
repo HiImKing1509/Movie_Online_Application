@@ -1,0 +1,10 @@
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\bin\Debug\MusicOnline.exe.config
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\bin\Debug\MusicOnline.exe
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\bin\Debug\MusicOnline.pdb
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.csproj.AssemblyReference.cache
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.csproj.SuggestedBindingRedirects.cache
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Properties.Resources.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.csproj.GenerateResource.cache
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.csproj.CoreCompileInputs.cache
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.exe
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.pdb
