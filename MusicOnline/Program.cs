@@ -16,7 +16,7 @@ namespace MusicOnline
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Forms._01_Form_Loading());
         }
     }
 }

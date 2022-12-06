@@ -1,0 +1,17 @@
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\bin\Debug\MusicOnline.exe.config
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\bin\Debug\MusicOnline.exe
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\bin\Debug\MusicOnline.pdb
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\bin\Debug\Interop.WMPLib.dll
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\bin\Debug\AxInterop.WMPLib.dll
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MovieOnline.csproj.AssemblyReference.cache
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MovieOnline.csproj.SuggestedBindingRedirects.cache
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\Interop.WMPLib.dll
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\AxInterop.WMPLib.dll
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MovieOnline.csproj.ResolveComReference.cache
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Forms._01_Form_Loading.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Forms._02_Form_Home.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Properties.Resources.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MovieOnline.csproj.GenerateResource.cache
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MovieOnline.csproj.CoreCompileInputs.cache
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.exe
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.pdb
