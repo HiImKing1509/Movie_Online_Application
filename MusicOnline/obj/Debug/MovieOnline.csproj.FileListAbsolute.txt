@@ -15,3 +15,5 @@ D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MovieOnline.csproj.Ge
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MovieOnline.csproj.CoreCompileInputs.cache
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.exe
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.pdb
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\bin\Debug\FontAwesome.Sharp.dll
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MovieOnline.csproj.CopyComplete
