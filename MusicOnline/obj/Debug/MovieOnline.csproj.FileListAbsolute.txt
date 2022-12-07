@@ -17,3 +17,5 @@ D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.exe
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.pdb
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\bin\Debug\FontAwesome.Sharp.dll
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MovieOnline.csproj.CopyComplete
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.CustomControls.Controls_Movie.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Assets.Images.Images_Movie.resources

@@ -188,6 +188,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "_02_Form_Home";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this._02_Form_Home_Load);
             this.Panel_Menu.ResumeLayout(false);
             this.ResumeLayout(false);
 

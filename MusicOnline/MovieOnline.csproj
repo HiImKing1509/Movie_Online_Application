@@ -53,7 +53,20 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Images\Images_Movie.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Images_Movie.resx</DependentUpon>
+    </Compile>
     <Compile Include="Assets\Variables\Colors.cs" />
+    <Compile Include="Assets\Variables\ResourcesManager.cs" />
+    <Compile Include="CustomControls\Controls_Movie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Controls_Movie.Designer.cs">
+      <DependentUpon>Controls_Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database\DAO\DataProvider.cs" />
     <Compile Include="Forms\01_Form_Loading.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +81,13 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Assets\Images\Images_Movie.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Images_Movie.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\Controls_Movie.resx">
+      <DependentUpon>Controls_Movie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\01_Form_Loading.resx">
       <DependentUpon>01_Form_Loading.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,10 +137,14 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Assets\Images\" />
     <Folder Include="bin\Debug\" />
-    <Folder Include="Database\" />
     <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV01.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

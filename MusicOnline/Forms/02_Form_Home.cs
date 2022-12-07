@@ -1,4 +1,6 @@
 ﻿using FontAwesome.Sharp;
+using MusicOnline.CustomControls;
+using MusicOnline.Database.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,8 +8,10 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Resources;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using System.Windows.Forms;
 
 namespace MusicOnline.Forms
@@ -94,6 +98,47 @@ namespace MusicOnline.Forms
         private void Button_History_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+        }
+
+        private void ActivateMovies(string query)
+        {
+            foreach (Control item in Panel_Body.Controls.OfType<FlowLayoutPanel>().ToList())
+                Panel_Body.Controls.Remove(item);
+            foreach (Control item in Panel_Body.Controls.OfType<Form>().ToList())
+                Panel_Body.Controls.Remove(item);
+            FlowLayoutPanel flpShowProduct = new FlowLayoutPanel();
+            Panel_Body.Controls.Add(flpShowProduct);
+            flpShowProduct.Dock = DockStyle.Fill;
+            flpShowProduct.AutoScroll = true;
+
+            DataProvider provider = new DataProvider();
+            DataTable dtShowProduct = provider.ExecuteQuery(query);
+
+            ResourceManager rm;
+            foreach (DataRow row in dtShowProduct.Rows)
+            {
+                string str = row["MOVIE_ID"].ToString().Substring(0, 2);
+                switch (str)
+                {
+                    case "MV":
+                        rm = Assets.Variables.ResourcesManager.rm_movies;
+                        break;
+                    default:
+                        rm = Assets.Variables.ResourcesManager.rm_movies;
+                        break;
+                }
+                Bitmap myImage = (Bitmap)rm.GetObject(row["MOVIE_ID"].ToString());
+                Controls_Movie item = new Controls_Movie(
+                    myImage,
+                    row["MOVIE_NAME"].ToString()
+                );
+                flpShowProduct.Controls.Add(item);
+            }
+        }
+
+        private void _02_Form_Home_Load(object sender, EventArgs e)
+        {
+            ActivateMovies("select * from MOVIE");
         }
     }
 }
