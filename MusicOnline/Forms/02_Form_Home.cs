@@ -41,10 +41,18 @@ namespace MusicOnline.Forms
             Button_FavoritesList.IconColor = Assets.Variables.Colors.MetallicYellow;
             Button_History.IconColor = Assets.Variables.Colors.MetallicYellow;
 
+            Button_MovieSearch.BackColor = Assets.Variables.Colors.MetallicYellow;
+            Button_MovieSearch.IconColor = Assets.Variables.Colors.Black;
+
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, Button_Home.Height);
             Panel_Menu.Controls.Add(leftBorderBtn);
             ActivateButton(Button_Home);
+        }
+
+        private void _02_Form_Home_Load(object sender, EventArgs e)
+        {
+            ActivateMovies("select * from MOVIE");
         }
 
         private void ActivateButton(object senderBtn)
@@ -136,9 +144,38 @@ namespace MusicOnline.Forms
             }
         }
 
-        private void _02_Form_Home_Load(object sender, EventArgs e)
+        private void TextBox_MovieSearch_Enter(object sender, EventArgs e)
         {
-            ActivateMovies("select * from MOVIE");
+            if (TextBox_MovieSearch.Text == "Tên phim, tên diễn viên ..." && TextBox_MovieSearch.ForeColor == Color.Gray)
+            {
+                TextBox_MovieSearch.Text = "";
+                TextBox_MovieSearch.ForeColor = Assets.Variables.Colors.ChineseBlack;
+            }
+        }
+
+        private void TextBox_MovieSearch_Leave(object sender, EventArgs e)
+        {
+            if (TextBox_MovieSearch.Text == "")
+            {
+                TextBox_MovieSearch.Text = "Tên phim, tên diễn viên ...";
+                TextBox_MovieSearch.ForeColor = Color.Gray;
+            }
+        }
+
+        private void Button_MovieSearch_MouseLeave(object sender, EventArgs e)
+        {
+            Button_MovieSearch.BackColor = Assets.Variables.Colors.MetallicYellow;
+            Button_MovieSearch.IconColor = Assets.Variables.Colors.Black;
+        }
+
+        private void Button_MovieCategory_Click(object sender, EventArgs e)
+        {
+            DropdownMenu_ShowMovieCategory.Show(Button_MovieCategory, 0, Button_MovieCategory.Height);
+        }
+
+        private void Button_MovieCountry_Click(object sender, EventArgs e)
+        {
+            DropdownMenu_ShowMovieCountry.Show(Button_MovieCountry, 0, Button_MovieCategory.Height);
         }
     }
 }

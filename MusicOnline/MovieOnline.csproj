@@ -53,6 +53,11 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Controls\CustomDropdownMenu.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Assets\Controls\MenuColorTable.cs" />
+    <Compile Include="Assets\Controls\MenuRenderer.cs" />
     <Compile Include="Assets\Images\Images_Movie.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
