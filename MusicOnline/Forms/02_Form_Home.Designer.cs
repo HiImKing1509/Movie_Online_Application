@@ -42,10 +42,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.Button_MovieSearch = new FontAwesome.Sharp.IconButton();
             this.TextBox_MovieSearch = new System.Windows.Forms.TextBox();
-            this.Panel_Footer = new System.Windows.Forms.Panel();
             this.Panel_Body = new System.Windows.Forms.Panel();
             this.DropdownMenu_ShowMovieCategory = new MusicOnline.Assets.Controls.CustomDropdownMenu(this.components);
-            this.cổTrangThầnThoạiToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_Category01 = new System.Windows.Forms.ToolStripMenuItem();
             this.võThuậtKiếmHiệpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.d = new MusicOnline.Assets.Controls.CustomDropdownMenu(this.components);
             this.DropdownMenu_ShowMovieCountry = new MusicOnline.Assets.Controls.CustomDropdownMenu(this.components);
@@ -183,6 +182,7 @@
             // 
             // Button_MovieCountry
             // 
+            this.Button_MovieCountry.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_MovieCountry.FlatAppearance.BorderSize = 0;
             this.Button_MovieCountry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_MovieCountry.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -199,6 +199,7 @@
             // 
             // Button_MovieCategory
             // 
+            this.Button_MovieCategory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_MovieCategory.FlatAppearance.BorderSize = 0;
             this.Button_MovieCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Button_MovieCategory.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -266,46 +267,42 @@
             this.TextBox_MovieSearch.Enter += new System.EventHandler(this.TextBox_MovieSearch_Enter);
             this.TextBox_MovieSearch.Leave += new System.EventHandler(this.TextBox_MovieSearch_Leave);
             // 
-            // Panel_Footer
-            // 
-            this.Panel_Footer.BackColor = System.Drawing.SystemColors.Control;
-            this.Panel_Footer.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.Panel_Footer.Location = new System.Drawing.Point(336, 950);
-            this.Panel_Footer.Name = "Panel_Footer";
-            this.Panel_Footer.Size = new System.Drawing.Size(1566, 83);
-            this.Panel_Footer.TabIndex = 3;
-            // 
             // Panel_Body
             // 
             this.Panel_Body.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_Body.Location = new System.Drawing.Point(336, 199);
             this.Panel_Body.Name = "Panel_Body";
-            this.Panel_Body.Size = new System.Drawing.Size(1566, 751);
+            this.Panel_Body.Size = new System.Drawing.Size(1566, 834);
             this.Panel_Body.TabIndex = 4;
             // 
             // DropdownMenu_ShowMovieCategory
             // 
+            this.DropdownMenu_ShowMovieCategory.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DropdownMenu_ShowMovieCategory.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.DropdownMenu_ShowMovieCategory.IsMainMenu = false;
             this.DropdownMenu_ShowMovieCategory.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cổTrangThầnThoạiToolStripMenuItem,
+            this.ToolStripMenuItem_Category01,
             this.võThuậtKiếmHiệpToolStripMenuItem});
             this.DropdownMenu_ShowMovieCategory.MenuItemHeight = 25;
             this.DropdownMenu_ShowMovieCategory.MenuItemTextColor = System.Drawing.Color.Empty;
             this.DropdownMenu_ShowMovieCategory.Name = "customDropdownMenu1";
             this.DropdownMenu_ShowMovieCategory.PrimaryColor = System.Drawing.Color.Empty;
-            this.DropdownMenu_ShowMovieCategory.Size = new System.Drawing.Size(220, 52);
+            this.DropdownMenu_ShowMovieCategory.Size = new System.Drawing.Size(253, 79);
+            this.DropdownMenu_ShowMovieCategory.MouseEnter += new System.EventHandler(this.DropdownMenu_ShowMovieCategory_MouseEnter);
             // 
-            // cổTrangThầnThoạiToolStripMenuItem
+            // ToolStripMenuItem_Category01
             // 
-            this.cổTrangThầnThoạiToolStripMenuItem.Name = "cổTrangThầnThoạiToolStripMenuItem";
-            this.cổTrangThầnThoạiToolStripMenuItem.Size = new System.Drawing.Size(219, 24);
-            this.cổTrangThầnThoạiToolStripMenuItem.Text = "Cổ trang - Thần thoại";
+            this.ToolStripMenuItem_Category01.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.ToolStripMenuItem_Category01.Name = "ToolStripMenuItem_Category01";
+            this.ToolStripMenuItem_Category01.Size = new System.Drawing.Size(252, 26);
+            this.ToolStripMenuItem_Category01.Text = "Cổ trang - Thần thoại";
             // 
             // võThuậtKiếmHiệpToolStripMenuItem
             // 
+            this.võThuậtKiếmHiệpToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 10, 0, 5);
             this.võThuậtKiếmHiệpToolStripMenuItem.Name = "võThuậtKiếmHiệpToolStripMenuItem";
-            this.võThuậtKiếmHiệpToolStripMenuItem.Size = new System.Drawing.Size(219, 24);
+            this.võThuậtKiếmHiệpToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0);
+            this.võThuậtKiếmHiệpToolStripMenuItem.Size = new System.Drawing.Size(252, 24);
             this.võThuậtKiếmHiệpToolStripMenuItem.Text = "Võ Thuật - Kiếm hiệp";
             // 
             // d
@@ -320,6 +317,7 @@
             // 
             // DropdownMenu_ShowMovieCountry
             // 
+            this.DropdownMenu_ShowMovieCountry.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DropdownMenu_ShowMovieCountry.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.DropdownMenu_ShowMovieCountry.IsMainMenu = false;
             this.DropdownMenu_ShowMovieCountry.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -329,18 +327,18 @@
             this.DropdownMenu_ShowMovieCountry.MenuItemTextColor = System.Drawing.Color.Empty;
             this.DropdownMenu_ShowMovieCountry.Name = "DropdownMenu_ShowMovieCountry";
             this.DropdownMenu_ShowMovieCountry.PrimaryColor = System.Drawing.Color.Empty;
-            this.DropdownMenu_ShowMovieCountry.Size = new System.Drawing.Size(141, 52);
+            this.DropdownMenu_ShowMovieCountry.Size = new System.Drawing.Size(153, 56);
             // 
             // việtNamToolStripMenuItem
             // 
             this.việtNamToolStripMenuItem.Name = "việtNamToolStripMenuItem";
-            this.việtNamToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.việtNamToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.việtNamToolStripMenuItem.Text = "Việt Nam";
             // 
             // âuMỹToolStripMenuItem
             // 
             this.âuMỹToolStripMenuItem.Name = "âuMỹToolStripMenuItem";
-            this.âuMỹToolStripMenuItem.Size = new System.Drawing.Size(140, 24);
+            this.âuMỹToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
             this.âuMỹToolStripMenuItem.Text = "Âu - Mỹ";
             // 
             // _02_Form_Home
@@ -348,7 +346,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1902, 1033);
             this.Controls.Add(this.Panel_Body);
-            this.Controls.Add(this.Panel_Footer);
             this.Controls.Add(this.Panel_Header);
             this.Controls.Add(this.Panel_Menu);
             this.Name = "_02_Form_Home";
@@ -371,7 +368,6 @@
 
         private System.Windows.Forms.Panel Panel_Menu;
         private System.Windows.Forms.Panel Panel_Header;
-        private System.Windows.Forms.Panel Panel_Footer;
         private System.Windows.Forms.Panel Panel_Body;
         private System.Windows.Forms.Panel Panel_Logo;
         private FontAwesome.Sharp.IconButton Button_Home;
@@ -386,7 +382,7 @@
         private FontAwesome.Sharp.IconButton Button_MovieCountry;
         private Assets.Controls.CustomDropdownMenu DropdownMenu_ShowMovieCategory;
         private Assets.Controls.CustomDropdownMenu d;
-        private System.Windows.Forms.ToolStripMenuItem cổTrangThầnThoạiToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Category01;
         private System.Windows.Forms.ToolStripMenuItem võThuậtKiếmHiệpToolStripMenuItem;
         private Assets.Controls.CustomDropdownMenu DropdownMenu_ShowMovieCountry;
         private System.Windows.Forms.ToolStripMenuItem việtNamToolStripMenuItem;

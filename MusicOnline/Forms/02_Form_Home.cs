@@ -20,6 +20,7 @@ namespace MusicOnline.Forms
     {
         private IconButton currentBtn;
         private Panel leftBorderBtn;
+        private Form activeForm = null;
         public _02_Form_Home()
         {
             InitializeComponent();
@@ -30,7 +31,6 @@ namespace MusicOnline.Forms
             Panel_Menu.BackColor = Assets.Variables.Colors.RaisinBlack;
             Panel_Header.BackColor = Assets.Variables.Colors.RaisinBlack;
             Panel_Body.BackColor = Assets.Variables.Colors.BlackOlive;
-            Panel_Footer.BackColor = Assets.Variables.Colors.SmokyBlack;
 
             Button_Home.ForeColor = Assets.Variables.Colors.MetallicYellow;
             Button_Playlist.ForeColor = Assets.Variables.Colors.MetallicYellow;
@@ -47,6 +47,11 @@ namespace MusicOnline.Forms
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, Button_Home.Height);
             Panel_Menu.Controls.Add(leftBorderBtn);
+
+
+            // Add list controls
+            Assets.Variables.ListFormPanel.ListFormsPanel.Add(Panel_Body);
+
             ActivateButton(Button_Home);
         }
 
@@ -111,11 +116,11 @@ namespace MusicOnline.Forms
         private void ActivateMovies(string query)
         {
             foreach (Control item in Panel_Body.Controls.OfType<FlowLayoutPanel>().ToList())
-                Panel_Body.Controls.Remove(item);
+                Assets.Variables.ListFormPanel.ListFormsPanel[0].Controls.Remove(item);
             foreach (Control item in Panel_Body.Controls.OfType<Form>().ToList())
-                Panel_Body.Controls.Remove(item);
+                Assets.Variables.ListFormPanel.ListFormsPanel[0].Controls.Remove(item);
             FlowLayoutPanel flpShowProduct = new FlowLayoutPanel();
-            Panel_Body.Controls.Add(flpShowProduct);
+            Assets.Variables.ListFormPanel.ListFormsPanel[0].Controls.Add(flpShowProduct);
             flpShowProduct.Dock = DockStyle.Fill;
             flpShowProduct.AutoScroll = true;
 
@@ -125,21 +130,13 @@ namespace MusicOnline.Forms
             ResourceManager rm;
             foreach (DataRow row in dtShowProduct.Rows)
             {
-                string str = row["MOVIE_ID"].ToString().Substring(0, 2);
-                switch (str)
-                {
-                    case "MV":
-                        rm = Assets.Variables.ResourcesManager.rm_movies;
-                        break;
-                    default:
-                        rm = Assets.Variables.ResourcesManager.rm_movies;
-                        break;
-                }
+                rm = Assets.Variables.ResourcesManager.rm_movies;
                 Bitmap myImage = (Bitmap)rm.GetObject(row["MOVIE_ID"].ToString());
                 Controls_Movie item = new Controls_Movie(
                     myImage,
+                    row["MOVIE_ID"].ToString(),
                     row["MOVIE_NAME"].ToString()
-                );
+                );;
                 flpShowProduct.Controls.Add(item);
             }
         }
@@ -176,6 +173,27 @@ namespace MusicOnline.Forms
         private void Button_MovieCountry_Click(object sender, EventArgs e)
         {
             DropdownMenu_ShowMovieCountry.Show(Button_MovieCountry, 0, Button_MovieCategory.Height);
+        }
+
+        private void DropdownMenu_ShowMovieCategory_MouseEnter(object sender, EventArgs e)
+        {
+            //DropdownMenu_ShowMovieCategory.BackColor = Assets.Variables.Colors.MetallicYellow;
+            //DropdownMenu_ShowMovieCategory.MenuItemTextColor = Assets.Variables.Colors.BlackOlive;
+        }
+
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+
+            Assets.Variables.ListFormPanel.ListFormsPanel[0].Controls.Add(childForm);
+            Assets.Variables.ListFormPanel.ListFormsPanel[0].Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
     }
 }

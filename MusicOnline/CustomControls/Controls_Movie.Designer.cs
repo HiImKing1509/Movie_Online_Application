@@ -59,6 +59,7 @@
             this.Panel_MovieName.Name = "Panel_MovieName";
             this.Panel_MovieName.Size = new System.Drawing.Size(290, 95);
             this.Panel_MovieName.TabIndex = 2;
+            this.Panel_MovieName.Click += new System.EventHandler(this.Panel_MovieName_Click);
             this.Panel_MovieName.MouseEnter += new System.EventHandler(this.PictureBox_ImageMovie_MouseEnter);
             this.Panel_MovieName.MouseLeave += new System.EventHandler(this.PictureBox_ImageMovie_MouseLeave);
             // 
@@ -74,6 +75,7 @@
             this.Label_Subtitle.Size = new System.Drawing.Size(82, 18);
             this.Label_Subtitle.TabIndex = 1;
             this.Label_Subtitle.Text = "HD/VietSub";
+            this.Label_Subtitle.Click += new System.EventHandler(this.Label_Subtitle_Click);
             this.Label_Subtitle.MouseEnter += new System.EventHandler(this.PictureBox_ImageMovie_MouseEnter);
             this.Label_Subtitle.MouseLeave += new System.EventHandler(this.PictureBox_ImageMovie_MouseLeave);
             // 
@@ -89,6 +91,7 @@
             this.Label_MovieName.Size = new System.Drawing.Size(185, 21);
             this.Label_MovieName.TabIndex = 0;
             this.Label_MovieName.Text = "Đây là label ghi tên film";
+            this.Label_MovieName.Click += new System.EventHandler(this.Label_MovieName_Click);
             this.Label_MovieName.MouseEnter += new System.EventHandler(this.PictureBox_ImageMovie_MouseEnter);
             this.Label_MovieName.MouseLeave += new System.EventHandler(this.PictureBox_ImageMovie_MouseLeave);
             // 
@@ -102,6 +105,7 @@
             this.PictureBox_ImageMovie.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.PictureBox_ImageMovie.TabIndex = 1;
             this.PictureBox_ImageMovie.TabStop = false;
+            this.PictureBox_ImageMovie.Click += new System.EventHandler(this.PictureBox_ImageMovie_Click);
             this.PictureBox_ImageMovie.MouseEnter += new System.EventHandler(this.PictureBox_ImageMovie_MouseEnter);
             this.PictureBox_ImageMovie.MouseLeave += new System.EventHandler(this.PictureBox_ImageMovie_MouseLeave);
             // 

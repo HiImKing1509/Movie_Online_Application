@@ -43,7 +43,7 @@ namespace MusicOnline.Assets.Controls
         protected override void OnRenderItemText(ToolStripItemTextRenderEventArgs e)
         {
             base.OnRenderItemText(e);
-            e.Item.ForeColor = e.Item.Selected ? Color.White : textColor;
+            e.Item.ForeColor = e.Item.Selected ? Variables.Colors.MetallicYellow : textColor;
         }
 
         protected override void OnRenderArrow(ToolStripArrowRenderEventArgs e)
@@ -51,9 +51,8 @@ namespace MusicOnline.Assets.Controls
             //Fields
             var graph = e.Graphics;
             var arrowSize = new Size(5, 12);
-            var arrowColor = e.Item.Selected ? Color.White : primaryColor;
-            var rect = new Rectangle(e.ArrowRectangle.Location.X, (e.ArrowRectangle.Height - arrowSize.Height) / 2,
-                arrowSize.Width, arrowSize.Height);
+            var arrowColor = e.Item.Selected ? Variables.Colors.MetallicYellow : primaryColor;
+            var rect = new Rectangle(e.ArrowRectangle.Location.X, (e.ArrowRectangle.Height - arrowSize.Height) / 2, arrowSize.Width, arrowSize.Height);
             using (GraphicsPath path = new GraphicsPath())
             using (Pen pen = new Pen(arrowColor, arrowThickness))
             {

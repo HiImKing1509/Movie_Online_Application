@@ -124,4 +124,7 @@
   <data name="MV02" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\Images_Resources\MV02.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MV03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

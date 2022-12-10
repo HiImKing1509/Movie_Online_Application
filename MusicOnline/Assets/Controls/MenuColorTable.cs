@@ -23,17 +23,17 @@ namespace MusicOnline.Assets.Controls
         {
             if (isMainMenu)
             {
-                backColor = Color.FromArgb(37, 39, 60);
-                leftColumnColor = Color.FromArgb(32, 33, 51);
-                borderColor = Color.FromArgb(32, 33, 51);
+                backColor = Variables.Colors.SmokyBlack;
+                leftColumnColor = Variables.Colors.SmokyBlack;
+                borderColor = Variables.Colors.SmokyBlack;
                 menuItemBorderColor = primaryColor;
                 menuItemSelectedColor = primaryColor;
             }
             else
             {
-                backColor = Color.White;
-                leftColumnColor = Color.LightGray;
-                borderColor = Color.LightGray;
+                backColor = Variables.Colors.SmokyBlack;
+                leftColumnColor = Variables.Colors.SmokyBlack;
+                borderColor = Variables.Colors.SmokyBlack;
                 menuItemBorderColor = primaryColor;
                 menuItemSelectedColor = primaryColor;
             }
