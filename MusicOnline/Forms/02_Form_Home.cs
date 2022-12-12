@@ -21,9 +21,12 @@ namespace MusicOnline.Forms
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form activeForm = null;
+        private FormCollection fc = Application.OpenForms;
         public _02_Form_Home()
         {
+
             InitializeComponent();
+            FormBorderStyle = FormBorderStyle.None;
             //WindowState = FormWindowState.Maximized;
 
             // Set color
@@ -44,6 +47,9 @@ namespace MusicOnline.Forms
             Button_MovieSearch.BackColor = Assets.Variables.Colors.MetallicYellow;
             Button_MovieSearch.IconColor = Assets.Variables.Colors.Black;
 
+            Button_MovieCategory.ForeColor = Assets.Variables.Colors.MetallicYellow;
+            Button_MovieCountry.ForeColor = Assets.Variables.Colors.MetallicYellow;
+
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, Button_Home.Height);
             Panel_Menu.Controls.Add(leftBorderBtn);
@@ -57,7 +63,7 @@ namespace MusicOnline.Forms
 
         private void _02_Form_Home_Load(object sender, EventArgs e)
         {
-            ActivateMovies("select * from MOVIE");
+            ActivateMovies("select * from MOVIE"); 
         }
 
         private void ActivateButton(object senderBtn)
@@ -95,7 +101,7 @@ namespace MusicOnline.Forms
 
         private void Button_Home_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            ResetHomePage("select * from MOVIE", Button_Home);
         }
 
         private void Button_Playlist_Click(object sender, EventArgs e)
@@ -106,6 +112,8 @@ namespace MusicOnline.Forms
         private void Button_FavoritesList_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            openChildForm(new _05_Form_Favorite_Movie_List());
+
         }
 
         private void Button_History_Click(object sender, EventArgs e)
@@ -127,16 +135,14 @@ namespace MusicOnline.Forms
             DataProvider provider = new DataProvider();
             DataTable dtShowProduct = provider.ExecuteQuery(query);
 
-            ResourceManager rm;
             foreach (DataRow row in dtShowProduct.Rows)
             {
-                rm = Assets.Variables.ResourcesManager.rm_movies;
-                Bitmap myImage = (Bitmap)rm.GetObject(row["MOVIE_ID"].ToString());
+                Bitmap myImage = (Bitmap)Assets.Variables.ResourcesManager.rm_movies.GetObject(row["MOVIE_ID"].ToString());
                 Controls_Movie item = new Controls_Movie(
                     myImage,
                     row["MOVIE_ID"].ToString(),
                     row["MOVIE_NAME"].ToString()
-                );;
+                );
                 flpShowProduct.Controls.Add(item);
             }
         }
@@ -194,6 +200,124 @@ namespace MusicOnline.Forms
             Assets.Variables.ListFormPanel.ListFormsPanel[0].Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+        }
+
+        private void ResetHomePage(string query, Button btn = null)
+        {
+            TextBox_MovieSearch.Text = "Tên phim, tên diễn viên ...";
+            TextBox_MovieSearch.ForeColor = Color.Gray;
+            if (btn != null)
+                ActivateButton(btn);
+
+            //foreach (Form frm in fc)
+            //{
+            //    if (frm.Name == "_04_Form_Watching_Movie")
+            //    {
+            //        frm.Close();
+            //        break;
+            //    }
+            //}
+            if (Application.OpenForms.OfType<_04_Form_Watching_Movie>().Count() == 1)
+                Application.OpenForms.OfType<_04_Form_Watching_Movie>().First().Close();
+            ActivateMovies(query);
+        }
+
+        private void FilterMovie()
+        {
+            string query = "select * from MOVIE ";
+            if (TextBox_MovieSearch.Text == "Tên phim, tên diễn viên ...")
+                query += "where (dbo.LanguageComprehension(MOVIE_NAME) like N'%" + "" + "%' " +
+                         "or MOVIE_NAME like N'%" + "" + "%')";
+            else
+            {
+                query += "where (dbo.LanguageComprehension(MOVIE_NAME) like N'%" + TextBox_MovieSearch.Text + "%' " +
+                         "or MOVIE_NAME like N'%" + TextBox_MovieSearch.Text + "%')";
+            }
+            //if (CreateResources.Variables.Table != "All")
+            //    query += $" and PRODUCT_ID like '{CreateResources.Variables.Table}%'";
+            //if (Combobox_FilterColor.Text != "Màu")
+            //{
+            //    query += $" and PRODUCT_COLOR like N'%" + Combobox_FilterColor.Text + "%'";
+            //}
+            //if (Combobox_FilterMaterial.Text != "Chất liệu")
+            //{
+            //    query += $" and PRODUCT_MATERIAL like N'%" + Combobox_FilterMaterial.Text + "%'";
+            //}
+            //if (Combobox_FilterPrice.Text != "Giá")
+            //{
+            //    List<string> stringPriceList = Combobox_FilterPrice.Text.Split(" - ").ToList();
+            //    query += $" and PRODUCT_PRICE between {stringPriceList[0]} and {stringPriceList[1]}";
+            //}
+            ActivateMovies(query);
+        }
+
+        private void ToolStripMenuItem_Category01_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem tsi = (ToolStripMenuItem)sender;
+            ResetHomePage($"select * from MOVIE where MOVIE_CATEGORY like N'%{tsi.Text}%'", null);
+        }
+
+        private void ToolStripMenuItem_Category02_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_MovieCategory_MouseEnter(object sender, EventArgs e)
+        {
+            IconButton btn = (IconButton)sender;
+            btn.ForeColor = Assets.Variables.Colors.SmokyBlack;
+            btn.BackColor = Assets.Variables.Colors.MetallicYellow;
+            btn.IconColor = Assets.Variables.Colors.SmokyBlack;
+        }
+
+        private void Button_MovieCategory_MouseLeave(object sender, EventArgs e)
+        {
+            IconButton btn = (IconButton)sender;
+            btn.ForeColor = Assets.Variables.Colors.MetallicYellow;
+            btn.BackColor = Color.Transparent;
+            btn.IconColor = Assets.Variables.Colors.MetallicYellow;
+        }
+
+        private void Button_MinimizeForm_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Button_MaximumForm_Click(object sender, EventArgs e)
+        {
+            //if (this.WindowState == FormWindowState.Normal)
+            //    this.WindowState = FormWindowState.Maximized;
+            //else
+            //    this.WindowState = FormWindowState.Normal;
+        }
+
+        private void Button_CloseForm_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Button_CloseForm_MouseEnter(object sender, EventArgs e)
+        {
+            Button_CloseForm.BackColor = Color.Red;
+            Button_CloseForm.IconColor = Color.White;
+        }
+
+        private void Button_CloseForm_MouseLeave(object sender, EventArgs e)
+        {
+            Button_CloseForm.IconColor = Color.White;
+            Button_CloseForm.BackColor = Color.Transparent;
+        }
+
+        private void Button_MovieSearch_Click(object sender, EventArgs e)
+        {
+            FilterMovie();
+        }
+
+        private void TextBox_MovieSearch_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (ch == (char)13)
+                FilterMovie();
         }
     }
 }

@@ -20,3 +20,8 @@ D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MovieOnline.csproj.Co
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.CustomControls.Controls_Movie.resources
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Assets.Images.Images_Movie.resources
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Forms._03_Form_Movie_Detail.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Forms._04_Form_Watching_Movie.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Forms.Notification_Form.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Assets.Images.Icon.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Forms._05_Form_Favorite_Movie_List.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.CustomControls.Controls_Movie_inList.resources

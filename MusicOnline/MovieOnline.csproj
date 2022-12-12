@@ -58,6 +58,11 @@
     </Compile>
     <Compile Include="Assets\Controls\MenuColorTable.cs" />
     <Compile Include="Assets\Controls\MenuRenderer.cs" />
+    <Compile Include="Assets\Images\Icon.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Icon.resx</DependentUpon>
+    </Compile>
     <Compile Include="Assets\Images\Images_Movie.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -71,6 +76,12 @@
     </Compile>
     <Compile Include="CustomControls\Controls_Movie.Designer.cs">
       <DependentUpon>Controls_Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\Controls_Movie_inList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Controls_Movie_inList.Designer.cs">
+      <DependentUpon>Controls_Movie_inList.cs</DependentUpon>
     </Compile>
     <Compile Include="Database\DAO\DataProvider.cs" />
     <Compile Include="Forms\01_Form_Loading.cs">
@@ -91,14 +102,39 @@
     <Compile Include="Forms\03_Form_Movie_Detail.Designer.cs">
       <DependentUpon>03_Form_Movie_Detail.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\04_Form_Watching_Movie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\04_Form_Watching_Movie.Designer.cs">
+      <DependentUpon>04_Form_Watching_Movie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\05_Form_Favorite_Movie_List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\05_Form_Favorite_Movie_List.Designer.cs">
+      <DependentUpon>05_Form_Favorite_Movie_List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Notification_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Notification_Form.Designer.cs">
+      <DependentUpon>Notification_Form.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Assets\Images\Icon.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Icon.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Assets\Images\Images_Movie.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Images_Movie.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\Controls_Movie.resx">
       <DependentUpon>Controls_Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\Controls_Movie_inList.resx">
+      <DependentUpon>Controls_Movie_inList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\01_Form_Loading.resx">
       <DependentUpon>01_Form_Loading.cs</DependentUpon>
@@ -108,6 +144,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\03_Form_Movie_Detail.resx">
       <DependentUpon>03_Form_Movie_Detail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\04_Form_Watching_Movie.resx">
+      <DependentUpon>04_Form_Watching_Movie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\05_Form_Favorite_Movie_List.resx">
+      <DependentUpon>05_Form_Favorite_Movie_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Notification_Form.resx">
+      <DependentUpon>Notification_Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -163,6 +208,75 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images_Resources\MV03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\Success.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\Error.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

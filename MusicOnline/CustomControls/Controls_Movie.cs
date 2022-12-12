@@ -65,12 +65,12 @@ namespace MusicOnline.CustomControls
 
         private void EventClick_MovieDetail()
         {
-            ResourceManager getRM = Assets.Variables.ResourcesManager.rm_movies;
+            //ResourceManager getRM = Assets.Variables.ResourcesManager.rm_movies;
+            Bitmap myImage = (Bitmap)Assets.Variables.ResourcesManager.rm_movies.GetObject(Panel_ControlMovie.Name);
             string query = $"select * from MOVIE where MOVIE_ID like '{Panel_ControlMovie.Name}'";
             DataProvider provider = new DataProvider();
             DataTable dtShowMovieDetail = provider.ExecuteQuery(query);
-            MessageBox.Show(dtShowMovieDetail.Rows.Count.ToString());
-            openChildForm(new _03_Form_Movie_Detail(getRM, dtShowMovieDetail));
+            openChildForm(new _03_Form_Movie_Detail(myImage, dtShowMovieDetail));
         }
 
         private void openChildForm(Form childForm)

@@ -23,5 +23,6 @@ namespace MusicOnline.Assets.Variables
         public static Color Gray = ColorTranslator.FromHtml("#808080");
         public static Color MetallicYellow = ColorTranslator.FromHtml("#F9CC0B");
         public static Color VividGamboge = ColorTranslator.FromHtml("#FF9601");
+        public static Color UERed = ColorTranslator.FromHtml("#C00000");
     }
 }

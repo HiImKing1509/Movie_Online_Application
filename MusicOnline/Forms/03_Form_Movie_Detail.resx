@@ -117,9 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Label_MovieTags.Text" xml:space="preserve">
-    <value>xem phim Người Hobbit 3: Đại Chiến 5 Cánh Quân tập Full, Phim Người Hobbit 3: Đại Chiến 5 Cánh Quân tập Full Vietsub, Người Hobbit 3: Đại Chiến 5 Cánh Quân ep Full full hd, download phim Người Hobbit 3: Đại Chiến 5 Cánh Quân tập Full, xem online Người Hobbit 3: Đại Chiến 5 Cánh Quân tập Full netflix, wetv, vieon, phim keeng, youtube, phimmoi, bilutv, biphim, hdvip, hayghe, motphim, tvhay, zingtv, fptplay, phim1080, luotphim, fimfast, dongphim, dongphym, fullphim, phephim, vtvgiaitri, preview Người Hobbit 3: Đại Chiến 5 Cánh Quân tập Full thuyết minh, Người Hobbit 3: Đại Chiến 5 Cánh Quân tập Full lồng tiếng</value>
-  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="PictureBox_MovieImage.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -1082,6 +1079,9 @@
         3dMxudwArBAzxjUWWn5ix4cXK313Krg06Cnm5qjTViWJ2A09PoTwo0zC5geyFQqgsqWruoArRQ4UtMQx
         0WKaEMIYhzGzqmPcJhkBwCF2+xekoOoNF3bEqhNwWqoMAbo6n//Z
 </value>
+  </data>
+  <data name="Label_MovieTags.Text" xml:space="preserve">
+    <value>xem phim Người Hobbit 3: Đại Chiến 5 Cánh Quân tập Full, Phim Người Hobbit 3: Đại Chiến 5 Cánh Quân tập Full Vietsub, Người Hobbit 3: Đại Chiến 5 Cánh Quân ep Full full hd, download phim Người Hobbit 3: Đại Chiến 5 Cánh Quân tập Full, xem online Người Hobbit 3: Đại Chiến 5 Cánh Quân tập Full netflix, wetv, vieon, phim keeng, youtube, phimmoi, bilutv, biphim, hdvip, hayghe, motphim, tvhay, zingtv, fptplay, phim1080, luotphim, fimfast, dongphim, dongphym, fullphim, phephim, vtvgiaitri, preview Người Hobbit 3: Đại Chiến 5 Cánh Quân tập Full thuyết minh, Người Hobbit 3: Đại Chiến 5 Cánh Quân tập Full lồng tiếng</value>
   </data>
   <data name="Label_MovieContent.Text" xml:space="preserve">
     <value>Người Hobbit 3: Đại Chiến 5 Cánh Quân là phần cuối cùng của series phim nói về người Hobbit. Đoàn quân người lùn của Thorin đã đặt được chân tới hang ổ của con rồng Smaug xấu xa. Chàng Hobbit quả cảm Bilbo và những người lùn lúc này đang ở rất gần Erebor và kho báu lẽ ra thuộc về họ. Chỉ có điều, có quá nhiều biến cố và thế lực đang nhăm nhe ập tới ngay sau khi họ đánh bại được rồng Smaug.</value>

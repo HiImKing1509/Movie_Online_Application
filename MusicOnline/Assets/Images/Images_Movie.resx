@@ -127,4 +127,67 @@
   <data name="MV03" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\..\Images_Resources\MV03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="MV04" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV04.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV05" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV05.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV06" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV06.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV07" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV07.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV08" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV08.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV09" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV09.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV10.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV11.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV12.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV13.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV15.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV19.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV20.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV23.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MV24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\..\Images_Resources\MV24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

@@ -30,11 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_03_Form_Movie_Detail));
             this.Panel_Details = new System.Windows.Forms.Panel();
+            this.Panel_MovieTags = new System.Windows.Forms.Panel();
+            this.Label_MovieTags = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.iconButton3 = new FontAwesome.Sharp.IconButton();
-            this.iconButton2 = new FontAwesome.Sharp.IconButton();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.Button_LoveMovie = new FontAwesome.Sharp.IconButton();
+            this.Button_DownloadMovie = new FontAwesome.Sharp.IconButton();
+            this.Button_WatchingMovie = new FontAwesome.Sharp.IconButton();
             this.Panel_MovieEvaluation = new System.Windows.Forms.Panel();
+            this.label13 = new System.Windows.Forms.Label();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.iconButton5 = new FontAwesome.Sharp.IconButton();
             this.iconButton6 = new FontAwesome.Sharp.IconButton();
@@ -52,8 +56,6 @@
             this.Label_MovieContent = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.Panel_MovieInformation = new System.Windows.Forms.Panel();
-            this.Panel_MovieName = new System.Windows.Forms.Panel();
-            this.Label_MovieName = new System.Windows.Forms.Label();
             this.Label_MovieActors = new System.Windows.Forms.Label();
             this.Label_MovieCategory = new System.Windows.Forms.Label();
             this.Label_MovieNation = new System.Windows.Forms.Label();
@@ -72,28 +74,26 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.Panel_MovieName = new System.Windows.Forms.Panel();
             this.Label_MovieNameEng = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.Panel_MovieTags = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.Label_MovieTags = new System.Windows.Forms.Label();
+            this.Label_MovieName = new System.Windows.Forms.Label();
             this.Panel_Details.SuspendLayout();
+            this.Panel_MovieTags.SuspendLayout();
             this.Panel_MovieEvaluation.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_MovieImage)).BeginInit();
             this.Panel_MovieContent.SuspendLayout();
             this.Panel_MovieInformation.SuspendLayout();
             this.Panel_MovieName.SuspendLayout();
-            this.Panel_MovieTags.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel_Details
             // 
             this.Panel_Details.Controls.Add(this.Panel_MovieTags);
             this.Panel_Details.Controls.Add(this.iconButton4);
-            this.Panel_Details.Controls.Add(this.iconButton3);
-            this.Panel_Details.Controls.Add(this.iconButton2);
-            this.Panel_Details.Controls.Add(this.iconButton1);
+            this.Panel_Details.Controls.Add(this.Button_LoveMovie);
+            this.Panel_Details.Controls.Add(this.Button_DownloadMovie);
+            this.Panel_Details.Controls.Add(this.Button_WatchingMovie);
             this.Panel_Details.Controls.Add(this.Panel_MovieEvaluation);
             this.Panel_Details.Controls.Add(this.PictureBox_MovieImage);
             this.Panel_Details.Controls.Add(this.Panel_MovieContent);
@@ -105,6 +105,36 @@
             this.Panel_Details.Name = "Panel_Details";
             this.Panel_Details.Size = new System.Drawing.Size(1566, 847);
             this.Panel_Details.TabIndex = 0;
+            // 
+            // Panel_MovieTags
+            // 
+            this.Panel_MovieTags.Controls.Add(this.Label_MovieTags);
+            this.Panel_MovieTags.Controls.Add(this.label14);
+            this.Panel_MovieTags.Location = new System.Drawing.Point(401, 746);
+            this.Panel_MovieTags.Name = "Panel_MovieTags";
+            this.Panel_MovieTags.Size = new System.Drawing.Size(1153, 87);
+            this.Panel_MovieTags.TabIndex = 8;
+            // 
+            // Label_MovieTags
+            // 
+            this.Label_MovieTags.AutoSize = true;
+            this.Label_MovieTags.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_MovieTags.Location = new System.Drawing.Point(66, 10);
+            this.Label_MovieTags.MaximumSize = new System.Drawing.Size(1070, 0);
+            this.Label_MovieTags.Name = "Label_MovieTags";
+            this.Label_MovieTags.Size = new System.Drawing.Size(1069, 68);
+            this.Label_MovieTags.TabIndex = 37;
+            this.Label_MovieTags.Text = resources.GetString("Label_MovieTags.Text");
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(8, 10);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(52, 19);
+            this.label14.TabIndex = 27;
+            this.label14.Text = "Tags:";
             // 
             // iconButton4
             // 
@@ -124,69 +154,82 @@
             this.iconButton4.Text = "Chia sẻ";
             this.iconButton4.UseVisualStyleBackColor = false;
             // 
-            // iconButton3
+            // Button_LoveMovie
             // 
-            this.iconButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.iconButton3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton3.FlatAppearance.BorderSize = 0;
-            this.iconButton3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton3.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton3.ForeColor = System.Drawing.Color.White;
-            this.iconButton3.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton3.IconColor = System.Drawing.Color.Black;
-            this.iconButton3.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton3.Location = new System.Drawing.Point(47, 597);
-            this.iconButton3.Name = "iconButton3";
-            this.iconButton3.Size = new System.Drawing.Size(311, 61);
-            this.iconButton3.TabIndex = 6;
-            this.iconButton3.Text = "Yêu thích";
-            this.iconButton3.UseVisualStyleBackColor = false;
+            this.Button_LoveMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_LoveMovie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_LoveMovie.FlatAppearance.BorderSize = 0;
+            this.Button_LoveMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_LoveMovie.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_LoveMovie.ForeColor = System.Drawing.Color.White;
+            this.Button_LoveMovie.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Button_LoveMovie.IconColor = System.Drawing.Color.Black;
+            this.Button_LoveMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Button_LoveMovie.Location = new System.Drawing.Point(47, 597);
+            this.Button_LoveMovie.Name = "Button_LoveMovie";
+            this.Button_LoveMovie.Size = new System.Drawing.Size(311, 61);
+            this.Button_LoveMovie.TabIndex = 6;
+            this.Button_LoveMovie.Text = "Yêu thích";
+            this.Button_LoveMovie.UseVisualStyleBackColor = false;
+            this.Button_LoveMovie.Click += new System.EventHandler(this.Button_LoveMovie_Click);
             // 
-            // iconButton2
+            // Button_DownloadMovie
             // 
-            this.iconButton2.BackColor = System.Drawing.Color.Green;
-            this.iconButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton2.FlatAppearance.BorderSize = 0;
-            this.iconButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton2.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton2.ForeColor = System.Drawing.Color.White;
-            this.iconButton2.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton2.IconColor = System.Drawing.Color.Black;
-            this.iconButton2.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton2.Location = new System.Drawing.Point(210, 484);
-            this.iconButton2.Name = "iconButton2";
-            this.iconButton2.Size = new System.Drawing.Size(148, 56);
-            this.iconButton2.TabIndex = 5;
-            this.iconButton2.Text = "Tải phim";
-            this.iconButton2.UseVisualStyleBackColor = false;
+            this.Button_DownloadMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Button_DownloadMovie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_DownloadMovie.FlatAppearance.BorderSize = 0;
+            this.Button_DownloadMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_DownloadMovie.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_DownloadMovie.ForeColor = System.Drawing.Color.Black;
+            this.Button_DownloadMovie.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Button_DownloadMovie.IconColor = System.Drawing.Color.Black;
+            this.Button_DownloadMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Button_DownloadMovie.Location = new System.Drawing.Point(210, 484);
+            this.Button_DownloadMovie.Name = "Button_DownloadMovie";
+            this.Button_DownloadMovie.Size = new System.Drawing.Size(148, 56);
+            this.Button_DownloadMovie.TabIndex = 5;
+            this.Button_DownloadMovie.Text = "Tải phim";
+            this.Button_DownloadMovie.UseVisualStyleBackColor = false;
+            this.Button_DownloadMovie.Click += new System.EventHandler(this.Button_DownloadMovie_Click);
             // 
-            // iconButton1
+            // Button_WatchingMovie
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.iconButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.Location = new System.Drawing.Point(47, 484);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(148, 56);
-            this.iconButton1.TabIndex = 4;
-            this.iconButton1.Text = "Xem phim";
-            this.iconButton1.UseVisualStyleBackColor = false;
+            this.Button_WatchingMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_WatchingMovie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_WatchingMovie.FlatAppearance.BorderSize = 0;
+            this.Button_WatchingMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_WatchingMovie.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_WatchingMovie.ForeColor = System.Drawing.Color.White;
+            this.Button_WatchingMovie.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Button_WatchingMovie.IconColor = System.Drawing.Color.Black;
+            this.Button_WatchingMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Button_WatchingMovie.Location = new System.Drawing.Point(47, 484);
+            this.Button_WatchingMovie.Name = "Button_WatchingMovie";
+            this.Button_WatchingMovie.Size = new System.Drawing.Size(148, 56);
+            this.Button_WatchingMovie.TabIndex = 4;
+            this.Button_WatchingMovie.Text = "Xem phim";
+            this.Button_WatchingMovie.UseVisualStyleBackColor = false;
+            this.Button_WatchingMovie.Click += new System.EventHandler(this.Button_WatchingMovie_Click);
             // 
             // Panel_MovieEvaluation
             // 
             this.Panel_MovieEvaluation.Controls.Add(this.label13);
             this.Panel_MovieEvaluation.Controls.Add(this.flowLayoutPanel1);
             this.Panel_MovieEvaluation.Controls.Add(this.label10);
-            this.Panel_MovieEvaluation.Location = new System.Drawing.Point(401, 611);
+            this.Panel_MovieEvaluation.Location = new System.Drawing.Point(401, 629);
             this.Panel_MovieEvaluation.Name = "Panel_MovieEvaluation";
-            this.Panel_MovieEvaluation.Size = new System.Drawing.Size(443, 129);
+            this.Panel_MovieEvaluation.Size = new System.Drawing.Size(443, 111);
             this.Panel_MovieEvaluation.TabIndex = 3;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(381, 82);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(41, 19);
+            this.label13.TabIndex = 40;
+            this.label13.Text = "1/10";
             // 
             // flowLayoutPanel1
             // 
@@ -200,10 +243,10 @@
             this.flowLayoutPanel1.Controls.Add(this.iconButton12);
             this.flowLayoutPanel1.Controls.Add(this.iconButton13);
             this.flowLayoutPanel1.Controls.Add(this.iconButton14);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(30, 50);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(39, 39);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(386, 39);
-            this.flowLayoutPanel1.TabIndex = 11;
+            this.flowLayoutPanel1.TabIndex = 39;
             // 
             // iconButton5
             // 
@@ -212,7 +255,7 @@
             this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Star;
             this.iconButton5.IconColor = System.Drawing.Color.Black;
             this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.IconSize = 32;
+            this.iconButton5.IconSize = 28;
             this.iconButton5.Location = new System.Drawing.Point(3, 3);
             this.iconButton5.Name = "iconButton5";
             this.iconButton5.Size = new System.Drawing.Size(32, 32);
@@ -226,7 +269,7 @@
             this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Star;
             this.iconButton6.IconColor = System.Drawing.Color.Black;
             this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.IconSize = 32;
+            this.iconButton6.IconSize = 28;
             this.iconButton6.Location = new System.Drawing.Point(41, 3);
             this.iconButton6.Name = "iconButton6";
             this.iconButton6.Size = new System.Drawing.Size(32, 32);
@@ -240,7 +283,7 @@
             this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Star;
             this.iconButton7.IconColor = System.Drawing.Color.Black;
             this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.IconSize = 32;
+            this.iconButton7.IconSize = 28;
             this.iconButton7.Location = new System.Drawing.Point(79, 3);
             this.iconButton7.Name = "iconButton7";
             this.iconButton7.Size = new System.Drawing.Size(32, 32);
@@ -254,7 +297,7 @@
             this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Star;
             this.iconButton8.IconColor = System.Drawing.Color.Black;
             this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton8.IconSize = 32;
+            this.iconButton8.IconSize = 28;
             this.iconButton8.Location = new System.Drawing.Point(117, 3);
             this.iconButton8.Name = "iconButton8";
             this.iconButton8.Size = new System.Drawing.Size(32, 32);
@@ -268,7 +311,7 @@
             this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Star;
             this.iconButton9.IconColor = System.Drawing.Color.Black;
             this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton9.IconSize = 32;
+            this.iconButton9.IconSize = 28;
             this.iconButton9.Location = new System.Drawing.Point(155, 3);
             this.iconButton9.Name = "iconButton9";
             this.iconButton9.Size = new System.Drawing.Size(32, 32);
@@ -282,7 +325,7 @@
             this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.Star;
             this.iconButton10.IconColor = System.Drawing.Color.Black;
             this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton10.IconSize = 32;
+            this.iconButton10.IconSize = 28;
             this.iconButton10.Location = new System.Drawing.Point(193, 3);
             this.iconButton10.Name = "iconButton10";
             this.iconButton10.Size = new System.Drawing.Size(32, 32);
@@ -296,7 +339,7 @@
             this.iconButton11.IconChar = FontAwesome.Sharp.IconChar.Star;
             this.iconButton11.IconColor = System.Drawing.Color.Black;
             this.iconButton11.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton11.IconSize = 32;
+            this.iconButton11.IconSize = 28;
             this.iconButton11.Location = new System.Drawing.Point(231, 3);
             this.iconButton11.Name = "iconButton11";
             this.iconButton11.Size = new System.Drawing.Size(32, 32);
@@ -310,7 +353,7 @@
             this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.Star;
             this.iconButton12.IconColor = System.Drawing.Color.Black;
             this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton12.IconSize = 32;
+            this.iconButton12.IconSize = 28;
             this.iconButton12.Location = new System.Drawing.Point(269, 3);
             this.iconButton12.Name = "iconButton12";
             this.iconButton12.Size = new System.Drawing.Size(32, 32);
@@ -324,7 +367,7 @@
             this.iconButton13.IconChar = FontAwesome.Sharp.IconChar.Star;
             this.iconButton13.IconColor = System.Drawing.Color.Black;
             this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton13.IconSize = 32;
+            this.iconButton13.IconSize = 28;
             this.iconButton13.Location = new System.Drawing.Point(307, 3);
             this.iconButton13.Name = "iconButton13";
             this.iconButton13.Size = new System.Drawing.Size(32, 32);
@@ -338,7 +381,7 @@
             this.iconButton14.IconChar = FontAwesome.Sharp.IconChar.Star;
             this.iconButton14.IconColor = System.Drawing.Color.Black;
             this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton14.IconSize = 32;
+            this.iconButton14.IconSize = 28;
             this.iconButton14.Location = new System.Drawing.Point(345, 3);
             this.iconButton14.Name = "iconButton14";
             this.iconButton14.Size = new System.Drawing.Size(32, 32);
@@ -349,10 +392,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(8, 15);
+            this.label10.Location = new System.Drawing.Point(26, 17);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(121, 19);
-            this.label10.TabIndex = 10;
+            this.label10.TabIndex = 38;
             this.label10.Text = "Đánh giá phim";
             // 
             // PictureBox_MovieImage
@@ -380,7 +423,7 @@
             // 
             this.Label_MovieContent.AutoSize = true;
             this.Label_MovieContent.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_MovieContent.Location = new System.Drawing.Point(13, 56);
+            this.Label_MovieContent.Location = new System.Drawing.Point(20, 86);
             this.Label_MovieContent.MaximumSize = new System.Drawing.Size(650, 0);
             this.Label_MovieContent.Name = "Label_MovieContent";
             this.Label_MovieContent.Size = new System.Drawing.Size(649, 126);
@@ -391,15 +434,16 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Bahnschrift", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(3, 4);
+            this.label11.Font = new System.Drawing.Font("Arial", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(18, 19);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(222, 34);
+            this.label11.Size = new System.Drawing.Size(243, 33);
             this.label11.TabIndex = 2;
             this.label11.Text = "NỘI DUNG PHIM:";
             // 
             // Panel_MovieInformation
             // 
+            this.Panel_MovieInformation.AutoScroll = true;
             this.Panel_MovieInformation.BackColor = System.Drawing.Color.Transparent;
             this.Panel_MovieInformation.Controls.Add(this.Label_MovieActors);
             this.Panel_MovieInformation.Controls.Add(this.Label_MovieCategory);
@@ -424,45 +468,27 @@
             this.Panel_MovieInformation.Size = new System.Drawing.Size(443, 455);
             this.Panel_MovieInformation.TabIndex = 0;
             // 
-            // Panel_MovieName
-            // 
-            this.Panel_MovieName.Controls.Add(this.Label_MovieNameEng);
-            this.Panel_MovieName.Controls.Add(this.Label_MovieName);
-            this.Panel_MovieName.Location = new System.Drawing.Point(401, 22);
-            this.Panel_MovieName.Name = "Panel_MovieName";
-            this.Panel_MovieName.Size = new System.Drawing.Size(1153, 122);
-            this.Panel_MovieName.TabIndex = 0;
-            // 
-            // Label_MovieName
-            // 
-            this.Label_MovieName.AutoSize = true;
-            this.Label_MovieName.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_MovieName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_MovieName.Location = new System.Drawing.Point(3, 7);
-            this.Label_MovieName.Name = "Label_MovieName";
-            this.Label_MovieName.Size = new System.Drawing.Size(485, 52);
-            this.Label_MovieName.TabIndex = 0;
-            this.Label_MovieName.Text = "CHIẾC BẬT LỬA VÀ VÁY CÔNG CHÚA";
-            // 
             // Label_MovieActors
             // 
             this.Label_MovieActors.AutoSize = true;
             this.Label_MovieActors.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_MovieActors.Location = new System.Drawing.Point(119, 394);
+            this.Label_MovieActors.Location = new System.Drawing.Point(119, 372);
+            this.Label_MovieActors.MaximumSize = new System.Drawing.Size(310, 0);
             this.Label_MovieActors.Name = "Label_MovieActors";
-            this.Label_MovieActors.Size = new System.Drawing.Size(82, 19);
+            this.Label_MovieActors.Size = new System.Drawing.Size(300, 38);
             this.Label_MovieActors.TabIndex = 36;
-            this.Label_MovieActors.Text = "Diễn viên:";
+            this.Label_MovieActors.Text = "Martin Freeman, Ian McKellen, Richard Armitage";
             // 
             // Label_MovieCategory
             // 
             this.Label_MovieCategory.AutoSize = true;
             this.Label_MovieCategory.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_MovieCategory.Location = new System.Drawing.Point(108, 313);
+            this.Label_MovieCategory.MaximumSize = new System.Drawing.Size(330, 0);
             this.Label_MovieCategory.Name = "Label_MovieCategory";
-            this.Label_MovieCategory.Size = new System.Drawing.Size(71, 19);
+            this.Label_MovieCategory.Size = new System.Drawing.Size(318, 38);
             this.Label_MovieCategory.TabIndex = 35;
-            this.Label_MovieCategory.Text = "Thể loại:";
+            this.Label_MovieCategory.Text = "Cổ Trang - Thần Thoại, Phiêu Lưu - Hành Động";
             // 
             // Label_MovieNation
             // 
@@ -538,7 +564,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(26, 394);
+            this.label9.Location = new System.Drawing.Point(26, 372);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(87, 19);
             this.label9.TabIndex = 27;
@@ -624,6 +650,15 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "Trạng thái:";
             // 
+            // Panel_MovieName
+            // 
+            this.Panel_MovieName.Controls.Add(this.Label_MovieNameEng);
+            this.Panel_MovieName.Controls.Add(this.Label_MovieName);
+            this.Panel_MovieName.Location = new System.Drawing.Point(401, 22);
+            this.Panel_MovieName.Name = "Panel_MovieName";
+            this.Panel_MovieName.Size = new System.Drawing.Size(1153, 122);
+            this.Panel_MovieName.TabIndex = 0;
+            // 
             // Label_MovieNameEng
             // 
             this.Label_MovieNameEng.AutoSize = true;
@@ -634,45 +669,16 @@
             this.Label_MovieNameEng.TabIndex = 29;
             this.Label_MovieNameEng.Text = "The Hobbit: The Battle of the Five Armies (2014)";
             // 
-            // label13
+            // Label_MovieName
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(372, 95);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 19);
-            this.label13.TabIndex = 37;
-            this.label13.Text = "1/10";
-            // 
-            // Panel_MovieTags
-            // 
-            this.Panel_MovieTags.Controls.Add(this.Label_MovieTags);
-            this.Panel_MovieTags.Controls.Add(this.label14);
-            this.Panel_MovieTags.Location = new System.Drawing.Point(401, 746);
-            this.Panel_MovieTags.Name = "Panel_MovieTags";
-            this.Panel_MovieTags.Size = new System.Drawing.Size(1153, 87);
-            this.Panel_MovieTags.TabIndex = 8;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(8, 10);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(52, 19);
-            this.label14.TabIndex = 27;
-            this.label14.Text = "Tags:";
-            // 
-            // Label_MovieTags
-            // 
-            this.Label_MovieTags.AutoSize = true;
-            this.Label_MovieTags.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_MovieTags.Location = new System.Drawing.Point(66, 10);
-            this.Label_MovieTags.MaximumSize = new System.Drawing.Size(1070, 0);
-            this.Label_MovieTags.Name = "Label_MovieTags";
-            this.Label_MovieTags.Size = new System.Drawing.Size(1069, 68);
-            this.Label_MovieTags.TabIndex = 37;
-            this.Label_MovieTags.Text = resources.GetString("Label_MovieTags.Text");
+            this.Label_MovieName.AutoSize = true;
+            this.Label_MovieName.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_MovieName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Label_MovieName.Location = new System.Drawing.Point(3, 7);
+            this.Label_MovieName.Name = "Label_MovieName";
+            this.Label_MovieName.Size = new System.Drawing.Size(485, 52);
+            this.Label_MovieName.TabIndex = 0;
+            this.Label_MovieName.Text = "CHIẾC BẬT LỬA VÀ VÁY CÔNG CHÚA";
             // 
             // _03_Form_Movie_Detail
             // 
@@ -683,6 +689,8 @@
             this.Name = "_03_Form_Movie_Detail";
             this.Text = "_03_Form_Movie_Detail";
             this.Panel_Details.ResumeLayout(false);
+            this.Panel_MovieTags.ResumeLayout(false);
+            this.Panel_MovieTags.PerformLayout();
             this.Panel_MovieEvaluation.ResumeLayout(false);
             this.Panel_MovieEvaluation.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -693,8 +701,6 @@
             this.Panel_MovieInformation.PerformLayout();
             this.Panel_MovieName.ResumeLayout(false);
             this.Panel_MovieName.PerformLayout();
-            this.Panel_MovieTags.ResumeLayout(false);
-            this.Panel_MovieTags.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -707,23 +713,11 @@
         private System.Windows.Forms.PictureBox PictureBox_MovieImage;
         private System.Windows.Forms.Panel Panel_MovieEvaluation;
         private FontAwesome.Sharp.IconButton iconButton4;
-        private FontAwesome.Sharp.IconButton iconButton3;
-        private FontAwesome.Sharp.IconButton iconButton2;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton Button_LoveMovie;
+        private FontAwesome.Sharp.IconButton Button_DownloadMovie;
+        private FontAwesome.Sharp.IconButton Button_WatchingMovie;
         private System.Windows.Forms.Panel Panel_MovieName;
         private System.Windows.Forms.Label Label_MovieName;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconButton7;
-        private FontAwesome.Sharp.IconButton iconButton8;
-        private FontAwesome.Sharp.IconButton iconButton9;
-        private FontAwesome.Sharp.IconButton iconButton10;
-        private FontAwesome.Sharp.IconButton iconButton11;
-        private FontAwesome.Sharp.IconButton iconButton12;
-        private FontAwesome.Sharp.IconButton iconButton13;
-        private FontAwesome.Sharp.IconButton iconButton14;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label Label_MovieContent;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label Label_MovieActors;
@@ -745,9 +739,21 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label Label_MovieNameEng;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel Panel_MovieTags;
         private System.Windows.Forms.Label Label_MovieTags;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private FontAwesome.Sharp.IconButton iconButton5;
+        private FontAwesome.Sharp.IconButton iconButton6;
+        private FontAwesome.Sharp.IconButton iconButton7;
+        private FontAwesome.Sharp.IconButton iconButton8;
+        private FontAwesome.Sharp.IconButton iconButton9;
+        private FontAwesome.Sharp.IconButton iconButton10;
+        private FontAwesome.Sharp.IconButton iconButton11;
+        private FontAwesome.Sharp.IconButton iconButton12;
+        private FontAwesome.Sharp.IconButton iconButton13;
+        private FontAwesome.Sharp.IconButton iconButton14;
+        private System.Windows.Forms.Label label10;
     }
 }

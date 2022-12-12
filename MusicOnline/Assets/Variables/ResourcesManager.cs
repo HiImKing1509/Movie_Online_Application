@@ -11,5 +11,6 @@ namespace MusicOnline.Assets.Variables
     public class ResourcesManager
     {
         public static ResourceManager rm_movies = new ResourceManager("MusicOnline.Assets.Images.Images_Movie", Assembly.GetExecutingAssembly());
+        public static ResourceManager rm_icon = new ResourceManager("MusicOnline.Assets.Images.Icon", Assembly.GetExecutingAssembly());
     }
 }
