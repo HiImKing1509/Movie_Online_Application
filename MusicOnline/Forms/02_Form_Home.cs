@@ -1,4 +1,5 @@
-﻿using FontAwesome.Sharp;
+﻿using AxWMPLib;
+using FontAwesome.Sharp;
 using MusicOnline.CustomControls;
 using MusicOnline.Database.DAO;
 using System;
@@ -13,6 +14,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Documents;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace MusicOnline.Forms
 {
@@ -119,6 +121,7 @@ namespace MusicOnline.Forms
         private void Button_History_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
+            openChildForm(new _06_Form_History());
         }
 
         private void ActivateMovies(string query)

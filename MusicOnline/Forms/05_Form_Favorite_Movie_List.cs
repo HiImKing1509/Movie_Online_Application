@@ -15,11 +15,15 @@ namespace MusicOnline.Forms
 {
     public partial class _05_Form_Favorite_Movie_List : Form
     {
+        private Form activeForm = null;
+
         public _05_Form_Favorite_Movie_List()
         {
             InitializeComponent();
             FlowLayoutPanel_ShowListMovie.BackColor = Assets.Variables.Colors.BlackOlive;
             Panel_Tools.BackColor = Assets.Variables.Colors.ChineseBlack;
+            Button_ShowAllMovie.BackColor = Assets.Variables.Colors.MetallicYellow;
+            Button_RemoveAllMovie.BackColor = Assets.Variables.Colors.UERed;
 
             Load_MyFavoriteList();
         }
@@ -30,6 +34,9 @@ namespace MusicOnline.Forms
 
             DataProvider provider = new DataProvider();
             DataTable dtShowMyList = provider.ExecuteQuery(query);
+
+            Label_NumberOfMovie.Text = dtShowMyList.Rows.Count.ToString();
+
             ResourceManager rm;
             if (dtShowMyList.Rows.Count > 0)
             {
@@ -50,6 +57,35 @@ namespace MusicOnline.Forms
                 //rm = CreateResources.Variables.rm_logo;
                 //FlowLayoutPanel_OrderProduct.BackgroundImage = (Bitmap)rm.GetObject("No_product");
             }
+        }
+
+        private void Button_ShowAllMovie_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_RemoveAllMovie_Click(object sender, EventArgs e)
+        {
+            DataProvider provider = new DataProvider();
+            string query = $"update MOVIE set MOVIE_LOVE_STATUS = 0 where MOVIE_LOVE_STATUS = 1";
+
+            provider.ExecuteNonQuery(query);
+            openChildForm(new _05_Form_Favorite_Movie_List());
+        }
+
+        private void openChildForm(Form childForm)
+        {
+            if (activeForm != null)
+                activeForm.Close();
+            activeForm = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+
+            Assets.Variables.ListFormPanel.ListFormsPanel[0].Controls.Add(childForm);
+            Assets.Variables.ListFormPanel.ListFormsPanel[0].Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show();
         }
     }
 }

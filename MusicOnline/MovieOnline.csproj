@@ -77,6 +77,18 @@
     <Compile Include="CustomControls\Controls_Movie.Designer.cs">
       <DependentUpon>Controls_Movie.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\Controls_Movie_Freq.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Controls_Movie_Freq.Designer.cs">
+      <DependentUpon>Controls_Movie_Freq.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\Controls_Movie_History.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Controls_Movie_History.Designer.cs">
+      <DependentUpon>Controls_Movie_History.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\Controls_Movie_inList.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -114,6 +126,12 @@
     <Compile Include="Forms\05_Form_Favorite_Movie_List.Designer.cs">
       <DependentUpon>05_Form_Favorite_Movie_List.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\06_Form_History.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\06_Form_History.Designer.cs">
+      <DependentUpon>06_Form_History.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Notification_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,6 +151,12 @@
     <EmbeddedResource Include="CustomControls\Controls_Movie.resx">
       <DependentUpon>Controls_Movie.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\Controls_Movie_Freq.resx">
+      <DependentUpon>Controls_Movie_Freq.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\Controls_Movie_History.resx">
+      <DependentUpon>Controls_Movie_History.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\Controls_Movie_inList.resx">
       <DependentUpon>Controls_Movie_inList.cs</DependentUpon>
     </EmbeddedResource>
@@ -150,6 +174,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\05_Form_Favorite_Movie_List.resx">
       <DependentUpon>05_Form_Favorite_Movie_List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\06_Form_History.resx">
+      <DependentUpon>06_Form_History.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Notification_Form.resx">
       <DependentUpon>Notification_Form.cs</DependentUpon>

@@ -110,6 +110,7 @@
             this.Controls.Add(this.Panel_WatchMovie);
             this.Name = "_04_Form_Watching_Movie";
             this.Text = "_04_Form_Watching_Movie";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this._04_Form_Watching_Movie_FormClosing);
             this.Panel_WatchMovie.ResumeLayout(false);
             this.Panel_Body.ResumeLayout(false);
             this.Panel_Body.PerformLayout();

@@ -38,6 +38,7 @@ namespace MusicOnline.Forms
             Panel_MovieName.BackColor = Assets.Variables.Colors.ChineseBlack;
 
             Label_MovieName.ForeColor = Assets.Variables.Colors.VividGamboge;
+            Label_Access.ForeColor = Assets.Variables.Colors.MetallicYellow;
             Button_DownloadMovie.BackColor = Assets.Variables.Colors.MetallicYellow;
 
             // Clone data
@@ -56,6 +57,7 @@ namespace MusicOnline.Forms
             Label_MovieActors.Text = dr["MOVIE_ACTORS"].ToString();
             Label_MovieContent.Text = dr["MOVIE_CONTENT"].ToString();
             Label_MovieTags.Text = dr["MOVIE_TAGS"].ToString();
+            Label_Access.Text = dr["MOVIE_NUMBER_ACCESS"].ToString();
 
             UpdateStatusLoveMovie(dr["MOVIE_ID"].ToString());
             //
@@ -63,6 +65,7 @@ namespace MusicOnline.Forms
 
         private void Button_WatchingMovie_Click(object sender, EventArgs e)
         {
+            UpdateNumberOfAccess(movie.Rows[0]["MOVIE_ID"].ToString());
             openChildForm(new _04_Form_Watching_Movie(movie));
         }
 
@@ -142,6 +145,13 @@ namespace MusicOnline.Forms
                 Button_LoveMovie.Text = "Bỏ yêu thích";
                 Button_LoveMovie.BackColor = Color.Green;
             }
+        }
+
+        private void UpdateNumberOfAccess(string id)
+        {
+            DataProvider provider = new DataProvider();
+            string query = $"update MOVIE set MOVIE_NUMBER_ACCESS = MOVIE_NUMBER_ACCESS + 1 where MOVIE_ID = '{id}'";
+            provider.ExecuteNonQuery(query);
         }
     }
 }
