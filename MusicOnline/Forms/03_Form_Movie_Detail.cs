@@ -1,4 +1,5 @@
-﻿using MusicOnline.Database.DAO;
+﻿using FontAwesome.Sharp;
+using MusicOnline.Database.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -43,6 +44,7 @@ namespace MusicOnline.Forms
 
             // Clone data
             DataRow dr = dt.Rows[0];
+            PictureBox_MovieImage.Name = dr["MOVIE_ID"].ToString();
             PictureBox_MovieImage.Image = image;
             Label_MovieName.Text = dr["MOVIE_NAME"].ToString().ToUpper();
             Label_MovieNameEng.Text = dr["MOVIE_NAME_ENG"].ToString();
@@ -60,6 +62,7 @@ namespace MusicOnline.Forms
             Label_Access.Text = dr["MOVIE_NUMBER_ACCESS"].ToString();
 
             UpdateStatusLoveMovie(dr["MOVIE_ID"].ToString());
+            LoadStars(dr["MOVIE_ID"].ToString());
             //
         }
 
@@ -152,6 +155,57 @@ namespace MusicOnline.Forms
             DataProvider provider = new DataProvider();
             string query = $"update MOVIE set MOVIE_NUMBER_ACCESS = MOVIE_NUMBER_ACCESS + 1 where MOVIE_ID = '{id}'";
             provider.ExecuteNonQuery(query);
+        }
+
+        private void B1_MouseEnter(object sender, EventArgs e)
+        {
+            IconButton btn = (IconButton)sender;
+            string numberStar = btn.Name.Substring(1);
+
+            foreach (IconButton item in FlowLayoutPanel_Star.Controls)
+            {
+                if (Convert.ToInt16(item.Name.Substring(1)) <= Convert.ToInt16(numberStar))
+                    item.IconColor = Assets.Variables.Colors.MetallicYellow;
+                else
+                    item.IconColor = Color.Black;
+            }
+        }
+
+        private void B1_MouseLeave(object sender, EventArgs e)
+        {
+            IconButton btn = (IconButton)sender;
+            LoadStars(PictureBox_MovieImage.Name);
+        }
+
+
+        private void B1_Click(object sender, EventArgs e)
+        {
+            IconButton btn = (IconButton)sender;
+            DataProvider provider = new DataProvider();
+            string query = $"update MOVIE set MOVIE_STARS = {btn.Name.Substring(1)} where MOVIE_ID = '{PictureBox_MovieImage.Name}'";
+            provider.ExecuteNonQuery(query);
+            Alert("Đánh giá thành công !", Notification_Form.enmType.Success);
+            LoadStars(PictureBox_MovieImage.Name);
+        }
+        private void LoadStars(string id)
+        {
+            DataProvider provider = new DataProvider();
+            string query = $"select [MOVIE_STARS] from MOVIE where MOVIE_ID = '{id}'";
+            DataTable dt = provider.ExecuteQuery(query);
+
+            DataRow dr = dt.Rows[0];
+
+            string numberStar = dr["MOVIE_STARS"].ToString();
+
+            foreach (IconButton item in FlowLayoutPanel_Star.Controls)
+            {
+                if (Convert.ToInt16(item.Name.Substring(1)) <= Convert.ToInt16(numberStar))
+                    item.IconColor = Assets.Variables.Colors.MetallicYellow;
+                else
+                    item.IconColor = Color.Black;
+            }
+
+            Label_Stars.Text = dr["MOVIE_STARS"].ToString() + "/10";
         }
     }
 }

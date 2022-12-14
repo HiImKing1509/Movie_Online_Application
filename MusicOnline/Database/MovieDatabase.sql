@@ -76,8 +76,27 @@ create table HISTORY_MOVIE_LIST (
 	constraint PK_HISTORY_MOVIE_LIST primary key (HISTORY_MOVIE_ID, HISTORY_MOVIE_TIME)
 )
 
+create table PLAYLIST (
+	PLAYLIST_ID char(4),
+	PLAYLIST_NAME nvarchar(100),
+	PLAYLIST_TIME nvarchar(50),
+	PLAYLIST_LOGO char(4)
+	constraint PK_PLAYLIST primary key (PLAYLIST_ID)
+)
+go
+
+create table PLAYLIST_DETAIL (
+	PLAYLIST_ID char(4),
+	MOVIE_ID char(4),
+	MOVIE_TIME nvarchar(50),
+	constraint PK_PLAYLIST_DETAIL primary key (PLAYLIST_ID, MOVIE_ID)
+)
+go
+
 drop table MOVIE
 drop table HISTORY_MOVIE_LIST
+drop table PLAYLIST
+drop table PLAYLIST_DETAIL
 insert into MOVIE values('MV01',
 						N'Người Hobbit: Hành Trình Vô Định',
 						N'The Hobbit: An Unexpected Journey (2012)',
@@ -470,6 +489,22 @@ insert into HISTORY_MOVIE_LIST values('MV01', '12-11-2022 12:24:35 PM', 20)
 insert into HISTORY_MOVIE_LIST values('MV01', '12-11-2022 12:25:35 PM', 50)
 insert into HISTORY_MOVIE_LIST values('MV02', '12-11-2022 12:26:35 PM', 43)
 insert into HISTORY_MOVIE_LIST values('MV03', '12-11-2022 12:27:35 PM', 23)
+go
+
+insert into PLAYLIST values('PL01', N'Phim khoa học', '12-11-2022 12:24:35 PM', 'LG07')
+insert into PLAYLIST values('PL02', N'Phim trinh thám', '12-11-2022 12:24:35 PM', 'LG09')
+insert into PLAYLIST values('PL03', N'List phim người lớn', '12-11-2022 12:24:35 PM', 'LG13')
+
+insert into PLAYLIST_DETAIL values('PL01', 'MV01', '12-11-2022 12:24:35 PM')
+insert into PLAYLIST_DETAIL values('PL01', 'MV12', '12-11-2022 12:22:35 PM')
+insert into PLAYLIST_DETAIL values('PL01', 'MV13', '12-11-2022 12:23:35 PM')
+insert into PLAYLIST_DETAIL values('PL02', 'MV02', '12-11-2022 12:21:35 PM')
+insert into PLAYLIST_DETAIL values('PL02', 'MV03', '12-11-2022 12:28:35 PM')
+insert into PLAYLIST_DETAIL values('PL02', 'MV04', '12-11-2022 12:24:35 PM')
+insert into PLAYLIST_DETAIL values('PL02', 'MV06', '12-11-2022 11:24:35 PM')
+insert into PLAYLIST_DETAIL values('PL03', 'MV05', '12-11-2022 13:24:35 PM')
+insert into PLAYLIST_DETAIL values('PL03', 'MV11', '12-11-2022 16:24:32 PM')
+insert into PLAYLIST_DETAIL values('PL03', 'MV19', '12-11-2022 18:24:35 PM')
 
 -- Query
 select * from MOVIE
@@ -501,3 +536,11 @@ select [MOVIE_ID], [MOVIE_NAME], [MOVIE_NUMBER_ACCESS] from MOVIE where MOVIE_NU
 delete from HISTORY_MOVIE_LIST
 
 select [MOVIE_LOVE_STATUS] from MOVIE
+
+select * from PLAYLIST
+
+select [PLAYLIST_ID], PLAYLIST_DETAIL.MOVIE_ID, PLAYLIST_DETAIL.MOVIE_TIME, [MOVIE_NAME] from PLAYLIST_DETAIL inner join MOVIE on PLAYLIST_DETAIL.MOVIE_ID = MOVIE.MOVIE_ID where PLAYLIST_ID = 'PL01'
+
+select [MOVIE_ID], [MOVIE_STARS] from MOVIE where MOVIE_ID = 'MV03'
+
+update MOVIE set MOVIE_STARS = 1 where MOVIE_ID = 'MV03'

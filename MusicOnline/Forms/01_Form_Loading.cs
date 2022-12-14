@@ -15,6 +15,8 @@ namespace MusicOnline.Forms
         public _01_Form_Loading()
         {
             InitializeComponent();
+            Panel_Header.BackColor = Assets.Variables.Colors.ChineseBlack;
+            Panel_Main.BackColor = Assets.Variables.Colors.BlackOlive;
 
             // Initialization
             WaitLoadingForm();

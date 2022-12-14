@@ -28,3 +28,7 @@ D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.CustomCon
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.CustomControls.Controls_Movie_History.resources
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Forms._06_Form_History.resources
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.CustomControls.Controls_Movie_Freq.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Forms._07_Form_Playlist.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.CustomControls.Custom_Playlist.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Assets.Images.Logo.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.CustomControls.Controls_getMovie_Playlist.resources

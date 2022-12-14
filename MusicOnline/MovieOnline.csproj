@@ -68,9 +68,20 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Images_Movie.resx</DependentUpon>
     </Compile>
+    <Compile Include="Assets\Images\Logo.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Logo.resx</DependentUpon>
+    </Compile>
     <Compile Include="Assets\Variables\Colors.cs" />
     <Compile Include="Assets\Variables\ListFormPanel.cs" />
     <Compile Include="Assets\Variables\ResourcesManager.cs" />
+    <Compile Include="CustomControls\Controls_getMovie_Playlist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Controls_getMovie_Playlist.Designer.cs">
+      <DependentUpon>Controls_getMovie_Playlist.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\Controls_Movie.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,6 +105,12 @@
     </Compile>
     <Compile Include="CustomControls\Controls_Movie_inList.Designer.cs">
       <DependentUpon>Controls_Movie_inList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomControls\Custom_Playlist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Custom_Playlist.Designer.cs">
+      <DependentUpon>Custom_Playlist.cs</DependentUpon>
     </Compile>
     <Compile Include="Database\DAO\DataProvider.cs" />
     <Compile Include="Forms\01_Form_Loading.cs">
@@ -132,6 +149,12 @@
     <Compile Include="Forms\06_Form_History.Designer.cs">
       <DependentUpon>06_Form_History.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\07_Form_Playlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\07_Form_Playlist.Designer.cs">
+      <DependentUpon>07_Form_Playlist.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Notification_Form.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +171,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Images_Movie.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Assets\Images\Logo.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Logo.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\Controls_getMovie_Playlist.resx">
+      <DependentUpon>Controls_getMovie_Playlist.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\Controls_Movie.resx">
       <DependentUpon>Controls_Movie.cs</DependentUpon>
     </EmbeddedResource>
@@ -159,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\Controls_Movie_inList.resx">
       <DependentUpon>Controls_Movie_inList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\Custom_Playlist.resx">
+      <DependentUpon>Custom_Playlist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\01_Form_Loading.resx">
       <DependentUpon>01_Form_Loading.cs</DependentUpon>
@@ -177,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\06_Form_History.resx">
       <DependentUpon>06_Form_History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\07_Form_Playlist.resx">
+      <DependentUpon>07_Form_Playlist.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Notification_Form.resx">
       <DependentUpon>Notification_Form.cs</DependentUpon>
@@ -304,6 +340,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images_Resources\Error.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\LG02.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\LG03.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\LG04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\LG05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\LG06.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\LG07.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\LG08.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\LG01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\LG09.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\LG10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\LG11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\LG12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\LG13.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

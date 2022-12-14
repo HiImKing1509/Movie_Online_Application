@@ -29,12 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_02_Form_Home));
             this.Panel_Menu = new System.Windows.Forms.Panel();
             this.Button_History = new FontAwesome.Sharp.IconButton();
             this.Button_FavoritesList = new FontAwesome.Sharp.IconButton();
             this.Button_Playlist = new FontAwesome.Sharp.IconButton();
             this.Button_Home = new FontAwesome.Sharp.IconButton();
             this.Panel_Logo = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Panel_Header = new System.Windows.Forms.Panel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.Button_CloseForm = new FontAwesome.Sharp.IconButton();
@@ -72,6 +74,8 @@
             this.việtNamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.âuMỹToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Panel_Menu.SuspendLayout();
+            this.Panel_Logo.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.Panel_Header.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -183,11 +187,23 @@
             // 
             // Panel_Logo
             // 
+            this.Panel_Logo.Controls.Add(this.pictureBox1);
             this.Panel_Logo.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Logo.Location = new System.Drawing.Point(0, 0);
             this.Panel_Logo.Name = "Panel_Logo";
             this.Panel_Logo.Size = new System.Drawing.Size(336, 199);
             this.Panel_Logo.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(41, 34);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(259, 126);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // Panel_Header
             // 
@@ -607,6 +623,8 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this._02_Form_Home_Load);
             this.Panel_Menu.ResumeLayout(false);
+            this.Panel_Logo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.Panel_Header.ResumeLayout(false);
             this.Panel_Header.PerformLayout();
             this.flowLayoutPanel1.ResumeLayout(false);
@@ -662,5 +680,6 @@
         private FontAwesome.Sharp.IconButton Button_CloseForm;
         private FontAwesome.Sharp.IconButton Button_MaximumForm;
         private FontAwesome.Sharp.IconButton Button_MinimizeForm;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

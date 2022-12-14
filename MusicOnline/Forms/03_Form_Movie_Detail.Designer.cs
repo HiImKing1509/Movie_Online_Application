@@ -33,10 +33,25 @@
             this.Panel_MovieTags = new System.Windows.Forms.Panel();
             this.Label_MovieTags = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.iconButton4 = new FontAwesome.Sharp.IconButton();
+            this.Button_LoveMovie = new FontAwesome.Sharp.IconButton();
+            this.Button_DownloadMovie = new FontAwesome.Sharp.IconButton();
+            this.Button_WatchingMovie = new FontAwesome.Sharp.IconButton();
             this.Panel_MovieEvaluation = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.Label_Stars = new System.Windows.Forms.Label();
+            this.FlowLayoutPanel_Star = new System.Windows.Forms.FlowLayoutPanel();
+            this.B1 = new FontAwesome.Sharp.IconButton();
+            this.B2 = new FontAwesome.Sharp.IconButton();
+            this.B3 = new FontAwesome.Sharp.IconButton();
+            this.B4 = new FontAwesome.Sharp.IconButton();
+            this.B5 = new FontAwesome.Sharp.IconButton();
+            this.B6 = new FontAwesome.Sharp.IconButton();
+            this.B7 = new FontAwesome.Sharp.IconButton();
+            this.B8 = new FontAwesome.Sharp.IconButton();
+            this.B9 = new FontAwesome.Sharp.IconButton();
+            this.B10 = new FontAwesome.Sharp.IconButton();
             this.label10 = new System.Windows.Forms.Label();
+            this.PictureBox_MovieImage = new System.Windows.Forms.PictureBox();
             this.Panel_MovieContent = new System.Windows.Forms.Panel();
             this.Label_MovieContent = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -60,33 +75,18 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Panel_MovieName = new System.Windows.Forms.Panel();
-            this.Label_MovieNameEng = new System.Windows.Forms.Label();
-            this.Label_MovieName = new System.Windows.Forms.Label();
-            this.iconButton4 = new FontAwesome.Sharp.IconButton();
-            this.Button_LoveMovie = new FontAwesome.Sharp.IconButton();
-            this.Button_DownloadMovie = new FontAwesome.Sharp.IconButton();
-            this.Button_WatchingMovie = new FontAwesome.Sharp.IconButton();
-            this.iconButton5 = new FontAwesome.Sharp.IconButton();
-            this.iconButton6 = new FontAwesome.Sharp.IconButton();
-            this.iconButton7 = new FontAwesome.Sharp.IconButton();
-            this.iconButton8 = new FontAwesome.Sharp.IconButton();
-            this.iconButton9 = new FontAwesome.Sharp.IconButton();
-            this.iconButton10 = new FontAwesome.Sharp.IconButton();
-            this.iconButton11 = new FontAwesome.Sharp.IconButton();
-            this.iconButton12 = new FontAwesome.Sharp.IconButton();
-            this.iconButton13 = new FontAwesome.Sharp.IconButton();
-            this.iconButton14 = new FontAwesome.Sharp.IconButton();
-            this.PictureBox_MovieImage = new System.Windows.Forms.PictureBox();
             this.Label_Access = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.Label_MovieNameEng = new System.Windows.Forms.Label();
+            this.Label_MovieName = new System.Windows.Forms.Label();
             this.Panel_Details.SuspendLayout();
             this.Panel_MovieTags.SuspendLayout();
             this.Panel_MovieEvaluation.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.FlowLayoutPanel_Star.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_MovieImage)).BeginInit();
             this.Panel_MovieContent.SuspendLayout();
             this.Panel_MovieInformation.SuspendLayout();
             this.Panel_MovieName.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_MovieImage)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel_Details
@@ -138,42 +138,297 @@
             this.label14.TabIndex = 27;
             this.label14.Text = "Tags:";
             // 
+            // iconButton4
+            // 
+            this.iconButton4.BackColor = System.Drawing.Color.Navy;
+            this.iconButton4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.iconButton4.FlatAppearance.BorderSize = 0;
+            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton4.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton4.ForeColor = System.Drawing.Color.White;
+            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.iconButton4.IconColor = System.Drawing.Color.Black;
+            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton4.Location = new System.Drawing.Point(47, 679);
+            this.iconButton4.Name = "iconButton4";
+            this.iconButton4.Size = new System.Drawing.Size(311, 61);
+            this.iconButton4.TabIndex = 7;
+            this.iconButton4.Text = "Chia sẻ";
+            this.iconButton4.UseVisualStyleBackColor = false;
+            // 
+            // Button_LoveMovie
+            // 
+            this.Button_LoveMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_LoveMovie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_LoveMovie.FlatAppearance.BorderSize = 0;
+            this.Button_LoveMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_LoveMovie.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_LoveMovie.ForeColor = System.Drawing.Color.White;
+            this.Button_LoveMovie.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Button_LoveMovie.IconColor = System.Drawing.Color.Black;
+            this.Button_LoveMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Button_LoveMovie.Location = new System.Drawing.Point(47, 597);
+            this.Button_LoveMovie.Name = "Button_LoveMovie";
+            this.Button_LoveMovie.Size = new System.Drawing.Size(311, 61);
+            this.Button_LoveMovie.TabIndex = 6;
+            this.Button_LoveMovie.Text = "Yêu thích";
+            this.Button_LoveMovie.UseVisualStyleBackColor = false;
+            this.Button_LoveMovie.Click += new System.EventHandler(this.Button_LoveMovie_Click);
+            // 
+            // Button_DownloadMovie
+            // 
+            this.Button_DownloadMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Button_DownloadMovie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_DownloadMovie.FlatAppearance.BorderSize = 0;
+            this.Button_DownloadMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_DownloadMovie.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_DownloadMovie.ForeColor = System.Drawing.Color.Black;
+            this.Button_DownloadMovie.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Button_DownloadMovie.IconColor = System.Drawing.Color.Black;
+            this.Button_DownloadMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Button_DownloadMovie.Location = new System.Drawing.Point(210, 484);
+            this.Button_DownloadMovie.Name = "Button_DownloadMovie";
+            this.Button_DownloadMovie.Size = new System.Drawing.Size(148, 56);
+            this.Button_DownloadMovie.TabIndex = 5;
+            this.Button_DownloadMovie.Text = "Tải phim";
+            this.Button_DownloadMovie.UseVisualStyleBackColor = false;
+            this.Button_DownloadMovie.Click += new System.EventHandler(this.Button_DownloadMovie_Click);
+            // 
+            // Button_WatchingMovie
+            // 
+            this.Button_WatchingMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_WatchingMovie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_WatchingMovie.FlatAppearance.BorderSize = 0;
+            this.Button_WatchingMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_WatchingMovie.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_WatchingMovie.ForeColor = System.Drawing.Color.White;
+            this.Button_WatchingMovie.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Button_WatchingMovie.IconColor = System.Drawing.Color.Black;
+            this.Button_WatchingMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Button_WatchingMovie.Location = new System.Drawing.Point(47, 484);
+            this.Button_WatchingMovie.Name = "Button_WatchingMovie";
+            this.Button_WatchingMovie.Size = new System.Drawing.Size(148, 56);
+            this.Button_WatchingMovie.TabIndex = 4;
+            this.Button_WatchingMovie.Text = "Xem phim";
+            this.Button_WatchingMovie.UseVisualStyleBackColor = false;
+            this.Button_WatchingMovie.Click += new System.EventHandler(this.Button_WatchingMovie_Click);
+            // 
             // Panel_MovieEvaluation
             // 
-            this.Panel_MovieEvaluation.Controls.Add(this.label13);
-            this.Panel_MovieEvaluation.Controls.Add(this.flowLayoutPanel1);
+            this.Panel_MovieEvaluation.Controls.Add(this.Label_Stars);
+            this.Panel_MovieEvaluation.Controls.Add(this.FlowLayoutPanel_Star);
             this.Panel_MovieEvaluation.Controls.Add(this.label10);
             this.Panel_MovieEvaluation.Location = new System.Drawing.Point(401, 629);
             this.Panel_MovieEvaluation.Name = "Panel_MovieEvaluation";
             this.Panel_MovieEvaluation.Size = new System.Drawing.Size(443, 111);
             this.Panel_MovieEvaluation.TabIndex = 3;
             // 
-            // label13
+            // Label_Stars
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(381, 82);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 19);
-            this.label13.TabIndex = 40;
-            this.label13.Text = "1/10";
+            this.Label_Stars.AutoSize = true;
+            this.Label_Stars.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Stars.Location = new System.Drawing.Point(366, 81);
+            this.Label_Stars.Name = "Label_Stars";
+            this.Label_Stars.Size = new System.Drawing.Size(41, 19);
+            this.Label_Stars.TabIndex = 40;
+            this.Label_Stars.Text = "1/10";
             // 
-            // flowLayoutPanel1
+            // FlowLayoutPanel_Star
             // 
-            this.flowLayoutPanel1.Controls.Add(this.iconButton5);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton6);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton7);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton8);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton9);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton10);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton11);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton12);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton13);
-            this.flowLayoutPanel1.Controls.Add(this.iconButton14);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(39, 39);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(386, 39);
-            this.flowLayoutPanel1.TabIndex = 39;
+            this.FlowLayoutPanel_Star.Controls.Add(this.B1);
+            this.FlowLayoutPanel_Star.Controls.Add(this.B2);
+            this.FlowLayoutPanel_Star.Controls.Add(this.B3);
+            this.FlowLayoutPanel_Star.Controls.Add(this.B4);
+            this.FlowLayoutPanel_Star.Controls.Add(this.B5);
+            this.FlowLayoutPanel_Star.Controls.Add(this.B6);
+            this.FlowLayoutPanel_Star.Controls.Add(this.B7);
+            this.FlowLayoutPanel_Star.Controls.Add(this.B8);
+            this.FlowLayoutPanel_Star.Controls.Add(this.B9);
+            this.FlowLayoutPanel_Star.Controls.Add(this.B10);
+            this.FlowLayoutPanel_Star.Location = new System.Drawing.Point(39, 39);
+            this.FlowLayoutPanel_Star.Name = "FlowLayoutPanel_Star";
+            this.FlowLayoutPanel_Star.Size = new System.Drawing.Size(386, 39);
+            this.FlowLayoutPanel_Star.TabIndex = 39;
+            // 
+            // B1
+            // 
+            this.B1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B1.FlatAppearance.BorderSize = 0;
+            this.B1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B1.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.B1.IconColor = System.Drawing.Color.Black;
+            this.B1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.B1.IconSize = 28;
+            this.B1.Location = new System.Drawing.Point(3, 3);
+            this.B1.Name = "B1";
+            this.B1.Size = new System.Drawing.Size(32, 32);
+            this.B1.TabIndex = 0;
+            this.B1.UseVisualStyleBackColor = true;
+            this.B1.Click += new System.EventHandler(this.B1_Click);
+            this.B1.MouseEnter += new System.EventHandler(this.B1_MouseEnter);
+            this.B1.MouseLeave += new System.EventHandler(this.B1_MouseLeave);
+            // 
+            // B2
+            // 
+            this.B2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B2.FlatAppearance.BorderSize = 0;
+            this.B2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B2.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.B2.IconColor = System.Drawing.Color.Black;
+            this.B2.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.B2.IconSize = 28;
+            this.B2.Location = new System.Drawing.Point(41, 3);
+            this.B2.Name = "B2";
+            this.B2.Size = new System.Drawing.Size(32, 32);
+            this.B2.TabIndex = 1;
+            this.B2.UseVisualStyleBackColor = true;
+            this.B2.Click += new System.EventHandler(this.B1_Click);
+            this.B2.MouseEnter += new System.EventHandler(this.B1_MouseEnter);
+            this.B2.MouseLeave += new System.EventHandler(this.B1_MouseLeave);
+            // 
+            // B3
+            // 
+            this.B3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B3.FlatAppearance.BorderSize = 0;
+            this.B3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B3.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.B3.IconColor = System.Drawing.Color.Black;
+            this.B3.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.B3.IconSize = 28;
+            this.B3.Location = new System.Drawing.Point(79, 3);
+            this.B3.Name = "B3";
+            this.B3.Size = new System.Drawing.Size(32, 32);
+            this.B3.TabIndex = 2;
+            this.B3.UseVisualStyleBackColor = true;
+            this.B3.Click += new System.EventHandler(this.B1_Click);
+            this.B3.MouseEnter += new System.EventHandler(this.B1_MouseEnter);
+            this.B3.MouseLeave += new System.EventHandler(this.B1_MouseLeave);
+            // 
+            // B4
+            // 
+            this.B4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B4.FlatAppearance.BorderSize = 0;
+            this.B4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B4.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.B4.IconColor = System.Drawing.Color.Black;
+            this.B4.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.B4.IconSize = 28;
+            this.B4.Location = new System.Drawing.Point(117, 3);
+            this.B4.Name = "B4";
+            this.B4.Size = new System.Drawing.Size(32, 32);
+            this.B4.TabIndex = 3;
+            this.B4.UseVisualStyleBackColor = true;
+            this.B4.Click += new System.EventHandler(this.B1_Click);
+            this.B4.MouseEnter += new System.EventHandler(this.B1_MouseEnter);
+            this.B4.MouseLeave += new System.EventHandler(this.B1_MouseLeave);
+            // 
+            // B5
+            // 
+            this.B5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B5.FlatAppearance.BorderSize = 0;
+            this.B5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B5.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.B5.IconColor = System.Drawing.Color.Black;
+            this.B5.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.B5.IconSize = 28;
+            this.B5.Location = new System.Drawing.Point(155, 3);
+            this.B5.Name = "B5";
+            this.B5.Size = new System.Drawing.Size(32, 32);
+            this.B5.TabIndex = 4;
+            this.B5.UseVisualStyleBackColor = true;
+            this.B5.Click += new System.EventHandler(this.B1_Click);
+            this.B5.MouseEnter += new System.EventHandler(this.B1_MouseEnter);
+            this.B5.MouseLeave += new System.EventHandler(this.B1_MouseLeave);
+            // 
+            // B6
+            // 
+            this.B6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B6.FlatAppearance.BorderSize = 0;
+            this.B6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B6.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.B6.IconColor = System.Drawing.Color.Black;
+            this.B6.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.B6.IconSize = 28;
+            this.B6.Location = new System.Drawing.Point(193, 3);
+            this.B6.Name = "B6";
+            this.B6.Size = new System.Drawing.Size(32, 32);
+            this.B6.TabIndex = 5;
+            this.B6.UseVisualStyleBackColor = true;
+            this.B6.Click += new System.EventHandler(this.B1_Click);
+            this.B6.MouseEnter += new System.EventHandler(this.B1_MouseEnter);
+            this.B6.MouseLeave += new System.EventHandler(this.B1_MouseLeave);
+            // 
+            // B7
+            // 
+            this.B7.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B7.FlatAppearance.BorderSize = 0;
+            this.B7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B7.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.B7.IconColor = System.Drawing.Color.Black;
+            this.B7.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.B7.IconSize = 28;
+            this.B7.Location = new System.Drawing.Point(231, 3);
+            this.B7.Name = "B7";
+            this.B7.Size = new System.Drawing.Size(32, 32);
+            this.B7.TabIndex = 6;
+            this.B7.UseVisualStyleBackColor = true;
+            this.B7.Click += new System.EventHandler(this.B1_Click);
+            this.B7.MouseEnter += new System.EventHandler(this.B1_MouseEnter);
+            this.B7.MouseLeave += new System.EventHandler(this.B1_MouseLeave);
+            // 
+            // B8
+            // 
+            this.B8.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B8.FlatAppearance.BorderSize = 0;
+            this.B8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B8.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.B8.IconColor = System.Drawing.Color.Black;
+            this.B8.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.B8.IconSize = 28;
+            this.B8.Location = new System.Drawing.Point(269, 3);
+            this.B8.Name = "B8";
+            this.B8.Size = new System.Drawing.Size(32, 32);
+            this.B8.TabIndex = 7;
+            this.B8.UseVisualStyleBackColor = true;
+            this.B8.Click += new System.EventHandler(this.B1_Click);
+            this.B8.MouseEnter += new System.EventHandler(this.B1_MouseEnter);
+            this.B8.MouseLeave += new System.EventHandler(this.B1_MouseLeave);
+            // 
+            // B9
+            // 
+            this.B9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B9.FlatAppearance.BorderSize = 0;
+            this.B9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B9.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.B9.IconColor = System.Drawing.Color.Black;
+            this.B9.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.B9.IconSize = 28;
+            this.B9.Location = new System.Drawing.Point(307, 3);
+            this.B9.Name = "B9";
+            this.B9.Size = new System.Drawing.Size(32, 32);
+            this.B9.TabIndex = 8;
+            this.B9.UseVisualStyleBackColor = true;
+            this.B9.Click += new System.EventHandler(this.B1_Click);
+            this.B9.MouseEnter += new System.EventHandler(this.B1_MouseEnter);
+            this.B9.MouseLeave += new System.EventHandler(this.B1_MouseLeave);
+            // 
+            // B10
+            // 
+            this.B10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.B10.FlatAppearance.BorderSize = 0;
+            this.B10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.B10.IconChar = FontAwesome.Sharp.IconChar.Star;
+            this.B10.IconColor = System.Drawing.Color.Black;
+            this.B10.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.B10.IconSize = 28;
+            this.B10.Location = new System.Drawing.Point(345, 3);
+            this.B10.Name = "B10";
+            this.B10.Size = new System.Drawing.Size(32, 32);
+            this.B10.TabIndex = 9;
+            this.B10.UseVisualStyleBackColor = true;
+            this.B10.Click += new System.EventHandler(this.B1_Click);
+            this.B10.MouseEnter += new System.EventHandler(this.B1_MouseEnter);
+            this.B10.MouseLeave += new System.EventHandler(this.B1_MouseLeave);
             // 
             // label10
             // 
@@ -184,6 +439,17 @@
             this.label10.Size = new System.Drawing.Size(121, 19);
             this.label10.TabIndex = 38;
             this.label10.Text = "Đánh giá phim";
+            // 
+            // PictureBox_MovieImage
+            // 
+            this.PictureBox_MovieImage.BackColor = System.Drawing.Color.White;
+            this.PictureBox_MovieImage.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox_MovieImage.Image")));
+            this.PictureBox_MovieImage.Location = new System.Drawing.Point(27, 29);
+            this.PictureBox_MovieImage.Name = "PictureBox_MovieImage";
+            this.PictureBox_MovieImage.Size = new System.Drawing.Size(352, 544);
+            this.PictureBox_MovieImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox_MovieImage.TabIndex = 2;
+            this.PictureBox_MovieImage.TabStop = false;
             // 
             // Panel_MovieContent
             // 
@@ -437,6 +703,26 @@
             this.Panel_MovieName.Size = new System.Drawing.Size(1153, 122);
             this.Panel_MovieName.TabIndex = 0;
             // 
+            // Label_Access
+            // 
+            this.Label_Access.AutoSize = true;
+            this.Label_Access.Font = new System.Drawing.Font("Bahnschrift Condensed", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Access.Location = new System.Drawing.Point(1033, 55);
+            this.Label_Access.Name = "Label_Access";
+            this.Label_Access.Size = new System.Drawing.Size(31, 40);
+            this.Label_Access.TabIndex = 31;
+            this.Label_Access.Text = "0";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Bahnschrift Condensed", 19.8F, System.Drawing.FontStyle.Bold);
+            this.label15.Location = new System.Drawing.Point(898, 55);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(127, 40);
+            this.label15.TabIndex = 30;
+            this.label15.Text = "Lượt xem:";
+            // 
             // Label_MovieNameEng
             // 
             this.Label_MovieNameEng.AutoSize = true;
@@ -458,252 +744,6 @@
             this.Label_MovieName.TabIndex = 0;
             this.Label_MovieName.Text = "CHIẾC BẬT LỬA VÀ VÁY CÔNG CHÚA";
             // 
-            // iconButton4
-            // 
-            this.iconButton4.BackColor = System.Drawing.Color.Navy;
-            this.iconButton4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.iconButton4.FlatAppearance.BorderSize = 0;
-            this.iconButton4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton4.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton4.ForeColor = System.Drawing.Color.White;
-            this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.iconButton4.IconColor = System.Drawing.Color.Black;
-            this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(47, 679);
-            this.iconButton4.Name = "iconButton4";
-            this.iconButton4.Size = new System.Drawing.Size(311, 61);
-            this.iconButton4.TabIndex = 7;
-            this.iconButton4.Text = "Chia sẻ";
-            this.iconButton4.UseVisualStyleBackColor = false;
-            // 
-            // Button_LoveMovie
-            // 
-            this.Button_LoveMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_LoveMovie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_LoveMovie.FlatAppearance.BorderSize = 0;
-            this.Button_LoveMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_LoveMovie.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_LoveMovie.ForeColor = System.Drawing.Color.White;
-            this.Button_LoveMovie.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.Button_LoveMovie.IconColor = System.Drawing.Color.Black;
-            this.Button_LoveMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Button_LoveMovie.Location = new System.Drawing.Point(47, 597);
-            this.Button_LoveMovie.Name = "Button_LoveMovie";
-            this.Button_LoveMovie.Size = new System.Drawing.Size(311, 61);
-            this.Button_LoveMovie.TabIndex = 6;
-            this.Button_LoveMovie.Text = "Yêu thích";
-            this.Button_LoveMovie.UseVisualStyleBackColor = false;
-            this.Button_LoveMovie.Click += new System.EventHandler(this.Button_LoveMovie_Click);
-            // 
-            // Button_DownloadMovie
-            // 
-            this.Button_DownloadMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.Button_DownloadMovie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_DownloadMovie.FlatAppearance.BorderSize = 0;
-            this.Button_DownloadMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_DownloadMovie.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_DownloadMovie.ForeColor = System.Drawing.Color.Black;
-            this.Button_DownloadMovie.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.Button_DownloadMovie.IconColor = System.Drawing.Color.Black;
-            this.Button_DownloadMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Button_DownloadMovie.Location = new System.Drawing.Point(210, 484);
-            this.Button_DownloadMovie.Name = "Button_DownloadMovie";
-            this.Button_DownloadMovie.Size = new System.Drawing.Size(148, 56);
-            this.Button_DownloadMovie.TabIndex = 5;
-            this.Button_DownloadMovie.Text = "Tải phim";
-            this.Button_DownloadMovie.UseVisualStyleBackColor = false;
-            this.Button_DownloadMovie.Click += new System.EventHandler(this.Button_DownloadMovie_Click);
-            // 
-            // Button_WatchingMovie
-            // 
-            this.Button_WatchingMovie.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_WatchingMovie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_WatchingMovie.FlatAppearance.BorderSize = 0;
-            this.Button_WatchingMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_WatchingMovie.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_WatchingMovie.ForeColor = System.Drawing.Color.White;
-            this.Button_WatchingMovie.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.Button_WatchingMovie.IconColor = System.Drawing.Color.Black;
-            this.Button_WatchingMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Button_WatchingMovie.Location = new System.Drawing.Point(47, 484);
-            this.Button_WatchingMovie.Name = "Button_WatchingMovie";
-            this.Button_WatchingMovie.Size = new System.Drawing.Size(148, 56);
-            this.Button_WatchingMovie.TabIndex = 4;
-            this.Button_WatchingMovie.Text = "Xem phim";
-            this.Button_WatchingMovie.UseVisualStyleBackColor = false;
-            this.Button_WatchingMovie.Click += new System.EventHandler(this.Button_WatchingMovie_Click);
-            // 
-            // iconButton5
-            // 
-            this.iconButton5.FlatAppearance.BorderSize = 0;
-            this.iconButton5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton5.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconButton5.IconColor = System.Drawing.Color.Black;
-            this.iconButton5.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton5.IconSize = 28;
-            this.iconButton5.Location = new System.Drawing.Point(3, 3);
-            this.iconButton5.Name = "iconButton5";
-            this.iconButton5.Size = new System.Drawing.Size(32, 32);
-            this.iconButton5.TabIndex = 0;
-            this.iconButton5.UseVisualStyleBackColor = true;
-            // 
-            // iconButton6
-            // 
-            this.iconButton6.FlatAppearance.BorderSize = 0;
-            this.iconButton6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton6.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconButton6.IconColor = System.Drawing.Color.Black;
-            this.iconButton6.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton6.IconSize = 28;
-            this.iconButton6.Location = new System.Drawing.Point(41, 3);
-            this.iconButton6.Name = "iconButton6";
-            this.iconButton6.Size = new System.Drawing.Size(32, 32);
-            this.iconButton6.TabIndex = 1;
-            this.iconButton6.UseVisualStyleBackColor = true;
-            // 
-            // iconButton7
-            // 
-            this.iconButton7.FlatAppearance.BorderSize = 0;
-            this.iconButton7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton7.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconButton7.IconColor = System.Drawing.Color.Black;
-            this.iconButton7.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton7.IconSize = 28;
-            this.iconButton7.Location = new System.Drawing.Point(79, 3);
-            this.iconButton7.Name = "iconButton7";
-            this.iconButton7.Size = new System.Drawing.Size(32, 32);
-            this.iconButton7.TabIndex = 2;
-            this.iconButton7.UseVisualStyleBackColor = true;
-            // 
-            // iconButton8
-            // 
-            this.iconButton8.FlatAppearance.BorderSize = 0;
-            this.iconButton8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton8.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconButton8.IconColor = System.Drawing.Color.Black;
-            this.iconButton8.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton8.IconSize = 28;
-            this.iconButton8.Location = new System.Drawing.Point(117, 3);
-            this.iconButton8.Name = "iconButton8";
-            this.iconButton8.Size = new System.Drawing.Size(32, 32);
-            this.iconButton8.TabIndex = 3;
-            this.iconButton8.UseVisualStyleBackColor = true;
-            // 
-            // iconButton9
-            // 
-            this.iconButton9.FlatAppearance.BorderSize = 0;
-            this.iconButton9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton9.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconButton9.IconColor = System.Drawing.Color.Black;
-            this.iconButton9.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton9.IconSize = 28;
-            this.iconButton9.Location = new System.Drawing.Point(155, 3);
-            this.iconButton9.Name = "iconButton9";
-            this.iconButton9.Size = new System.Drawing.Size(32, 32);
-            this.iconButton9.TabIndex = 4;
-            this.iconButton9.UseVisualStyleBackColor = true;
-            // 
-            // iconButton10
-            // 
-            this.iconButton10.FlatAppearance.BorderSize = 0;
-            this.iconButton10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton10.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconButton10.IconColor = System.Drawing.Color.Black;
-            this.iconButton10.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton10.IconSize = 28;
-            this.iconButton10.Location = new System.Drawing.Point(193, 3);
-            this.iconButton10.Name = "iconButton10";
-            this.iconButton10.Size = new System.Drawing.Size(32, 32);
-            this.iconButton10.TabIndex = 5;
-            this.iconButton10.UseVisualStyleBackColor = true;
-            // 
-            // iconButton11
-            // 
-            this.iconButton11.FlatAppearance.BorderSize = 0;
-            this.iconButton11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton11.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconButton11.IconColor = System.Drawing.Color.Black;
-            this.iconButton11.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton11.IconSize = 28;
-            this.iconButton11.Location = new System.Drawing.Point(231, 3);
-            this.iconButton11.Name = "iconButton11";
-            this.iconButton11.Size = new System.Drawing.Size(32, 32);
-            this.iconButton11.TabIndex = 6;
-            this.iconButton11.UseVisualStyleBackColor = true;
-            // 
-            // iconButton12
-            // 
-            this.iconButton12.FlatAppearance.BorderSize = 0;
-            this.iconButton12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton12.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconButton12.IconColor = System.Drawing.Color.Black;
-            this.iconButton12.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton12.IconSize = 28;
-            this.iconButton12.Location = new System.Drawing.Point(269, 3);
-            this.iconButton12.Name = "iconButton12";
-            this.iconButton12.Size = new System.Drawing.Size(32, 32);
-            this.iconButton12.TabIndex = 7;
-            this.iconButton12.UseVisualStyleBackColor = true;
-            // 
-            // iconButton13
-            // 
-            this.iconButton13.FlatAppearance.BorderSize = 0;
-            this.iconButton13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton13.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconButton13.IconColor = System.Drawing.Color.Black;
-            this.iconButton13.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton13.IconSize = 28;
-            this.iconButton13.Location = new System.Drawing.Point(307, 3);
-            this.iconButton13.Name = "iconButton13";
-            this.iconButton13.Size = new System.Drawing.Size(32, 32);
-            this.iconButton13.TabIndex = 8;
-            this.iconButton13.UseVisualStyleBackColor = true;
-            // 
-            // iconButton14
-            // 
-            this.iconButton14.FlatAppearance.BorderSize = 0;
-            this.iconButton14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton14.IconChar = FontAwesome.Sharp.IconChar.Star;
-            this.iconButton14.IconColor = System.Drawing.Color.Black;
-            this.iconButton14.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton14.IconSize = 28;
-            this.iconButton14.Location = new System.Drawing.Point(345, 3);
-            this.iconButton14.Name = "iconButton14";
-            this.iconButton14.Size = new System.Drawing.Size(32, 32);
-            this.iconButton14.TabIndex = 9;
-            this.iconButton14.UseVisualStyleBackColor = true;
-            // 
-            // PictureBox_MovieImage
-            // 
-            this.PictureBox_MovieImage.BackColor = System.Drawing.Color.White;
-            this.PictureBox_MovieImage.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox_MovieImage.Image")));
-            this.PictureBox_MovieImage.Location = new System.Drawing.Point(27, 29);
-            this.PictureBox_MovieImage.Name = "PictureBox_MovieImage";
-            this.PictureBox_MovieImage.Size = new System.Drawing.Size(352, 544);
-            this.PictureBox_MovieImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBox_MovieImage.TabIndex = 2;
-            this.PictureBox_MovieImage.TabStop = false;
-            // 
-            // Label_Access
-            // 
-            this.Label_Access.AutoSize = true;
-            this.Label_Access.Font = new System.Drawing.Font("Bahnschrift Condensed", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Access.Location = new System.Drawing.Point(1033, 55);
-            this.Label_Access.Name = "Label_Access";
-            this.Label_Access.Size = new System.Drawing.Size(32, 41);
-            this.Label_Access.TabIndex = 31;
-            this.Label_Access.Text = "0";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Bahnschrift Condensed", 19.8F, System.Drawing.FontStyle.Bold);
-            this.label15.Location = new System.Drawing.Point(898, 55);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(129, 41);
-            this.label15.TabIndex = 30;
-            this.label15.Text = "Lượt xem:";
-            // 
             // _03_Form_Movie_Detail
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -717,14 +757,14 @@
             this.Panel_MovieTags.PerformLayout();
             this.Panel_MovieEvaluation.ResumeLayout(false);
             this.Panel_MovieEvaluation.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
+            this.FlowLayoutPanel_Star.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_MovieImage)).EndInit();
             this.Panel_MovieContent.ResumeLayout(false);
             this.Panel_MovieContent.PerformLayout();
             this.Panel_MovieInformation.ResumeLayout(false);
             this.Panel_MovieInformation.PerformLayout();
             this.Panel_MovieName.ResumeLayout(false);
             this.Panel_MovieName.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_MovieImage)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -766,18 +806,18 @@
         private System.Windows.Forms.Panel Panel_MovieTags;
         private System.Windows.Forms.Label Label_MovieTags;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private FontAwesome.Sharp.IconButton iconButton5;
-        private FontAwesome.Sharp.IconButton iconButton6;
-        private FontAwesome.Sharp.IconButton iconButton7;
-        private FontAwesome.Sharp.IconButton iconButton8;
-        private FontAwesome.Sharp.IconButton iconButton9;
-        private FontAwesome.Sharp.IconButton iconButton10;
-        private FontAwesome.Sharp.IconButton iconButton11;
-        private FontAwesome.Sharp.IconButton iconButton12;
-        private FontAwesome.Sharp.IconButton iconButton13;
-        private FontAwesome.Sharp.IconButton iconButton14;
+        private System.Windows.Forms.Label Label_Stars;
+        private System.Windows.Forms.FlowLayoutPanel FlowLayoutPanel_Star;
+        private FontAwesome.Sharp.IconButton B1;
+        private FontAwesome.Sharp.IconButton B2;
+        private FontAwesome.Sharp.IconButton B3;
+        private FontAwesome.Sharp.IconButton B4;
+        private FontAwesome.Sharp.IconButton B5;
+        private FontAwesome.Sharp.IconButton B6;
+        private FontAwesome.Sharp.IconButton B7;
+        private FontAwesome.Sharp.IconButton B8;
+        private FontAwesome.Sharp.IconButton B9;
+        private FontAwesome.Sharp.IconButton B10;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label Label_Access;
         private System.Windows.Forms.Label label15;

@@ -23,7 +23,6 @@ namespace MusicOnline.Forms
         private IconButton currentBtn;
         private Panel leftBorderBtn;
         private Form activeForm = null;
-        private FormCollection fc = Application.OpenForms;
         public _02_Form_Home()
         {
 
@@ -108,11 +107,14 @@ namespace MusicOnline.Forms
 
         private void Button_Playlist_Click(object sender, EventArgs e)
         {
+            CloseForm();
             ActivateButton(sender);
+            openChildForm(new _07_Form_Playlist());
         }
 
         private void Button_FavoritesList_Click(object sender, EventArgs e)
         {
+            CloseForm();
             ActivateButton(sender);
             openChildForm(new _05_Form_Favorite_Movie_List());
 
@@ -120,6 +122,7 @@ namespace MusicOnline.Forms
 
         private void Button_History_Click(object sender, EventArgs e)
         {
+            CloseForm();
             ActivateButton(sender);
             openChildForm(new _06_Form_History());
         }
@@ -211,18 +214,14 @@ namespace MusicOnline.Forms
             TextBox_MovieSearch.ForeColor = Color.Gray;
             if (btn != null)
                 ActivateButton(btn);
+            CloseForm();
+            ActivateMovies(query);
+        }
 
-            //foreach (Form frm in fc)
-            //{
-            //    if (frm.Name == "_04_Form_Watching_Movie")
-            //    {
-            //        frm.Close();
-            //        break;
-            //    }
-            //}
+        private void CloseForm()
+        {
             if (Application.OpenForms.OfType<_04_Form_Watching_Movie>().Count() == 1)
                 Application.OpenForms.OfType<_04_Form_Watching_Movie>().First().Close();
-            ActivateMovies(query);
         }
 
         private void FilterMovie()
