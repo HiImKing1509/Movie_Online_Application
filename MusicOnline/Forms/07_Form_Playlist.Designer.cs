@@ -35,28 +35,28 @@
             this.Label_MovieNameEng = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.Panel_Tools = new System.Windows.Forms.Panel();
+            this.FlowLayoutPanel_Main = new System.Windows.Forms.FlowLayoutPanel();
+            this.FlowLayoutPanel_Items = new System.Windows.Forms.FlowLayoutPanel();
             this.Button_CreatePlaylist = new FontAwesome.Sharp.IconButton();
             this.Button_ShowAllMovies = new FontAwesome.Sharp.IconButton();
             this.Button_RemoveAllPlaylist = new FontAwesome.Sharp.IconButton();
-            this.FlowLayoutPanel_Main = new System.Windows.Forms.FlowLayoutPanel();
-            this.FlowLayoutPanel_Items = new System.Windows.Forms.FlowLayoutPanel();
-            this.Panel_CreatePlaylist = new System.Windows.Forms.Panel();
-            this.Button_NewCreate = new FontAwesome.Sharp.IconButton();
+            this.label12 = new System.Windows.Forms.Label();
+            this.Button_ClosePanel = new FontAwesome.Sharp.IconButton();
             this.Panel_CreatePlaylistInfomation = new System.Windows.Forms.Panel();
-            this.PictureBox_Image = new System.Windows.Forms.PictureBox();
-            this.ComboBox_Image = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.TextBox_NamePlaylist = new System.Windows.Forms.TextBox();
-            this.Button_ClosePanel = new FontAwesome.Sharp.IconButton();
-            this.label12 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.ComboBox_Image = new System.Windows.Forms.ComboBox();
+            this.PictureBox_Image = new System.Windows.Forms.PictureBox();
+            this.Button_NewCreate = new FontAwesome.Sharp.IconButton();
+            this.Panel_CreatePlaylist = new System.Windows.Forms.Panel();
             this.Panel_Header.SuspendLayout();
             this.Panel_Tools.SuspendLayout();
-            this.Panel_CreatePlaylist.SuspendLayout();
             this.Panel_CreatePlaylistInfomation.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Image)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Image)).BeginInit();
+            this.Panel_CreatePlaylist.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel_Header
@@ -126,6 +126,22 @@
             this.Panel_Tools.Size = new System.Drawing.Size(1566, 103);
             this.Panel_Tools.TabIndex = 1;
             // 
+            // FlowLayoutPanel_Main
+            // 
+            this.FlowLayoutPanel_Main.AutoScroll = true;
+            this.FlowLayoutPanel_Main.Location = new System.Drawing.Point(26, 110);
+            this.FlowLayoutPanel_Main.Name = "FlowLayoutPanel_Main";
+            this.FlowLayoutPanel_Main.Size = new System.Drawing.Size(953, 649);
+            this.FlowLayoutPanel_Main.TabIndex = 2;
+            // 
+            // FlowLayoutPanel_Items
+            // 
+            this.FlowLayoutPanel_Items.AutoScroll = true;
+            this.FlowLayoutPanel_Items.Location = new System.Drawing.Point(996, 110);
+            this.FlowLayoutPanel_Items.Name = "FlowLayoutPanel_Items";
+            this.FlowLayoutPanel_Items.Size = new System.Drawing.Size(558, 649);
+            this.FlowLayoutPanel_Items.TabIndex = 3;
+            // 
             // Button_CreatePlaylist
             // 
             this.Button_CreatePlaylist.BackColor = System.Drawing.Color.Transparent;
@@ -181,53 +197,35 @@
             this.Button_RemoveAllPlaylist.UseVisualStyleBackColor = false;
             this.Button_RemoveAllPlaylist.Click += new System.EventHandler(this.Button_RemoveAllPlaylist_Click);
             // 
-            // FlowLayoutPanel_Main
+            // label12
             // 
-            this.FlowLayoutPanel_Main.AutoScroll = true;
-            this.FlowLayoutPanel_Main.Location = new System.Drawing.Point(26, 110);
-            this.FlowLayoutPanel_Main.Name = "FlowLayoutPanel_Main";
-            this.FlowLayoutPanel_Main.Size = new System.Drawing.Size(953, 649);
-            this.FlowLayoutPanel_Main.TabIndex = 2;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label12.Location = new System.Drawing.Point(28, 21);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(246, 52);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "Tạo mới playlist";
             // 
-            // FlowLayoutPanel_Items
+            // Button_ClosePanel
             // 
-            this.FlowLayoutPanel_Items.AutoScroll = true;
-            this.FlowLayoutPanel_Items.Location = new System.Drawing.Point(996, 110);
-            this.FlowLayoutPanel_Items.Name = "FlowLayoutPanel_Items";
-            this.FlowLayoutPanel_Items.Size = new System.Drawing.Size(558, 649);
-            this.FlowLayoutPanel_Items.TabIndex = 3;
-            // 
-            // Panel_CreatePlaylist
-            // 
-            this.Panel_CreatePlaylist.BackColor = System.Drawing.Color.Black;
-            this.Panel_CreatePlaylist.Controls.Add(this.Button_NewCreate);
-            this.Panel_CreatePlaylist.Controls.Add(this.Panel_CreatePlaylistInfomation);
-            this.Panel_CreatePlaylist.Controls.Add(this.Button_ClosePanel);
-            this.Panel_CreatePlaylist.Controls.Add(this.label12);
-            this.Panel_CreatePlaylist.Location = new System.Drawing.Point(240, 65);
-            this.Panel_CreatePlaylist.Name = "Panel_CreatePlaylist";
-            this.Panel_CreatePlaylist.Size = new System.Drawing.Size(808, 525);
-            this.Panel_CreatePlaylist.TabIndex = 38;
-            this.Panel_CreatePlaylist.Visible = false;
-            // 
-            // Button_NewCreate
-            // 
-            this.Button_NewCreate.BackColor = System.Drawing.Color.Green;
-            this.Button_NewCreate.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_NewCreate.FlatAppearance.BorderSize = 0;
-            this.Button_NewCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_NewCreate.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_NewCreate.ForeColor = System.Drawing.Color.White;
-            this.Button_NewCreate.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.Button_NewCreate.IconColor = System.Drawing.Color.Black;
-            this.Button_NewCreate.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Button_NewCreate.Location = new System.Drawing.Point(368, 454);
-            this.Button_NewCreate.Name = "Button_NewCreate";
-            this.Button_NewCreate.Size = new System.Drawing.Size(158, 54);
-            this.Button_NewCreate.TabIndex = 34;
-            this.Button_NewCreate.Text = "Tạo mới";
-            this.Button_NewCreate.UseVisualStyleBackColor = false;
-            this.Button_NewCreate.Click += new System.EventHandler(this.Button_NewCreate_Click);
+            this.Button_ClosePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_ClosePanel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_ClosePanel.FlatAppearance.BorderSize = 0;
+            this.Button_ClosePanel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_ClosePanel.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_ClosePanel.ForeColor = System.Drawing.Color.White;
+            this.Button_ClosePanel.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Button_ClosePanel.IconColor = System.Drawing.Color.Black;
+            this.Button_ClosePanel.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Button_ClosePanel.Location = new System.Drawing.Point(559, 454);
+            this.Button_ClosePanel.Name = "Button_ClosePanel";
+            this.Button_ClosePanel.Size = new System.Drawing.Size(164, 54);
+            this.Button_ClosePanel.TabIndex = 32;
+            this.Button_ClosePanel.Text = "Đóng";
+            this.Button_ClosePanel.UseVisualStyleBackColor = false;
+            this.Button_ClosePanel.Click += new System.EventHandler(this.Button_ClosePanel_Click);
             // 
             // Panel_CreatePlaylistInfomation
             // 
@@ -240,59 +238,6 @@
             this.Panel_CreatePlaylistInfomation.Name = "Panel_CreatePlaylistInfomation";
             this.Panel_CreatePlaylistInfomation.Size = new System.Drawing.Size(734, 339);
             this.Panel_CreatePlaylistInfomation.TabIndex = 33;
-            // 
-            // PictureBox_Image
-            // 
-            this.PictureBox_Image.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox_Image.Image")));
-            this.PictureBox_Image.Location = new System.Drawing.Point(413, 148);
-            this.PictureBox_Image.Name = "PictureBox_Image";
-            this.PictureBox_Image.Size = new System.Drawing.Size(273, 169);
-            this.PictureBox_Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBox_Image.TabIndex = 5;
-            this.PictureBox_Image.TabStop = false;
-            // 
-            // ComboBox_Image
-            // 
-            this.ComboBox_Image.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ComboBox_Image.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBox_Image.FormattingEnabled = true;
-            this.ComboBox_Image.ItemHeight = 24;
-            this.ComboBox_Image.Items.AddRange(new object[] {
-            "Warwick Dolton",
-            "Jewel Lyons",
-            "Sapphire Haynes",
-            "Tara Howe",
-            "Megan Tyler",
-            "Water Tribe",
-            "Air Nomad"});
-            this.ComboBox_Image.Location = new System.Drawing.Point(116, 174);
-            this.ComboBox_Image.Name = "ComboBox_Image";
-            this.ComboBox_Image.Size = new System.Drawing.Size(225, 32);
-            this.ComboBox_Image.TabIndex = 4;
-            this.ComboBox_Image.Text = "Warwick Dolton";
-            this.ComboBox_Image.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Image_SelectedIndexChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(36, 174);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(67, 24);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Image";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(36, 32);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(113, 24);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Tên playlist";
             // 
             // panel1
             // 
@@ -318,35 +263,90 @@
             this.TextBox_NamePlaylist.Enter += new System.EventHandler(this.TextBox_NamePlaylist_Enter);
             this.TextBox_NamePlaylist.Leave += new System.EventHandler(this.TextBox_NamePlaylist_Leave);
             // 
-            // Button_ClosePanel
+            // label3
             // 
-            this.Button_ClosePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Button_ClosePanel.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_ClosePanel.FlatAppearance.BorderSize = 0;
-            this.Button_ClosePanel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_ClosePanel.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_ClosePanel.ForeColor = System.Drawing.Color.White;
-            this.Button_ClosePanel.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.Button_ClosePanel.IconColor = System.Drawing.Color.Black;
-            this.Button_ClosePanel.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Button_ClosePanel.Location = new System.Drawing.Point(559, 454);
-            this.Button_ClosePanel.Name = "Button_ClosePanel";
-            this.Button_ClosePanel.Size = new System.Drawing.Size(164, 54);
-            this.Button_ClosePanel.TabIndex = 32;
-            this.Button_ClosePanel.Text = "Đóng";
-            this.Button_ClosePanel.UseVisualStyleBackColor = false;
-            this.Button_ClosePanel.Click += new System.EventHandler(this.Button_ClosePanel_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(36, 32);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(113, 24);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Tên playlist";
             // 
-            // label12
+            // label4
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label12.Location = new System.Drawing.Point(28, 21);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(246, 52);
-            this.label12.TabIndex = 31;
-            this.label12.Text = "Tạo mới playlist";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(36, 174);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(67, 24);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Image";
+            // 
+            // ComboBox_Image
+            // 
+            this.ComboBox_Image.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ComboBox_Image.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBox_Image.FormattingEnabled = true;
+            this.ComboBox_Image.ItemHeight = 24;
+            this.ComboBox_Image.Items.AddRange(new object[] {
+            "Warwick Dolton",
+            "Jewel Lyons",
+            "Sapphire Haynes",
+            "Tara Howe",
+            "Megan Tyler",
+            "Water Tribe",
+            "Air Nomad"});
+            this.ComboBox_Image.Location = new System.Drawing.Point(116, 174);
+            this.ComboBox_Image.Name = "ComboBox_Image";
+            this.ComboBox_Image.Size = new System.Drawing.Size(225, 32);
+            this.ComboBox_Image.TabIndex = 4;
+            this.ComboBox_Image.Text = "Warwick Dolton";
+            this.ComboBox_Image.SelectedIndexChanged += new System.EventHandler(this.ComboBox_Image_SelectedIndexChanged);
+            // 
+            // PictureBox_Image
+            // 
+            this.PictureBox_Image.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox_Image.Image")));
+            this.PictureBox_Image.Location = new System.Drawing.Point(413, 148);
+            this.PictureBox_Image.Name = "PictureBox_Image";
+            this.PictureBox_Image.Size = new System.Drawing.Size(273, 169);
+            this.PictureBox_Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox_Image.TabIndex = 5;
+            this.PictureBox_Image.TabStop = false;
+            // 
+            // Button_NewCreate
+            // 
+            this.Button_NewCreate.BackColor = System.Drawing.Color.Green;
+            this.Button_NewCreate.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_NewCreate.FlatAppearance.BorderSize = 0;
+            this.Button_NewCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_NewCreate.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_NewCreate.ForeColor = System.Drawing.Color.White;
+            this.Button_NewCreate.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Button_NewCreate.IconColor = System.Drawing.Color.Black;
+            this.Button_NewCreate.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Button_NewCreate.Location = new System.Drawing.Point(368, 454);
+            this.Button_NewCreate.Name = "Button_NewCreate";
+            this.Button_NewCreate.Size = new System.Drawing.Size(158, 54);
+            this.Button_NewCreate.TabIndex = 34;
+            this.Button_NewCreate.Text = "Tạo mới";
+            this.Button_NewCreate.UseVisualStyleBackColor = false;
+            this.Button_NewCreate.Click += new System.EventHandler(this.Button_NewCreate_Click);
+            // 
+            // Panel_CreatePlaylist
+            // 
+            this.Panel_CreatePlaylist.BackColor = System.Drawing.Color.Black;
+            this.Panel_CreatePlaylist.Controls.Add(this.Button_NewCreate);
+            this.Panel_CreatePlaylist.Controls.Add(this.Panel_CreatePlaylistInfomation);
+            this.Panel_CreatePlaylist.Controls.Add(this.Button_ClosePanel);
+            this.Panel_CreatePlaylist.Controls.Add(this.label12);
+            this.Panel_CreatePlaylist.Location = new System.Drawing.Point(240, 65);
+            this.Panel_CreatePlaylist.Name = "Panel_CreatePlaylist";
+            this.Panel_CreatePlaylist.Size = new System.Drawing.Size(808, 525);
+            this.Panel_CreatePlaylist.TabIndex = 38;
+            this.Panel_CreatePlaylist.Visible = false;
             // 
             // _07_Form_Playlist
             // 
@@ -364,13 +364,13 @@
             this.Panel_Header.ResumeLayout(false);
             this.Panel_Header.PerformLayout();
             this.Panel_Tools.ResumeLayout(false);
-            this.Panel_CreatePlaylist.ResumeLayout(false);
-            this.Panel_CreatePlaylist.PerformLayout();
             this.Panel_CreatePlaylistInfomation.ResumeLayout(false);
             this.Panel_CreatePlaylistInfomation.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Image)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Image)).EndInit();
+            this.Panel_CreatePlaylist.ResumeLayout(false);
+            this.Panel_CreatePlaylist.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -388,16 +388,16 @@
         private System.Windows.Forms.FlowLayoutPanel FlowLayoutPanel_Main;
         private System.Windows.Forms.FlowLayoutPanel FlowLayoutPanel_Items;
         private FontAwesome.Sharp.IconButton Button_CreatePlaylist;
-        private System.Windows.Forms.Panel Panel_CreatePlaylist;
-        private System.Windows.Forms.Panel Panel_CreatePlaylistInfomation;
         private System.Windows.Forms.Label label12;
-        private FontAwesome.Sharp.IconButton Button_NewCreate;
+        private FontAwesome.Sharp.IconButton Button_ClosePanel;
+        private System.Windows.Forms.Panel Panel_CreatePlaylistInfomation;
+        private System.Windows.Forms.PictureBox PictureBox_Image;
         private System.Windows.Forms.ComboBox ComboBox_Image;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox TextBox_NamePlaylist;
-        private FontAwesome.Sharp.IconButton Button_ClosePanel;
-        private System.Windows.Forms.PictureBox PictureBox_Image;
+        private FontAwesome.Sharp.IconButton Button_NewCreate;
+        private System.Windows.Forms.Panel Panel_CreatePlaylist;
     }
 }
