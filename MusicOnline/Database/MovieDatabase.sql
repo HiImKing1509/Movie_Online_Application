@@ -93,6 +93,25 @@ create table PLAYLIST_DETAIL (
 )
 go
 
+create table COMMENT (
+	COMMENT_MOVIE_ID char(4),
+	COMMENT_NAME nvarchar(30),
+	COMMENT_TEXT nvarchar(100),
+	COMMENT_TIME datetime,
+)
+
+drop table COMMENT
+
+set dateformat mdy
+go
+
+insert into COMMENT values('MV01', N'Nguyễn Nhật Trường', N'Phim khá hay', '12-16-2002 15:45:21')
+insert into COMMENT values('MV01', N'Nguyễn Nhật School', N'Tốt', '12-17-2002 15:45:21')
+insert into COMMENT values('MV01', N'Nguyễn Cu Trường', N'7 điểm', '12-17-2002 15:45:21')
+insert into COMMENT values('MV02', N'Nguyễn Trường', N'Không nên xem', '12-18-2002 15:45:21')
+insert into COMMENT values('MV02', N'Nguyễn Trường Béo', N'Phim không hay', '12-12-2002 15:45:21')
+insert into COMMENT values('MV03', N'Nguyễn Nhật Trường ốm', N'Xem tốn thời gian', '12-13-2002 15:45:21')
+
 drop table MOVIE
 drop table HISTORY_MOVIE_LIST
 drop table PLAYLIST
@@ -483,6 +502,102 @@ insert into MOVIE values('MV24',
 						N'Sai Người Sai Thời Điểm kể về một tên đầu bếp methamphetamines săn lùng cựu Cảnh sát trưởng của một thị trấn nhỏ để bịt miệng anh ta trước khi anh ta có thể đưa ra lời khai nhân chứng chống lại gia đình anh ta, nhưng cuối cùng lại thấy mình chống lại nhiều hơn những gì anh ta đã mặc cả.',
 						N'xem phim Sai Người Sai Thời Điểm tập Full, Phim Sai Người Sai Thời Điểm tập Full Vietsub, Sai Người Sai Thời Điểm ep Full full hd, download phim Sai Người Sai Thời Điểm tập Full, xem online Sai Người Sai Thời Điểm tập Full netflix, wetv, vieon, phim keeng, youtube, phimmoi, bilutv, biphim, hdvip, hayghe, motphim, tvhay, zingtv, fptplay, phim1080, luotphim, fimfast, dongphim, dongphym, fullphim, phephim, vtvgiaitri, preview Sai Người Sai Thời Điểm tập Full thuyết minh, Sai Người Sai Thời Điểm tập Full lồng tiếng', 0, 0)
 go
+insert into MOVIE values('MV25',
+						N'Trái Tim Ngục Tù',
+						N'In the Heart of the Machine (2022)',
+						N'HD Vietsub',
+						N'Martin Makariev',
+						N'115 phút',
+						N'Phim đang chiếu',
+						N'Phụ đề Việt',
+						N'2022',
+						N'Âu - Mỹ',
+						N'Tâm Lý - Tình Cảm, Hình Sự - Chiến Tranh, Kinh Dị - Ma',
+						N'Hristo Shopov, Alexander Sano, Bashar Rahal',
+						10,
+						N'Trái Tim Ngục Tù kể về vào năm 1978, Bohemy, một tù nhân trẻ đang phục vụ tại Nhà tù Trung tâm ở Sofia, có cơ hội rút ngắn bản án nếu anh ta tập hợp một nhóm để tăng gấp đôi sản lượng trong thời gian họ làm việc tại nhà máy Kremikovtsi. Anh ta tập hợp một đội bao gồm Hatchet, một kẻ sát nhân kép khủng khiếp, tên tội phạm rắc rối Needle, Giáo viên lớn tuổi và Krasy gypsy. Vấn đề của họ bắt đầu khi Hatchet từ chối bật máy tiện của mình vì một con chim bồ câu bị mắc kẹt bên trong nó. Bất chấp việc Đại úy Vekilsky, quản giáo của nhà máy, ra lệnh cho anh ta bật máy tiện, Hatchet kiên quyết từ chối, bắt quản giáo tân binh Kovachky làm con tin và tuyên bố rằng anh ta sẽ không bắt đầu công việc cho đến khi con chim bồ câu được giải cứu. Tình hình nhanh chóng leo thang và ngày càng trở nên phức tạp sau khi có thêm lính canh đến và Giáo viên bị giết khi cố gắng thương lượng với họ. Dần dần, các tù nhân nhận ra rằng cách duy nhất để giải quyết tình huống là giải cứu chú chim như mong muốn của Hatchet.',
+						N'xem phim Trái Tim Ngục Tù tập Full, Phim Trái Tim Ngục Tù tập Full Vietsub, Trái Tim Ngục Tù ep Full full hd, download phim Trái Tim Ngục Tù tập Full, xem online Trái Tim Ngục Tù tập Full netflix, wetv, vieon, phim keeng, youtube, phimmoi, bilutv, biphim, hdvip, hayghe, motphim, tvhay, zingtv, fptplay, phim1080, luotphim, fimfast, dongphim, dongphym, fullphim, phephim, vtvgiaitri, preview Trái Tim Ngục Tù tập Full thuyết minh, Trái Tim Ngục Tù tập Full lồng tiếng', 0, 0)
+go
+insert into MOVIE values('MV26',
+						N'Daeng: Hậu Duệ Tình Người Duyên Ma',
+						N'Daeng Phra Khanong (2022)',
+						N'HD Vietsub',
+						N'Martin Makariev',
+						N'96 phút',
+						N'Phim đang chiếu',
+						N'Phụ đề Việt',
+						N'2022',
+						N'Thái Lan',
+						N'Hài Hước, Kinh Dị - Ma',
+						N'Maki Machida Sutthikulphanich, X Champagne, Nui Chernyim, Yong Chernyim, Na Phuang Chernyim, Nong Chernyim Piyachot',
+						9,
+						N'Daeng: Hậu Duệ Tình Người Duyên Ma nối tiếp câu chuyện “Tình Người Duyên Ma” của nàng Nak - ma nữ nổi tiếng của người Thái với người chồng tên Mak, truyền thuyết cổ dựa trên những sự kiện lịch sử diễn ra từ thời vua Rama IV, Daeng là bộ phim kể về đứa bé ma do Nak sinh ra. Bộ phim xoay quanh cuộc sống của Daeng khi không có bố mẹ bên cạnh và tình bạn cũng như tình yêu với con người. Liệu cậu bé có được chào đón ở thế giới của con người hay phải đối diện với sự xa lánh, xua đuổi của dân làng như mẹ Nak?',
+						N'xem phim Daeng: Hậu Duệ Tình Người Duyên Ma tập Full, Phim Daeng: Hậu Duệ Tình Người Duyên Ma tập Full Vietsub, Daeng: Hậu Duệ Tình Người Duyên Ma ep Full full hd, download phim Daeng: Hậu Duệ Tình Người Duyên Ma tập Full, xem online Daeng: Hậu Duệ Tình Người Duyên Ma tập Full netflix, wetv, vieon, phim keeng, youtube, phimmoi, bilutv, biphim, hdvip, hayghe, motphim, tvhay, zingtv, fptplay, phim1080, luotphim, fimfast, dongphim, dongphym, fullphim, phephim, vtvgiaitri, preview Daeng: Hậu Duệ Tình Người Duyên Ma tập Full thuyết minh, Daeng: Hậu Duệ Tình Người Duyên Ma tập Full lồng tiếng', 0, 0)
+go
+insert into MOVIE values('MV27',
+						N'Pearl',
+						N'Pearl (2022)',
+						N'HD Vietsub',
+						N'Ti West',
+						N'102 phút',
+						N'Phim đang chiếu',
+						N'Phụ đề Việt',
+						N'2022',
+						N'Âu - Mỹ',
+						N'Tâm Lý - Tình Cảm, Kinh Dị - Ma',
+						N'Mia Goth, David Corenswet, Tandi Wright, Matthew Sunderland',
+						8,
+						N'Pearl là cô gái Đức sống cùng cha mẹ nhập cư trên đất Texas, phải chăm sóc người cha ốm yếu của cô dưới sự giám sát cay nghiệt và hống hách của người mẹ sùng đạo của cô. Sau khi vô tình xem được bộ phim nóng bỏng tại rạp, khao khát trong Pearl trỗi dậy sau vẻ bề ngoài quê mùa. Ham muốn một cuộc sống hào nhoáng, cám dỗ tình dục và kìm nén của Pearl bắt đầu va chạm với nhau, biến cô thành sát nhân thực thụ.',
+						N'xem phim Pearl tập Full, Phim Pearl tập Full Vietsub, Pearl ep Full full hd, download phim Pearl tập Full, xem online Pearl tập Full netflix, wetv, vieon, phim keeng, youtube, phimmoi, bilutv, biphim, hdvip, hayghe, motphim, tvhay, zingtv, fptplay, phim1080, luotphim, fimfast, dongphim, dongphym, fullphim, phephim, vtvgiaitri, preview Pearl tập Full thuyết minh, Pearl tập Full lồng tiếng', 0, 0)
+go
+insert into MOVIE values('MV28',
+						N'Sử Thi Baahubali 2: Kết Thúc',
+						N'Bahubali 2: The Conclusion (2017)',
+						N'HD Thuyết Minh',
+						N'S. S. Rajamouli',
+						N'167 phút',
+						N'Phim đang chiếu',
+						N'Thuyết minh',
+						N'2017',
+						N'Ấn Độ',
+						N'Cổ Trang - Thần Thoại, Võ Thuật - Kiếm Hiệp, Phiêu Lưu - Hành Động, Thuyết Minh',
+						N'Prabhas, Rana Daggubati, Anushka Shetty, Tamannaah Bhatia, Sathyaraj, Ramya Krishnan',
+						7,
+						N'Sử Thi Baahubali 2: Kết Thúc tiếp nối sau phần 1 câu hỏi dư âm "Tại sao Kattappa giết Baahubali?" "Nhân vật chính sẽ sống sót bằng cách nào hay có một nhân vật mới sẽ xuất hiên?". Baahubali phần 2 - Hồi kết sẽ trả lời tất cả khúc mắc trên với những thước phim cực kì kịch tính và hoành tráng. Bộ phim được đầu tư với con số lên tới 37 triệu USD. Là một bộ phim được mong chờ trong tháng 4 trên toàn thế giới.',
+						N'xem phim Sử Thi Baahubali 2: Kết Thúc tập Full, Phim Sử Thi Baahubali 2: Kết Thúc tập Full Vietsub, Sử Thi Baahubali 2: Kết Thúc ep Full full hd, download phim Sử Thi Baahubali 2: Kết Thúc tập Full, xem online Sử Thi Baahubali 2: Kết Thúc tập Full netflix, wetv, vieon, phim keeng, youtube, phimmoi, bilutv, biphim, hdvip, hayghe, motphim, tvhay, zingtv, fptplay, phim1080, luotphim, fimfast, dongphim, dongphym, fullphim, phephim, vtvgiaitri, preview Sử Thi Baahubali 2: Kết Thúc tập Full thuyết minh, Sử Thi Baahubali 2: Kết Thúc tập Full lồng tiếng', 0, 0)
+go
+insert into MOVIE values('MV29',
+						N'Những Kẻ Bất Bại',
+						N'Den of Thieves (2018)',
+						N'HD Thuyết Minh',
+						N'Christian Gudegast',
+						N'100 phút',
+						N'Phim đang chiếu',
+						N'Thuyết minh',
+						N'2018',
+						N'Âu - Mỹ',
+						N'Phiêu Lưu - Hành Động, Hình Sự - Chiến Tranh, Phim Chiếu Rạp, Thuyết Minh',
+						N'Gerard Butler, Pablo Schreiber, O Shea Jackson Jr.',
+						7,
+						N'Những Kẻ Bất Bại là câu chuyện tại Los Angeles - thủ phủ ngân hàng của thế giới, những kẻ nhẫn tâm hơn cả những tên tội phạm chính là nhóm The Regulators – một bộ phận thuộc sở cảnh sát thành phố Los Angeles, đứng đầu bởi Big Nick. Khi nghe tin tên trộm huyền thoại Merrimen đang lên kế hoạch tấn công tinh vi nhất, Big Nick đã lợi dụng điểm yếu của nhóm Merrimen nhằm biến chúng thành chính nguồn thông tin cho cảnh sát.',
+						N'xem phim Những Kẻ Bất Bại tập Full, Phim Những Kẻ Bất Bại tập Full Vietsub, Những Kẻ Bất Bại ep Full full hd, download phim Những Kẻ Bất Bại tập Full, xem online Những Kẻ Bất Bại tập Full netflix, wetv, vieon, phim keeng, youtube, phimmoi, bilutv, biphim, hdvip, hayghe, motphim, tvhay, zingtv, fptplay, phim1080, luotphim, fimfast, dongphim, dongphym, fullphim, phephim, vtvgiaitri, preview Những Kẻ Bất Bại tập Full thuyết minh, Những Kẻ Bất Bại tập Full lồng tiếng', 0, 0)
+go
+insert into MOVIE values('MV30',
+						N'Quỹ Dữ Hóa Thân',
+						N'Metamorphosis (2019)',
+						N'HD Thuyết Minh',
+						N'Kim Hong Seon',
+						N'113 phút',
+						N'Phim đang chiếu',
+						N'Thuyết minh',
+						N'2019',
+						N'Hàn Quốc',
+						N'Phiêu Lưu - Hành Động, Kinh Dị - Ma, Thuyết Minh',
+						N'Bae Sung Woo, Sung Dong Il, Jang Young Nam, Kim Hye Joon, Jo Yi Hyun, Kim Kang Hoon',
+						5,
+						N'Quỹ Dữ Hóa Thân kể về Gang Goo và Myung Joo là một cặp vợ chồng, họ có với nhau ba người con: Sun Woo, Hyun Joo và Woo Jong. Sau khi chuyển tới ngôi nhà mới, những điều kỳ lạ cứ liên tiếp xảy đến với gia đình họ. Một con quỷ đã hóa thân thành một thành viên trong gia đình. Sun Woo phải cầu xin người chú là mục sư trừ tà của mình tới giải cứu họ.',
+						N'xem phim Quỹ Dữ Hóa Thân tập Full, Phim Quỹ Dữ Hóa Thân tập Full Vietsub, Quỹ Dữ Hóa Thân ep Full full hd, download phim Quỹ Dữ Hóa Thân tập Full, xem online Quỹ Dữ Hóa Thân tập Full netflix, wetv, vieon, phim keeng, youtube, phimmoi, bilutv, biphim, hdvip, hayghe, motphim, tvhay, zingtv, fptplay, phim1080, luotphim, fimfast, dongphim, dongphym, fullphim, phephim, vtvgiaitri, preview Quỹ Dữ Hóa Thân tập Full thuyết minh, Quỹ Dữ Hóa Thân tập Full lồng tiếng', 0, 0)
+go
 
 
 insert into HISTORY_MOVIE_LIST values('MV01', '12-11-2022 12:24:35 PM', 20)
@@ -560,3 +675,5 @@ select * from PLAYLIST
 delete from PLAYLIST where PLAYLIST_ID = 'PL03'
 
 delete from PLAYLIST_DETAIL
+
+select * from COMMENT where COMMENT_MOVIE_ID = 'MV01' order by COMMENT_TIME desc

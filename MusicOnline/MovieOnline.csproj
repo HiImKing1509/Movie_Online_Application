@@ -83,6 +83,12 @@
     <Compile Include="CustomControls\Controls_Addto_Playlist.Designer.cs">
       <DependentUpon>Controls_Addto_Playlist.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\Controls_Comment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomControls\Controls_Comment.Designer.cs">
+      <DependentUpon>Controls_Comment.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\Controls_getMovie_Playlist.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -196,6 +202,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\Controls_Addto_Playlist.resx">
       <DependentUpon>Controls_Addto_Playlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomControls\Controls_Comment.resx">
+      <DependentUpon>Controls_Comment.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\Controls_getMovie_Playlist.resx">
       <DependentUpon>Controls_getMovie_Playlist.cs</DependentUpon>
@@ -407,6 +416,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images_Resources\LG13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV28.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images_Resources\MV30.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

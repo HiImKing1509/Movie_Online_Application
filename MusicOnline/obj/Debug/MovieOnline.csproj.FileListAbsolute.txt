@@ -35,3 +35,4 @@ D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.CustomCon
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.CustomControls.Controls_Addto_Playlist.resources
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.Forms._08_Form_Watching_list_Movie.resources
 D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.CustomControls.Controls_List_Movie_watching.resources
+D:\Workspace-Learning-C#\MusicOnline\MusicOnline\obj\Debug\MusicOnline.CustomControls.Controls_Comment.resources
