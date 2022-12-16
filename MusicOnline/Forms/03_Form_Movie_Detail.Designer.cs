@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(_03_Form_Movie_Detail));
             this.Panel_Details = new System.Windows.Forms.Panel();
+            this.Panel_Playlist = new System.Windows.Forms.Panel();
+            this.Button_ClosePanelPlaylist = new FontAwesome.Sharp.IconButton();
+            this.label12 = new System.Windows.Forms.Label();
+            this.FlowLayoutPanel_Playlist = new System.Windows.Forms.FlowLayoutPanel();
+            this.Button_AddPlaylist = new FontAwesome.Sharp.IconButton();
             this.Panel_MovieTags = new System.Windows.Forms.Panel();
             this.Label_MovieTags = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -80,6 +85,7 @@
             this.Label_MovieNameEng = new System.Windows.Forms.Label();
             this.Label_MovieName = new System.Windows.Forms.Label();
             this.Panel_Details.SuspendLayout();
+            this.Panel_Playlist.SuspendLayout();
             this.Panel_MovieTags.SuspendLayout();
             this.Panel_MovieEvaluation.SuspendLayout();
             this.FlowLayoutPanel_Star.SuspendLayout();
@@ -91,6 +97,8 @@
             // 
             // Panel_Details
             // 
+            this.Panel_Details.Controls.Add(this.Panel_Playlist);
+            this.Panel_Details.Controls.Add(this.Button_AddPlaylist);
             this.Panel_Details.Controls.Add(this.Panel_MovieTags);
             this.Panel_Details.Controls.Add(this.iconButton4);
             this.Panel_Details.Controls.Add(this.Button_LoveMovie);
@@ -107,6 +115,74 @@
             this.Panel_Details.Name = "Panel_Details";
             this.Panel_Details.Size = new System.Drawing.Size(1566, 847);
             this.Panel_Details.TabIndex = 0;
+            // 
+            // Panel_Playlist
+            // 
+            this.Panel_Playlist.Controls.Add(this.Button_ClosePanelPlaylist);
+            this.Panel_Playlist.Controls.Add(this.label12);
+            this.Panel_Playlist.Controls.Add(this.FlowLayoutPanel_Playlist);
+            this.Panel_Playlist.Location = new System.Drawing.Point(364, 106);
+            this.Panel_Playlist.Name = "Panel_Playlist";
+            this.Panel_Playlist.Size = new System.Drawing.Size(988, 623);
+            this.Panel_Playlist.TabIndex = 37;
+            this.Panel_Playlist.Visible = false;
+            // 
+            // Button_ClosePanelPlaylist
+            // 
+            this.Button_ClosePanelPlaylist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Button_ClosePanelPlaylist.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_ClosePanelPlaylist.FlatAppearance.BorderSize = 0;
+            this.Button_ClosePanelPlaylist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_ClosePanelPlaylist.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_ClosePanelPlaylist.ForeColor = System.Drawing.Color.White;
+            this.Button_ClosePanelPlaylist.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Button_ClosePanelPlaylist.IconColor = System.Drawing.Color.Black;
+            this.Button_ClosePanelPlaylist.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Button_ClosePanelPlaylist.Location = new System.Drawing.Point(832, 21);
+            this.Button_ClosePanelPlaylist.Name = "Button_ClosePanelPlaylist";
+            this.Button_ClosePanelPlaylist.Size = new System.Drawing.Size(116, 40);
+            this.Button_ClosePanelPlaylist.TabIndex = 32;
+            this.Button_ClosePanelPlaylist.Text = "Đóng";
+            this.Button_ClosePanelPlaylist.UseVisualStyleBackColor = false;
+            this.Button_ClosePanelPlaylist.Click += new System.EventHandler(this.Button_ClosePanelPlaylist_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label12.Location = new System.Drawing.Point(28, 21);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(147, 52);
+            this.label12.TabIndex = 31;
+            this.label12.Text = "PLAYLIST";
+            // 
+            // FlowLayoutPanel_Playlist
+            // 
+            this.FlowLayoutPanel_Playlist.AutoScroll = true;
+            this.FlowLayoutPanel_Playlist.Location = new System.Drawing.Point(37, 76);
+            this.FlowLayoutPanel_Playlist.Name = "FlowLayoutPanel_Playlist";
+            this.FlowLayoutPanel_Playlist.Size = new System.Drawing.Size(911, 521);
+            this.FlowLayoutPanel_Playlist.TabIndex = 0;
+            // 
+            // Button_AddPlaylist
+            // 
+            this.Button_AddPlaylist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.Button_AddPlaylist.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_AddPlaylist.FlatAppearance.BorderSize = 0;
+            this.Button_AddPlaylist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_AddPlaylist.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_AddPlaylist.ForeColor = System.Drawing.Color.Black;
+            this.Button_AddPlaylist.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Button_AddPlaylist.IconColor = System.Drawing.Color.Black;
+            this.Button_AddPlaylist.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Button_AddPlaylist.Location = new System.Drawing.Point(47, 671);
+            this.Button_AddPlaylist.Name = "Button_AddPlaylist";
+            this.Button_AddPlaylist.Size = new System.Drawing.Size(311, 61);
+            this.Button_AddPlaylist.TabIndex = 9;
+            this.Button_AddPlaylist.Text = "Thêm vào Playlist";
+            this.Button_AddPlaylist.UseVisualStyleBackColor = false;
+            this.Button_AddPlaylist.Click += new System.EventHandler(this.Button_AddPlaylist_Click);
             // 
             // Panel_MovieTags
             // 
@@ -149,7 +225,7 @@
             this.iconButton4.IconChar = FontAwesome.Sharp.IconChar.None;
             this.iconButton4.IconColor = System.Drawing.Color.Black;
             this.iconButton4.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton4.Location = new System.Drawing.Point(47, 679);
+            this.iconButton4.Location = new System.Drawing.Point(47, 746);
             this.iconButton4.Name = "iconButton4";
             this.iconButton4.Size = new System.Drawing.Size(311, 61);
             this.iconButton4.TabIndex = 7;
@@ -753,6 +829,8 @@
             this.Name = "_03_Form_Movie_Detail";
             this.Text = "_03_Form_Movie_Detail";
             this.Panel_Details.ResumeLayout(false);
+            this.Panel_Playlist.ResumeLayout(false);
+            this.Panel_Playlist.PerformLayout();
             this.Panel_MovieTags.ResumeLayout(false);
             this.Panel_MovieTags.PerformLayout();
             this.Panel_MovieEvaluation.ResumeLayout(false);
@@ -821,5 +899,10 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label Label_Access;
         private System.Windows.Forms.Label label15;
+        private FontAwesome.Sharp.IconButton Button_AddPlaylist;
+        private System.Windows.Forms.Panel Panel_Playlist;
+        private System.Windows.Forms.FlowLayoutPanel FlowLayoutPanel_Playlist;
+        private System.Windows.Forms.Label label12;
+        private FontAwesome.Sharp.IconButton Button_ClosePanelPlaylist;
     }
 }

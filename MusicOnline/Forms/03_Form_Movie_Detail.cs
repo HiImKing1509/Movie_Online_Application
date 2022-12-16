@@ -1,4 +1,5 @@
 ﻿using FontAwesome.Sharp;
+using MusicOnline.CustomControls;
 using MusicOnline.Database.DAO;
 using System;
 using System.Collections.Generic;
@@ -37,6 +38,7 @@ namespace MusicOnline.Forms
             Panel_MovieContent.BackColor = Assets.Variables.Colors.BlackOlive;
             Panel_MovieEvaluation.BackColor = Assets.Variables.Colors.BlackOlive;
             Panel_MovieName.BackColor = Assets.Variables.Colors.ChineseBlack;
+            Panel_Playlist.BackColor = Assets.Variables.Colors.Black;
 
             Label_MovieName.ForeColor = Assets.Variables.Colors.VividGamboge;
             Label_Access.ForeColor = Assets.Variables.Colors.MetallicYellow;
@@ -141,12 +143,14 @@ namespace MusicOnline.Forms
                 status = "0";
                 Button_LoveMovie.Text = "Yêu thích";
                 Button_LoveMovie.BackColor = Assets.Variables.Colors.UERed;
+                //Alert("Bỏ yêu thích !", Notification_Form.enmType.Error);
             }
             else
             {
                 status = "1";
                 Button_LoveMovie.Text = "Bỏ yêu thích";
                 Button_LoveMovie.BackColor = Color.Green;
+                //Alert("Đã yêu thích !", Notification_Form.enmType.Success);
             }
         }
 
@@ -206,6 +210,43 @@ namespace MusicOnline.Forms
             }
 
             Label_Stars.Text = dr["MOVIE_STARS"].ToString() + "/10";
+        }
+
+        private void Button_AddPlaylist_Click(object sender, EventArgs e)
+        {
+            Panel_Playlist.Visible = true;
+            Load_MyPlayList();
+        }
+
+        private void Button_ClosePanelPlaylist_Click(object sender, EventArgs e)
+        {
+            Panel_Playlist.Visible = false;
+        }
+
+        private void Load_MyPlayList()
+        {
+            FlowLayoutPanel_Playlist.Controls.Clear();
+            string query = "select * from PLAYLIST";
+
+            DataProvider provider = new DataProvider();
+            DataTable dtShowMyList = provider.ExecuteQuery(query);
+
+            if (dtShowMyList.Rows.Count > 0)
+            {
+                foreach (DataRow row in dtShowMyList.Rows)
+                {
+                    Controls_Addto_Playlist item = new Controls_Addto_Playlist(
+                        row,
+                        PictureBox_MovieImage.Name
+                    );
+                    FlowLayoutPanel_Playlist.Controls.Add(item);
+                }
+            }
+            else
+            {
+                //rm = CreateResources.Variables.rm_logo;
+                //FlowLayoutPanel_OrderProduct.BackgroundImage = (Bitmap)rm.GetObject("No_product");
+            }
         }
     }
 }

@@ -38,13 +38,16 @@
             this.Panel_Logo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Panel_Header = new System.Windows.Forms.Panel();
+            this.Button_NewMovie = new FontAwesome.Sharp.IconButton();
+            this.Button_MovieCR = new FontAwesome.Sharp.IconButton();
+            this.Button_MovieTM = new FontAwesome.Sharp.IconButton();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.Button_CloseForm = new FontAwesome.Sharp.IconButton();
             this.Button_MaximumForm = new FontAwesome.Sharp.IconButton();
             this.Button_MinimizeForm = new FontAwesome.Sharp.IconButton();
             this.Button_MovieCountry = new FontAwesome.Sharp.IconButton();
             this.Button_MovieCategory = new FontAwesome.Sharp.IconButton();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Label_Breadculum = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Button_MovieSearch = new FontAwesome.Sharp.IconButton();
             this.TextBox_MovieSearch = new System.Windows.Forms.TextBox();
@@ -60,19 +63,38 @@
             this.ToolStripMenuItem_Category08 = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Category09 = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Category10 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_Category11 = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Category12 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_Category11 = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Category13 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_Category14 = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Category15 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_Category14 = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Category16 = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Category17 = new System.Windows.Forms.ToolStripMenuItem();
-            this.ToolStripMenuItem_Category18 = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Category19 = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_Category18 = new System.Windows.Forms.ToolStripMenuItem();
             this.d = new MusicOnline.Assets.Controls.CustomDropdownMenu(this.components);
             this.DropdownMenu_ShowMovieCountry = new MusicOnline.Assets.Controls.CustomDropdownMenu(this.components);
-            this.việtNamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_Country01 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.âuMỹToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.DropdownMenu_ShowNewMovie = new MusicOnline.Assets.Controls.CustomDropdownMenu(this.components);
+            this.ToolStripMenuItem_Year = new System.Windows.Forms.ToolStripMenuItem();
+            this.phim2021ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phim2020ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phim2019ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phim2018ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phim2017ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phim2016ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phim2015ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phim2014ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.phim2013ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Panel_Menu.SuspendLayout();
             this.Panel_Logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -81,6 +103,7 @@
             this.panel1.SuspendLayout();
             this.DropdownMenu_ShowMovieCategory.SuspendLayout();
             this.DropdownMenu_ShowMovieCountry.SuspendLayout();
+            this.DropdownMenu_ShowNewMovie.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel_Menu
@@ -104,7 +127,7 @@
             this.Button_History.Dock = System.Windows.Forms.DockStyle.Top;
             this.Button_History.FlatAppearance.BorderSize = 0;
             this.Button_History.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_History.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_History.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.Button_History.IconChar = FontAwesome.Sharp.IconChar.FileCircleCheck;
             this.Button_History.IconColor = System.Drawing.Color.Black;
             this.Button_History.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -126,7 +149,7 @@
             this.Button_FavoritesList.Dock = System.Windows.Forms.DockStyle.Top;
             this.Button_FavoritesList.FlatAppearance.BorderSize = 0;
             this.Button_FavoritesList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_FavoritesList.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_FavoritesList.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.Button_FavoritesList.IconChar = FontAwesome.Sharp.IconChar.Heart;
             this.Button_FavoritesList.IconColor = System.Drawing.Color.Black;
             this.Button_FavoritesList.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -148,7 +171,7 @@
             this.Button_Playlist.Dock = System.Windows.Forms.DockStyle.Top;
             this.Button_Playlist.FlatAppearance.BorderSize = 0;
             this.Button_Playlist.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Playlist.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Playlist.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.Button_Playlist.IconChar = FontAwesome.Sharp.IconChar.ListSquares;
             this.Button_Playlist.IconColor = System.Drawing.Color.Black;
             this.Button_Playlist.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -170,7 +193,7 @@
             this.Button_Home.Dock = System.Windows.Forms.DockStyle.Top;
             this.Button_Home.FlatAppearance.BorderSize = 0;
             this.Button_Home.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_Home.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_Home.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.Button_Home.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.Button_Home.IconColor = System.Drawing.Color.Black;
             this.Button_Home.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -208,16 +231,79 @@
             // Panel_Header
             // 
             this.Panel_Header.BackColor = System.Drawing.SystemColors.Control;
+            this.Panel_Header.Controls.Add(this.Button_NewMovie);
+            this.Panel_Header.Controls.Add(this.Button_MovieCR);
+            this.Panel_Header.Controls.Add(this.Button_MovieTM);
             this.Panel_Header.Controls.Add(this.flowLayoutPanel1);
             this.Panel_Header.Controls.Add(this.Button_MovieCountry);
             this.Panel_Header.Controls.Add(this.Button_MovieCategory);
-            this.Panel_Header.Controls.Add(this.label1);
+            this.Panel_Header.Controls.Add(this.Label_Breadculum);
             this.Panel_Header.Controls.Add(this.panel1);
             this.Panel_Header.Dock = System.Windows.Forms.DockStyle.Top;
             this.Panel_Header.Location = new System.Drawing.Point(336, 0);
             this.Panel_Header.Name = "Panel_Header";
             this.Panel_Header.Size = new System.Drawing.Size(1582, 199);
             this.Panel_Header.TabIndex = 1;
+            // 
+            // Button_NewMovie
+            // 
+            this.Button_NewMovie.BackColor = System.Drawing.Color.Transparent;
+            this.Button_NewMovie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_NewMovie.FlatAppearance.BorderSize = 0;
+            this.Button_NewMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_NewMovie.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.Button_NewMovie.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Button_NewMovie.IconColor = System.Drawing.Color.Black;
+            this.Button_NewMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Button_NewMovie.Location = new System.Drawing.Point(494, 134);
+            this.Button_NewMovie.Name = "Button_NewMovie";
+            this.Button_NewMovie.Size = new System.Drawing.Size(241, 65);
+            this.Button_NewMovie.TabIndex = 7;
+            this.Button_NewMovie.Text = "Phim mới";
+            this.Button_NewMovie.UseVisualStyleBackColor = false;
+            this.Button_NewMovie.Click += new System.EventHandler(this.Button_NewMovie_Click);
+            this.Button_NewMovie.MouseEnter += new System.EventHandler(this.Button_MovieCategory_MouseEnter);
+            this.Button_NewMovie.MouseLeave += new System.EventHandler(this.Button_MovieCategory_MouseLeave);
+            // 
+            // Button_MovieCR
+            // 
+            this.Button_MovieCR.BackColor = System.Drawing.Color.Transparent;
+            this.Button_MovieCR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_MovieCR.FlatAppearance.BorderSize = 0;
+            this.Button_MovieCR.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_MovieCR.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.Button_MovieCR.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Button_MovieCR.IconColor = System.Drawing.Color.Black;
+            this.Button_MovieCR.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Button_MovieCR.Location = new System.Drawing.Point(988, 134);
+            this.Button_MovieCR.Name = "Button_MovieCR";
+            this.Button_MovieCR.Size = new System.Drawing.Size(241, 65);
+            this.Button_MovieCR.TabIndex = 6;
+            this.Button_MovieCR.Text = "Phim chiếu rạp";
+            this.Button_MovieCR.UseVisualStyleBackColor = false;
+            this.Button_MovieCR.Click += new System.EventHandler(this.Button_MovieCR_Click);
+            this.Button_MovieCR.MouseEnter += new System.EventHandler(this.Button_MovieCategory_MouseEnter);
+            this.Button_MovieCR.MouseLeave += new System.EventHandler(this.Button_MovieCategory_MouseLeave);
+            // 
+            // Button_MovieTM
+            // 
+            this.Button_MovieTM.BackColor = System.Drawing.Color.Transparent;
+            this.Button_MovieTM.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_MovieTM.FlatAppearance.BorderSize = 0;
+            this.Button_MovieTM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_MovieTM.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.Button_MovieTM.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Button_MovieTM.IconColor = System.Drawing.Color.Black;
+            this.Button_MovieTM.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Button_MovieTM.Location = new System.Drawing.Point(741, 134);
+            this.Button_MovieTM.Name = "Button_MovieTM";
+            this.Button_MovieTM.Size = new System.Drawing.Size(241, 65);
+            this.Button_MovieTM.TabIndex = 5;
+            this.Button_MovieTM.Text = "Phim thuyết minh";
+            this.Button_MovieTM.UseVisualStyleBackColor = false;
+            this.Button_MovieTM.Click += new System.EventHandler(this.Button_MovieTM_Click);
+            this.Button_MovieTM.MouseEnter += new System.EventHandler(this.Button_MovieCategory_MouseEnter);
+            this.Button_MovieTM.MouseLeave += new System.EventHandler(this.Button_MovieCategory_MouseLeave);
             // 
             // flowLayoutPanel1
             // 
@@ -292,11 +378,11 @@
             this.Button_MovieCountry.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_MovieCountry.FlatAppearance.BorderSize = 0;
             this.Button_MovieCountry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_MovieCountry.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_MovieCountry.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.Button_MovieCountry.IconChar = FontAwesome.Sharp.IconChar.None;
             this.Button_MovieCountry.IconColor = System.Drawing.Color.Black;
             this.Button_MovieCountry.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Button_MovieCountry.Location = new System.Drawing.Point(250, 134);
+            this.Button_MovieCountry.Location = new System.Drawing.Point(247, 134);
             this.Button_MovieCountry.Name = "Button_MovieCountry";
             this.Button_MovieCountry.Size = new System.Drawing.Size(241, 65);
             this.Button_MovieCountry.TabIndex = 3;
@@ -312,7 +398,7 @@
             this.Button_MovieCategory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_MovieCategory.FlatAppearance.BorderSize = 0;
             this.Button_MovieCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_MovieCategory.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_MovieCategory.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.Button_MovieCategory.IconChar = FontAwesome.Sharp.IconChar.None;
             this.Button_MovieCategory.IconColor = System.Drawing.Color.Black;
             this.Button_MovieCategory.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -326,16 +412,16 @@
             this.Button_MovieCategory.MouseEnter += new System.EventHandler(this.Button_MovieCategory_MouseEnter);
             this.Button_MovieCategory.MouseLeave += new System.EventHandler(this.Button_MovieCategory_MouseLeave);
             // 
-            // label1
+            // Label_Breadculum
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(51, 98);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 18);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Công cụ tìm kiếm phim";
+            this.Label_Breadculum.AutoSize = true;
+            this.Label_Breadculum.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.Label_Breadculum.ForeColor = System.Drawing.Color.White;
+            this.Label_Breadculum.Location = new System.Drawing.Point(50, 103);
+            this.Label_Breadculum.Name = "Label_Breadculum";
+            this.Label_Breadculum.Size = new System.Drawing.Size(162, 24);
+            this.Label_Breadculum.TabIndex = 1;
+            this.Label_Breadculum.Text = "Công cụ tìm kiếm phim";
             // 
             // panel1
             // 
@@ -370,7 +456,7 @@
             // 
             this.TextBox_MovieSearch.BackColor = System.Drawing.Color.White;
             this.TextBox_MovieSearch.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_MovieSearch.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextBox_MovieSearch.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.TextBox_MovieSearch.ForeColor = System.Drawing.Color.Gray;
             this.TextBox_MovieSearch.Location = new System.Drawing.Point(14, 16);
             this.TextBox_MovieSearch.Name = "TextBox_MovieSearch";
@@ -405,174 +491,193 @@
             this.ToolStripMenuItem_Category08,
             this.ToolStripMenuItem_Category09,
             this.ToolStripMenuItem_Category10,
-            this.ToolStripMenuItem_Category11,
             this.ToolStripMenuItem_Category12,
+            this.ToolStripMenuItem_Category11,
             this.ToolStripMenuItem_Category13,
-            this.ToolStripMenuItem_Category14,
             this.ToolStripMenuItem_Category15,
+            this.ToolStripMenuItem_Category14,
             this.ToolStripMenuItem_Category16,
             this.ToolStripMenuItem_Category17,
-            this.ToolStripMenuItem_Category18,
-            this.ToolStripMenuItem_Category19});
+            this.ToolStripMenuItem_Category19,
+            this.ToolStripMenuItem_Category18});
             this.DropdownMenu_ShowMovieCategory.MenuItemHeight = 25;
             this.DropdownMenu_ShowMovieCategory.MenuItemTextColor = System.Drawing.Color.Empty;
             this.DropdownMenu_ShowMovieCategory.Name = "customDropdownMenu1";
             this.DropdownMenu_ShowMovieCategory.PrimaryColor = System.Drawing.Color.Empty;
-            this.DropdownMenu_ShowMovieCategory.Size = new System.Drawing.Size(269, 696);
+            this.DropdownMenu_ShowMovieCategory.Size = new System.Drawing.Size(230, 734);
             this.DropdownMenu_ShowMovieCategory.MouseEnter += new System.EventHandler(this.DropdownMenu_ShowMovieCategory_MouseEnter);
             // 
             // ToolStripMenuItem_Category01
             // 
+            this.ToolStripMenuItem_Category01.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category01.Margin = new System.Windows.Forms.Padding(0, 10, 0, 5);
             this.ToolStripMenuItem_Category01.Name = "ToolStripMenuItem_Category01";
-            this.ToolStripMenuItem_Category01.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category01.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category01.Text = "Cổ trang - Thần thoại";
             this.ToolStripMenuItem_Category01.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
             // ToolStripMenuItem_Category02
             // 
+            this.ToolStripMenuItem_Category02.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category02.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.ToolStripMenuItem_Category02.Name = "ToolStripMenuItem_Category02";
             this.ToolStripMenuItem_Category02.Padding = new System.Windows.Forms.Padding(0);
-            this.ToolStripMenuItem_Category02.Size = new System.Drawing.Size(268, 24);
+            this.ToolStripMenuItem_Category02.Size = new System.Drawing.Size(229, 26);
             this.ToolStripMenuItem_Category02.Text = "Võ Thuật - Kiếm hiệp";
             this.ToolStripMenuItem_Category02.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
             // ToolStripMenuItem_Category03
             // 
+            this.ToolStripMenuItem_Category03.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category03.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.ToolStripMenuItem_Category03.Name = "ToolStripMenuItem_Category03";
-            this.ToolStripMenuItem_Category03.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category03.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category03.Text = "Phiêu Lưu - Hành Động";
             this.ToolStripMenuItem_Category03.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
             // ToolStripMenuItem_Category04
             // 
+            this.ToolStripMenuItem_Category04.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category04.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.ToolStripMenuItem_Category04.Name = "ToolStripMenuItem_Category04";
-            this.ToolStripMenuItem_Category04.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category04.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category04.Text = "Tâm Lý - Tình Cảm";
             this.ToolStripMenuItem_Category04.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
             // ToolStripMenuItem_Category05
             // 
+            this.ToolStripMenuItem_Category05.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category05.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.ToolStripMenuItem_Category05.Name = "ToolStripMenuItem_Category05";
-            this.ToolStripMenuItem_Category05.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category05.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category05.Text = "Hoạt Hình";
             this.ToolStripMenuItem_Category05.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
             // ToolStripMenuItem_Category06
             // 
+            this.ToolStripMenuItem_Category06.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category06.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.ToolStripMenuItem_Category06.Name = "ToolStripMenuItem_Category06";
-            this.ToolStripMenuItem_Category06.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category06.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category06.Text = "Khoa Học - Viễn Tưởng";
             this.ToolStripMenuItem_Category06.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
             // ToolStripMenuItem_Category07
             // 
+            this.ToolStripMenuItem_Category07.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category07.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.ToolStripMenuItem_Category07.Name = "ToolStripMenuItem_Category07";
-            this.ToolStripMenuItem_Category07.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category07.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category07.Text = "Hình Sự - Chiến Tranh";
             this.ToolStripMenuItem_Category07.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
             // ToolStripMenuItem_Category08
             // 
+            this.ToolStripMenuItem_Category08.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category08.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.ToolStripMenuItem_Category08.Name = "ToolStripMenuItem_Category08";
-            this.ToolStripMenuItem_Category08.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category08.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category08.Text = "Tài Liệu - Khám Phá";
             this.ToolStripMenuItem_Category08.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
             // ToolStripMenuItem_Category09
             // 
+            this.ToolStripMenuItem_Category09.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category09.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.ToolStripMenuItem_Category09.Name = "ToolStripMenuItem_Category09";
-            this.ToolStripMenuItem_Category09.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category09.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category09.Text = "Văn Hóa - Tâm Linh";
             this.ToolStripMenuItem_Category09.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
             // ToolStripMenuItem_Category10
             // 
+            this.ToolStripMenuItem_Category10.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category10.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.ToolStripMenuItem_Category10.Name = "ToolStripMenuItem_Category10";
-            this.ToolStripMenuItem_Category10.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category10.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category10.Text = "Hài Hước";
             this.ToolStripMenuItem_Category10.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
-            // ToolStripMenuItem_Category11
-            // 
-            this.ToolStripMenuItem_Category11.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.ToolStripMenuItem_Category11.Name = "ToolStripMenuItem_Category11";
-            this.ToolStripMenuItem_Category11.Size = new System.Drawing.Size(268, 26);
-            this.ToolStripMenuItem_Category11.Text = "Thể Thao - Âm Nhạc";
-            this.ToolStripMenuItem_Category11.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
-            // 
             // ToolStripMenuItem_Category12
             // 
+            this.ToolStripMenuItem_Category12.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category12.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.ToolStripMenuItem_Category12.Name = "ToolStripMenuItem_Category12";
-            this.ToolStripMenuItem_Category12.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category12.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category12.Text = "Kinh Dị - Ma";
             this.ToolStripMenuItem_Category12.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
+            // ToolStripMenuItem_Category11
+            // 
+            this.ToolStripMenuItem_Category11.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.ToolStripMenuItem_Category11.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.ToolStripMenuItem_Category11.Name = "ToolStripMenuItem_Category11";
+            this.ToolStripMenuItem_Category11.Size = new System.Drawing.Size(229, 28);
+            this.ToolStripMenuItem_Category11.Text = "Thể Thao - Âm Nhạc";
+            this.ToolStripMenuItem_Category11.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
+            // 
             // ToolStripMenuItem_Category13
             // 
+            this.ToolStripMenuItem_Category13.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category13.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.ToolStripMenuItem_Category13.Name = "ToolStripMenuItem_Category13";
-            this.ToolStripMenuItem_Category13.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category13.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category13.Text = "Gia Đình - Học Đường";
             this.ToolStripMenuItem_Category13.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
-            // ToolStripMenuItem_Category14
-            // 
-            this.ToolStripMenuItem_Category14.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.ToolStripMenuItem_Category14.Name = "ToolStripMenuItem_Category14";
-            this.ToolStripMenuItem_Category14.Size = new System.Drawing.Size(268, 26);
-            this.ToolStripMenuItem_Category14.Text = "TV Show";
-            this.ToolStripMenuItem_Category14.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
-            // 
             // ToolStripMenuItem_Category15
             // 
+            this.ToolStripMenuItem_Category15.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category15.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.ToolStripMenuItem_Category15.Name = "ToolStripMenuItem_Category15";
-            this.ToolStripMenuItem_Category15.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category15.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category15.Text = "Phim Chiếu Rạp";
             this.ToolStripMenuItem_Category15.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
+            // ToolStripMenuItem_Category14
+            // 
+            this.ToolStripMenuItem_Category14.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.ToolStripMenuItem_Category14.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.ToolStripMenuItem_Category14.Name = "ToolStripMenuItem_Category14";
+            this.ToolStripMenuItem_Category14.Size = new System.Drawing.Size(229, 28);
+            this.ToolStripMenuItem_Category14.Text = "TV Show";
+            this.ToolStripMenuItem_Category14.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
+            // 
             // ToolStripMenuItem_Category16
             // 
+            this.ToolStripMenuItem_Category16.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category16.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.ToolStripMenuItem_Category16.Name = "ToolStripMenuItem_Category16";
-            this.ToolStripMenuItem_Category16.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category16.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category16.Text = "Bí Ẩn - Siêu Nhiên";
             this.ToolStripMenuItem_Category16.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
             // ToolStripMenuItem_Category17
             // 
+            this.ToolStripMenuItem_Category17.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category17.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
             this.ToolStripMenuItem_Category17.Name = "ToolStripMenuItem_Category17";
-            this.ToolStripMenuItem_Category17.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category17.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category17.Text = "Thuyết Minh";
             this.ToolStripMenuItem_Category17.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
-            // ToolStripMenuItem_Category18
-            // 
-            this.ToolStripMenuItem_Category18.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.ToolStripMenuItem_Category18.Name = "ToolStripMenuItem_Category18";
-            this.ToolStripMenuItem_Category18.Size = new System.Drawing.Size(268, 26);
-            this.ToolStripMenuItem_Category18.Text = "Lồng Tiếng";
-            this.ToolStripMenuItem_Category18.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
-            // 
             // ToolStripMenuItem_Category19
             // 
+            this.ToolStripMenuItem_Category19.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.ToolStripMenuItem_Category19.Margin = new System.Windows.Forms.Padding(0, 5, 0, 10);
             this.ToolStripMenuItem_Category19.Name = "ToolStripMenuItem_Category19";
-            this.ToolStripMenuItem_Category19.Size = new System.Drawing.Size(268, 26);
+            this.ToolStripMenuItem_Category19.Size = new System.Drawing.Size(229, 28);
             this.ToolStripMenuItem_Category19.Text = "Boy Love";
             this.ToolStripMenuItem_Category19.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
+            // 
+            // ToolStripMenuItem_Category18
+            // 
+            this.ToolStripMenuItem_Category18.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.ToolStripMenuItem_Category18.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.ToolStripMenuItem_Category18.Name = "ToolStripMenuItem_Category18";
+            this.ToolStripMenuItem_Category18.Size = new System.Drawing.Size(229, 28);
+            this.ToolStripMenuItem_Category18.Text = "Lồng Tiếng";
+            this.ToolStripMenuItem_Category18.Click += new System.EventHandler(this.ToolStripMenuItem_Category01_Click);
             // 
             // d
             // 
@@ -590,25 +695,222 @@
             this.DropdownMenu_ShowMovieCountry.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.DropdownMenu_ShowMovieCountry.IsMainMenu = false;
             this.DropdownMenu_ShowMovieCountry.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.việtNamToolStripMenuItem,
+            this.ToolStripMenuItem_Country01,
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem8,
+            this.toolStripMenuItem7,
+            this.toolStripMenuItem6,
+            this.toolStripMenuItem5,
+            this.toolStripMenuItem4,
+            this.toolStripMenuItem3,
+            this.toolStripMenuItem2,
             this.âuMỹToolStripMenuItem});
             this.DropdownMenu_ShowMovieCountry.MenuItemHeight = 25;
             this.DropdownMenu_ShowMovieCountry.MenuItemTextColor = System.Drawing.Color.Empty;
             this.DropdownMenu_ShowMovieCountry.Name = "DropdownMenu_ShowMovieCountry";
             this.DropdownMenu_ShowMovieCountry.PrimaryColor = System.Drawing.Color.Empty;
-            this.DropdownMenu_ShowMovieCountry.Size = new System.Drawing.Size(153, 56);
+            this.DropdownMenu_ShowMovieCountry.Size = new System.Drawing.Size(154, 394);
             // 
-            // việtNamToolStripMenuItem
+            // ToolStripMenuItem_Country01
             // 
-            this.việtNamToolStripMenuItem.Name = "việtNamToolStripMenuItem";
-            this.việtNamToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
-            this.việtNamToolStripMenuItem.Text = "Việt Nam";
+            this.ToolStripMenuItem_Country01.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.ToolStripMenuItem_Country01.Margin = new System.Windows.Forms.Padding(0, 10, 0, 5);
+            this.ToolStripMenuItem_Country01.Name = "ToolStripMenuItem_Country01";
+            this.ToolStripMenuItem_Country01.Size = new System.Drawing.Size(153, 28);
+            this.ToolStripMenuItem_Country01.Text = "Việt Nam";
+            this.ToolStripMenuItem_Country01.Click += new System.EventHandler(this.ToolStripMenuItem_Country01_Click);
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.toolStripMenuItem1.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(153, 28);
+            this.toolStripMenuItem1.Text = "Âu - Mỹ";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.ToolStripMenuItem_Country01_Click);
+            // 
+            // toolStripMenuItem8
+            // 
+            this.toolStripMenuItem8.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.toolStripMenuItem8.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.toolStripMenuItem8.Name = "toolStripMenuItem8";
+            this.toolStripMenuItem8.Size = new System.Drawing.Size(153, 28);
+            this.toolStripMenuItem8.Text = "Trung Quốc";
+            this.toolStripMenuItem8.Click += new System.EventHandler(this.ToolStripMenuItem_Country01_Click);
+            // 
+            // toolStripMenuItem7
+            // 
+            this.toolStripMenuItem7.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.toolStripMenuItem7.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.toolStripMenuItem7.Name = "toolStripMenuItem7";
+            this.toolStripMenuItem7.Size = new System.Drawing.Size(153, 28);
+            this.toolStripMenuItem7.Text = "Đài Loan";
+            this.toolStripMenuItem7.Click += new System.EventHandler(this.ToolStripMenuItem_Country01_Click);
+            // 
+            // toolStripMenuItem6
+            // 
+            this.toolStripMenuItem6.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.toolStripMenuItem6.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(153, 28);
+            this.toolStripMenuItem6.Text = "Hàn Quốc";
+            this.toolStripMenuItem6.Click += new System.EventHandler(this.ToolStripMenuItem_Country01_Click);
+            // 
+            // toolStripMenuItem5
+            // 
+            this.toolStripMenuItem5.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.toolStripMenuItem5.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(153, 28);
+            this.toolStripMenuItem5.Text = "Nhật Bản";
+            this.toolStripMenuItem5.Click += new System.EventHandler(this.ToolStripMenuItem_Country01_Click);
+            // 
+            // toolStripMenuItem4
+            // 
+            this.toolStripMenuItem4.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.toolStripMenuItem4.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(153, 28);
+            this.toolStripMenuItem4.Text = "Thái Lan";
+            this.toolStripMenuItem4.Click += new System.EventHandler(this.ToolStripMenuItem_Country01_Click);
+            // 
+            // toolStripMenuItem3
+            // 
+            this.toolStripMenuItem3.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.toolStripMenuItem3.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(153, 28);
+            this.toolStripMenuItem3.Text = "Ấn Độ";
+            this.toolStripMenuItem3.Click += new System.EventHandler(this.ToolStripMenuItem_Country01_Click);
+            // 
+            // toolStripMenuItem2
+            // 
+            this.toolStripMenuItem2.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.toolStripMenuItem2.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(153, 28);
+            this.toolStripMenuItem2.Text = "Hồng Kông";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.ToolStripMenuItem_Country01_Click);
             // 
             // âuMỹToolStripMenuItem
             // 
+            this.âuMỹToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.âuMỹToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 5, 0, 10);
             this.âuMỹToolStripMenuItem.Name = "âuMỹToolStripMenuItem";
-            this.âuMỹToolStripMenuItem.Size = new System.Drawing.Size(152, 26);
-            this.âuMỹToolStripMenuItem.Text = "Âu - Mỹ";
+            this.âuMỹToolStripMenuItem.Size = new System.Drawing.Size(153, 28);
+            this.âuMỹToolStripMenuItem.Text = "Canada";
+            this.âuMỹToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Country01_Click);
+            // 
+            // DropdownMenu_ShowNewMovie
+            // 
+            this.DropdownMenu_ShowNewMovie.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.DropdownMenu_ShowNewMovie.IsMainMenu = false;
+            this.DropdownMenu_ShowNewMovie.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.ToolStripMenuItem_Year,
+            this.phim2021ToolStripMenuItem,
+            this.phim2020ToolStripMenuItem,
+            this.phim2019ToolStripMenuItem,
+            this.phim2018ToolStripMenuItem,
+            this.phim2017ToolStripMenuItem,
+            this.phim2016ToolStripMenuItem,
+            this.phim2015ToolStripMenuItem,
+            this.phim2014ToolStripMenuItem,
+            this.phim2013ToolStripMenuItem});
+            this.DropdownMenu_ShowNewMovie.MenuItemHeight = 25;
+            this.DropdownMenu_ShowNewMovie.MenuItemTextColor = System.Drawing.Color.Empty;
+            this.DropdownMenu_ShowNewMovie.Name = "DropdownMenu_ShowNewMovie";
+            this.DropdownMenu_ShowNewMovie.PrimaryColor = System.Drawing.Color.Empty;
+            this.DropdownMenu_ShowNewMovie.Size = new System.Drawing.Size(150, 394);
+            // 
+            // ToolStripMenuItem_Year
+            // 
+            this.ToolStripMenuItem_Year.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.ToolStripMenuItem_Year.Margin = new System.Windows.Forms.Padding(0, 10, 0, 5);
+            this.ToolStripMenuItem_Year.Name = "ToolStripMenuItem_Year";
+            this.ToolStripMenuItem_Year.Size = new System.Drawing.Size(149, 28);
+            this.ToolStripMenuItem_Year.Text = "Phim 2022";
+            this.ToolStripMenuItem_Year.Click += new System.EventHandler(this.ToolStripMenuItem_Year_Click);
+            // 
+            // phim2021ToolStripMenuItem
+            // 
+            this.phim2021ToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.phim2021ToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.phim2021ToolStripMenuItem.Name = "phim2021ToolStripMenuItem";
+            this.phim2021ToolStripMenuItem.Size = new System.Drawing.Size(149, 28);
+            this.phim2021ToolStripMenuItem.Text = "Phim 2021";
+            this.phim2021ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Year_Click);
+            // 
+            // phim2020ToolStripMenuItem
+            // 
+            this.phim2020ToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.phim2020ToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.phim2020ToolStripMenuItem.Name = "phim2020ToolStripMenuItem";
+            this.phim2020ToolStripMenuItem.Size = new System.Drawing.Size(149, 28);
+            this.phim2020ToolStripMenuItem.Text = "Phim 2020";
+            this.phim2020ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Year_Click);
+            // 
+            // phim2019ToolStripMenuItem
+            // 
+            this.phim2019ToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.phim2019ToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.phim2019ToolStripMenuItem.Name = "phim2019ToolStripMenuItem";
+            this.phim2019ToolStripMenuItem.Size = new System.Drawing.Size(149, 28);
+            this.phim2019ToolStripMenuItem.Text = "Phim 2019";
+            this.phim2019ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Year_Click);
+            // 
+            // phim2018ToolStripMenuItem
+            // 
+            this.phim2018ToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.phim2018ToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.phim2018ToolStripMenuItem.Name = "phim2018ToolStripMenuItem";
+            this.phim2018ToolStripMenuItem.Size = new System.Drawing.Size(149, 28);
+            this.phim2018ToolStripMenuItem.Text = "Phim 2018";
+            this.phim2018ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Year_Click);
+            // 
+            // phim2017ToolStripMenuItem
+            // 
+            this.phim2017ToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.phim2017ToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.phim2017ToolStripMenuItem.Name = "phim2017ToolStripMenuItem";
+            this.phim2017ToolStripMenuItem.Size = new System.Drawing.Size(149, 28);
+            this.phim2017ToolStripMenuItem.Text = "Phim 2017";
+            this.phim2017ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Year_Click);
+            // 
+            // phim2016ToolStripMenuItem
+            // 
+            this.phim2016ToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.phim2016ToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.phim2016ToolStripMenuItem.Name = "phim2016ToolStripMenuItem";
+            this.phim2016ToolStripMenuItem.Size = new System.Drawing.Size(149, 28);
+            this.phim2016ToolStripMenuItem.Text = "Phim 2016";
+            this.phim2016ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Year_Click);
+            // 
+            // phim2015ToolStripMenuItem
+            // 
+            this.phim2015ToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.phim2015ToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.phim2015ToolStripMenuItem.Name = "phim2015ToolStripMenuItem";
+            this.phim2015ToolStripMenuItem.Size = new System.Drawing.Size(149, 28);
+            this.phim2015ToolStripMenuItem.Text = "Phim 2015";
+            this.phim2015ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Year_Click);
+            // 
+            // phim2014ToolStripMenuItem
+            // 
+            this.phim2014ToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.phim2014ToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.phim2014ToolStripMenuItem.Name = "phim2014ToolStripMenuItem";
+            this.phim2014ToolStripMenuItem.Size = new System.Drawing.Size(149, 28);
+            this.phim2014ToolStripMenuItem.Text = "Phim 2014";
+            this.phim2014ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Year_Click);
+            // 
+            // phim2013ToolStripMenuItem
+            // 
+            this.phim2013ToolStripMenuItem.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
+            this.phim2013ToolStripMenuItem.Margin = new System.Windows.Forms.Padding(0, 5, 0, 10);
+            this.phim2013ToolStripMenuItem.Name = "phim2013ToolStripMenuItem";
+            this.phim2013ToolStripMenuItem.Size = new System.Drawing.Size(149, 28);
+            this.phim2013ToolStripMenuItem.Text = "Phim 2013";
+            this.phim2013ToolStripMenuItem.Click += new System.EventHandler(this.ToolStripMenuItem_Year_Click);
             // 
             // _02_Form_Home
             // 
@@ -632,6 +934,7 @@
             this.panel1.PerformLayout();
             this.DropdownMenu_ShowMovieCategory.ResumeLayout(false);
             this.DropdownMenu_ShowMovieCountry.ResumeLayout(false);
+            this.DropdownMenu_ShowNewMovie.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -649,7 +952,7 @@
         private System.Windows.Forms.Panel panel1;
         private FontAwesome.Sharp.IconButton Button_MovieSearch;
         private System.Windows.Forms.TextBox TextBox_MovieSearch;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Label_Breadculum;
         private FontAwesome.Sharp.IconButton Button_MovieCategory;
         private FontAwesome.Sharp.IconButton Button_MovieCountry;
         private Assets.Controls.CustomDropdownMenu DropdownMenu_ShowMovieCategory;
@@ -657,7 +960,7 @@
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Category01;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Category02;
         private Assets.Controls.CustomDropdownMenu DropdownMenu_ShowMovieCountry;
-        private System.Windows.Forms.ToolStripMenuItem việtNamToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Country01;
         private System.Windows.Forms.ToolStripMenuItem âuMỹToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Category03;
         private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Category04;
@@ -681,5 +984,27 @@
         private FontAwesome.Sharp.IconButton Button_MaximumForm;
         private FontAwesome.Sharp.IconButton Button_MinimizeForm;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private FontAwesome.Sharp.IconButton Button_MovieTM;
+        private FontAwesome.Sharp.IconButton Button_MovieCR;
+        private FontAwesome.Sharp.IconButton Button_NewMovie;
+        private Assets.Controls.CustomDropdownMenu DropdownMenu_ShowNewMovie;
+        private System.Windows.Forms.ToolStripMenuItem ToolStripMenuItem_Year;
+        private System.Windows.Forms.ToolStripMenuItem phim2021ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phim2020ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phim2019ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phim2018ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phim2017ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phim2016ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phim2015ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phim2014ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem phim2013ToolStripMenuItem;
     }
 }

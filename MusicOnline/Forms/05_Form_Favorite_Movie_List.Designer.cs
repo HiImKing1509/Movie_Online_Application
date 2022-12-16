@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.Panel_Tools = new System.Windows.Forms.Panel();
-            this.FlowLayoutPanel_ShowListMovie = new System.Windows.Forms.FlowLayoutPanel();
-            this.Label_MovieName = new System.Windows.Forms.Label();
-            this.Label_MovieNameEng = new System.Windows.Forms.Label();
             this.Label_NumberOfMovie = new System.Windows.Forms.Label();
+            this.Label_MovieNameEng = new System.Windows.Forms.Label();
+            this.Label_MovieName = new System.Windows.Forms.Label();
             this.Button_ShowAllMovie = new FontAwesome.Sharp.IconButton();
             this.Button_RemoveAllMovie = new FontAwesome.Sharp.IconButton();
+            this.FlowLayoutPanel_ShowListMovie = new System.Windows.Forms.FlowLayoutPanel();
             this.Panel_Tools.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,25 +51,16 @@
             this.Panel_Tools.Size = new System.Drawing.Size(1566, 127);
             this.Panel_Tools.TabIndex = 0;
             // 
-            // FlowLayoutPanel_ShowListMovie
+            // Label_NumberOfMovie
             // 
-            this.FlowLayoutPanel_ShowListMovie.AutoScroll = true;
-            this.FlowLayoutPanel_ShowListMovie.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.FlowLayoutPanel_ShowListMovie.Location = new System.Drawing.Point(0, 0);
-            this.FlowLayoutPanel_ShowListMovie.Name = "FlowLayoutPanel_ShowListMovie";
-            this.FlowLayoutPanel_ShowListMovie.Size = new System.Drawing.Size(1566, 720);
-            this.FlowLayoutPanel_ShowListMovie.TabIndex = 1;
-            // 
-            // Label_MovieName
-            // 
-            this.Label_MovieName.AutoSize = true;
-            this.Label_MovieName.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_MovieName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.Label_MovieName.Location = new System.Drawing.Point(32, 16);
-            this.Label_MovieName.Name = "Label_MovieName";
-            this.Label_MovieName.Size = new System.Drawing.Size(401, 52);
-            this.Label_MovieName.TabIndex = 5;
-            this.Label_MovieName.Text = "DANH SÁCH PHIM YÊU THÍCH";
+            this.Label_NumberOfMovie.AutoSize = true;
+            this.Label_NumberOfMovie.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_NumberOfMovie.ForeColor = System.Drawing.Color.White;
+            this.Label_NumberOfMovie.Location = new System.Drawing.Point(140, 82);
+            this.Label_NumberOfMovie.Name = "Label_NumberOfMovie";
+            this.Label_NumberOfMovie.Size = new System.Drawing.Size(21, 23);
+            this.Label_NumberOfMovie.TabIndex = 31;
+            this.Label_NumberOfMovie.Text = "0";
             // 
             // Label_MovieNameEng
             // 
@@ -82,16 +73,16 @@
             this.Label_MovieNameEng.TabIndex = 30;
             this.Label_MovieNameEng.Text = "Số lượng:";
             // 
-            // Label_NumberOfMovie
+            // Label_MovieName
             // 
-            this.Label_NumberOfMovie.AutoSize = true;
-            this.Label_NumberOfMovie.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_NumberOfMovie.ForeColor = System.Drawing.Color.White;
-            this.Label_NumberOfMovie.Location = new System.Drawing.Point(140, 82);
-            this.Label_NumberOfMovie.Name = "Label_NumberOfMovie";
-            this.Label_NumberOfMovie.Size = new System.Drawing.Size(21, 23);
-            this.Label_NumberOfMovie.TabIndex = 31;
-            this.Label_NumberOfMovie.Text = "0";
+            this.Label_MovieName.AutoSize = true;
+            this.Label_MovieName.Font = new System.Drawing.Font("Bahnschrift SemiBold Condensed", 25.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_MovieName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.Label_MovieName.Location = new System.Drawing.Point(32, 16);
+            this.Label_MovieName.Name = "Label_MovieName";
+            this.Label_MovieName.Size = new System.Drawing.Size(401, 52);
+            this.Label_MovieName.TabIndex = 5;
+            this.Label_MovieName.Text = "DANH SÁCH PHIM YÊU THÍCH";
             // 
             // Button_ShowAllMovie
             // 
@@ -99,7 +90,7 @@
             this.Button_ShowAllMovie.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_ShowAllMovie.FlatAppearance.BorderSize = 0;
             this.Button_ShowAllMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_ShowAllMovie.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_ShowAllMovie.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.Button_ShowAllMovie.IconChar = FontAwesome.Sharp.IconChar.None;
             this.Button_ShowAllMovie.IconColor = System.Drawing.Color.Black;
             this.Button_ShowAllMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
@@ -117,7 +108,7 @@
             this.Button_RemoveAllMovie.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_RemoveAllMovie.FlatAppearance.BorderSize = 0;
             this.Button_RemoveAllMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_RemoveAllMovie.Font = new System.Drawing.Font("Tahoma", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Button_RemoveAllMovie.Font = new System.Drawing.Font("Bahnschrift Condensed", 12F);
             this.Button_RemoveAllMovie.ForeColor = System.Drawing.Color.White;
             this.Button_RemoveAllMovie.IconChar = FontAwesome.Sharp.IconChar.None;
             this.Button_RemoveAllMovie.IconColor = System.Drawing.Color.Black;
@@ -129,6 +120,15 @@
             this.Button_RemoveAllMovie.Text = "Xóa tất cả";
             this.Button_RemoveAllMovie.UseVisualStyleBackColor = false;
             this.Button_RemoveAllMovie.Click += new System.EventHandler(this.Button_RemoveAllMovie_Click);
+            // 
+            // FlowLayoutPanel_ShowListMovie
+            // 
+            this.FlowLayoutPanel_ShowListMovie.AutoScroll = true;
+            this.FlowLayoutPanel_ShowListMovie.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.FlowLayoutPanel_ShowListMovie.Location = new System.Drawing.Point(0, 0);
+            this.FlowLayoutPanel_ShowListMovie.Name = "FlowLayoutPanel_ShowListMovie";
+            this.FlowLayoutPanel_ShowListMovie.Size = new System.Drawing.Size(1566, 720);
+            this.FlowLayoutPanel_ShowListMovie.TabIndex = 1;
             // 
             // _05_Form_Favorite_Movie_List
             // 

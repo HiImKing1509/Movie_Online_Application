@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Resources;
 using System.Text;
@@ -31,11 +32,10 @@ namespace MusicOnline.Forms
 
         private void Load_MyHistoryList()
         {
-            string query = "select [HISTORY_MOVIE_ID], [HISTORY_MOVIE_TIME], [HISTORY_MOVIE_DURATION], [MOVIE_NAME], [MOVIE_NAME_ENG], [MOVIE_NUMBER_ACCESS] from HISTORY_MOVIE_LIST left join MOVIE on HISTORY_MOVIE_ID = MOVIE_ID order by HISTORY_MOVIE_TIME asc";
+            string query = "select [HISTORY_MOVIE_ID], [HISTORY_MOVIE_TIME], [HISTORY_MOVIE_DURATION], [MOVIE_NAME], [MOVIE_NAME_ENG], [MOVIE_NUMBER_ACCESS] from HISTORY_MOVIE_LIST left join MOVIE on HISTORY_MOVIE_ID = MOVIE_ID";
 
             DataProvider provider = new DataProvider();
             DataTable dtShowMyList = provider.ExecuteQuery(query);
-
 
             ResourceManager rm;
             if (dtShowMyList.Rows.Count > 0)

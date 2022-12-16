@@ -31,10 +31,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Controls_Movie_inList));
             this.Label_MovieNameEng = new System.Windows.Forms.Label();
             this.Label_MovieName = new System.Windows.Forms.Label();
-            this.PictureBox_Image = new System.Windows.Forms.PictureBox();
-            this.Button_DetailMovie = new FontAwesome.Sharp.IconButton();
-            this.Button_RemoveMovie = new FontAwesome.Sharp.IconButton();
             this.Label_Year = new System.Windows.Forms.Label();
+            this.Button_RemoveMovie = new FontAwesome.Sharp.IconButton();
+            this.Button_DetailMovie = new FontAwesome.Sharp.IconButton();
+            this.PictureBox_Image = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Image)).BeginInit();
             this.SuspendLayout();
             // 
@@ -60,32 +60,16 @@
             this.Label_MovieName.TabIndex = 30;
             this.Label_MovieName.Text = "THẾ GIỚI KHÔNG LỐI THOÁT (PHẦN 2)";
             // 
-            // PictureBox_Image
+            // Label_Year
             // 
-            this.PictureBox_Image.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox_Image.Image")));
-            this.PictureBox_Image.Location = new System.Drawing.Point(28, 22);
-            this.PictureBox_Image.Name = "PictureBox_Image";
-            this.PictureBox_Image.Size = new System.Drawing.Size(133, 179);
-            this.PictureBox_Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PictureBox_Image.TabIndex = 0;
-            this.PictureBox_Image.TabStop = false;
-            // 
-            // Button_DetailMovie
-            // 
-            this.Button_DetailMovie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Button_DetailMovie.FlatAppearance.BorderSize = 0;
-            this.Button_DetailMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Button_DetailMovie.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.Button_DetailMovie.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.Button_DetailMovie.IconColor = System.Drawing.Color.Black;
-            this.Button_DetailMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Button_DetailMovie.Location = new System.Drawing.Point(499, 154);
-            this.Button_DetailMovie.Name = "Button_DetailMovie";
-            this.Button_DetailMovie.Size = new System.Drawing.Size(145, 47);
-            this.Button_DetailMovie.TabIndex = 32;
-            this.Button_DetailMovie.Text = "Chi tiết";
-            this.Button_DetailMovie.UseVisualStyleBackColor = true;
-            this.Button_DetailMovie.Click += new System.EventHandler(this.Button_DetailMovie_Click);
+            this.Label_Year.AutoSize = true;
+            this.Label_Year.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_Year.ForeColor = System.Drawing.Color.White;
+            this.Label_Year.Location = new System.Drawing.Point(172, 131);
+            this.Label_Year.Name = "Label_Year";
+            this.Label_Year.Size = new System.Drawing.Size(45, 19);
+            this.Label_Year.TabIndex = 35;
+            this.Label_Year.Text = "2022";
             // 
             // Button_RemoveMovie
             // 
@@ -105,16 +89,32 @@
             this.Button_RemoveMovie.UseVisualStyleBackColor = false;
             this.Button_RemoveMovie.Click += new System.EventHandler(this.Button_RemoveMovie_Click);
             // 
-            // Label_Year
+            // Button_DetailMovie
             // 
-            this.Label_Year.AutoSize = true;
-            this.Label_Year.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Year.ForeColor = System.Drawing.Color.White;
-            this.Label_Year.Location = new System.Drawing.Point(172, 131);
-            this.Label_Year.Name = "Label_Year";
-            this.Label_Year.Size = new System.Drawing.Size(45, 19);
-            this.Label_Year.TabIndex = 35;
-            this.Label_Year.Text = "2022";
+            this.Button_DetailMovie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Button_DetailMovie.FlatAppearance.BorderSize = 0;
+            this.Button_DetailMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Button_DetailMovie.Font = new System.Drawing.Font("Tahoma", 10F);
+            this.Button_DetailMovie.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.Button_DetailMovie.IconColor = System.Drawing.Color.Black;
+            this.Button_DetailMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Button_DetailMovie.Location = new System.Drawing.Point(499, 154);
+            this.Button_DetailMovie.Name = "Button_DetailMovie";
+            this.Button_DetailMovie.Size = new System.Drawing.Size(145, 47);
+            this.Button_DetailMovie.TabIndex = 32;
+            this.Button_DetailMovie.Text = "Chi tiết";
+            this.Button_DetailMovie.UseVisualStyleBackColor = true;
+            this.Button_DetailMovie.Click += new System.EventHandler(this.Button_DetailMovie_Click);
+            // 
+            // PictureBox_Image
+            // 
+            this.PictureBox_Image.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox_Image.Image")));
+            this.PictureBox_Image.Location = new System.Drawing.Point(28, 22);
+            this.PictureBox_Image.Name = "PictureBox_Image";
+            this.PictureBox_Image.Size = new System.Drawing.Size(133, 179);
+            this.PictureBox_Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PictureBox_Image.TabIndex = 0;
+            this.PictureBox_Image.TabStop = false;
             // 
             // Controls_Movie_inList
             // 

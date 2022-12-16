@@ -15,6 +15,7 @@ namespace MusicOnline.CustomControls
 {
     public partial class Custom_Playlist : UserControl
     {
+        private DataTable dtShowMyList;
         public Custom_Playlist()
         {
             //InitializeComponent();
@@ -24,9 +25,11 @@ namespace MusicOnline.CustomControls
         {
             InitializeComponent();
             PictureBox_Image.Name = dr["PLAYLIST_ID"].ToString();
+            dtShowMyList = Datatable_MovieInPlaylist(PictureBox_Image.Name);
             PictureBox_Image.Image = image;
             Label_PlaylistName.Text = dr["PLAYLIST_NAME"].ToString();
             Label_Time.Text = dr["PLAYLIST_TIME"].ToString();
+            Label_NumberOfMovie.Text = dtShowMyList.Rows.Count.ToString();
         }
 
         private void PictureBox_Image_MouseEnter(object sender, EventArgs e)
@@ -39,14 +42,9 @@ namespace MusicOnline.CustomControls
             Panel_Information.BackColor = Color.Black;
         }
 
-        private void Load_MovieInPlaylist(string id)
+        private void Load_MovieInPlaylist()
         {
             Assets.Variables.ListFormPanel.ListFormsPanel[1].Controls.Clear();
-            string query = $"select [PLAYLIST_ID], PLAYLIST_DETAIL.MOVIE_ID, PLAYLIST_DETAIL.MOVIE_TIME, [MOVIE_NAME] from PLAYLIST_DETAIL inner join MOVIE on PLAYLIST_DETAIL.MOVIE_ID = MOVIE.MOVIE_ID where PLAYLIST_ID = '{id}'";
-
-            DataProvider provider = new DataProvider();
-            DataTable dtShowMyList = provider.ExecuteQuery(query);
-
             ResourceManager rm;
             if (dtShowMyList.Rows.Count > 0)
             {
@@ -73,7 +71,17 @@ namespace MusicOnline.CustomControls
 
         private void PictureBox_Image_Click(object sender, EventArgs e)
         {
-            Load_MovieInPlaylist(PictureBox_Image.Name);
+            Load_MovieInPlaylist();
+            Assets.Variables.GlobalVariables.Select_playlist = PictureBox_Image.Name;
+        }
+
+        private DataTable Datatable_MovieInPlaylist(string id)
+        {
+            string query = $"select [PLAYLIST_ID], PLAYLIST_DETAIL.MOVIE_ID, PLAYLIST_DETAIL.MOVIE_TIME, [MOVIE_NAME] from PLAYLIST_DETAIL inner join MOVIE on PLAYLIST_DETAIL.MOVIE_ID = MOVIE.MOVIE_ID where PLAYLIST_ID = '{id}'";
+
+            DataProvider provider = new DataProvider();
+            DataTable dt = provider.ExecuteQuery(query);
+            return dt;
         }
     }
 }

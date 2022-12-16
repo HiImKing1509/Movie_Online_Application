@@ -50,6 +50,9 @@ namespace MusicOnline.Forms
 
             Button_MovieCategory.ForeColor = Assets.Variables.Colors.MetallicYellow;
             Button_MovieCountry.ForeColor = Assets.Variables.Colors.MetallicYellow;
+            Button_MovieTM.ForeColor = Assets.Variables.Colors.MetallicYellow;
+            Button_MovieCR.ForeColor = Assets.Variables.Colors.MetallicYellow;
+            Button_NewMovie.ForeColor = Assets.Variables.Colors.MetallicYellow;
 
             leftBorderBtn = new Panel();
             leftBorderBtn.Size = new Size(7, Button_Home.Height);
@@ -117,7 +120,6 @@ namespace MusicOnline.Forms
             CloseForm();
             ActivateButton(sender);
             openChildForm(new _05_Form_Favorite_Movie_List());
-
         }
 
         private void Button_History_Click(object sender, EventArgs e)
@@ -147,7 +149,8 @@ namespace MusicOnline.Forms
                 Controls_Movie item = new Controls_Movie(
                     myImage,
                     row["MOVIE_ID"].ToString(),
-                    row["MOVIE_NAME"].ToString()
+                    row["MOVIE_NAME"].ToString(),
+                    row["MOVIE_STATE"].ToString()
                 );
                 flpShowProduct.Controls.Add(item);
             }
@@ -222,6 +225,8 @@ namespace MusicOnline.Forms
         {
             if (Application.OpenForms.OfType<_04_Form_Watching_Movie>().Count() == 1)
                 Application.OpenForms.OfType<_04_Form_Watching_Movie>().First().Close();
+            if (Application.OpenForms.OfType<_07_Form_Playlist>().Count() == 1)
+                Application.OpenForms.OfType<_07_Form_Playlist>().First().Close();
         }
 
         private void FilterMovie()
@@ -229,11 +234,19 @@ namespace MusicOnline.Forms
             string query = "select * from MOVIE ";
             if (TextBox_MovieSearch.Text == "Tên phim, tên diễn viên ...")
                 query += "where (dbo.LanguageComprehension(MOVIE_NAME) like N'%" + "" + "%' " +
-                         "or MOVIE_NAME like N'%" + "" + "%')";
+                         "or MOVIE_NAME like N'%" + "" + "%') " +
+                         "or (dbo.LanguageComprehension(MOVIE_DIRECTOR) like N'%" + "" + "%' " +
+                         "or MOVIE_DIRECTOR like N'%" + "" + "%') " +
+                         "or (dbo.LanguageComprehension(MOVIE_ACTORS) like N'%" + "" + "%' " +
+                         "or MOVIE_ACTORS like N'%" + "" + "%')";
             else
             {
                 query += "where (dbo.LanguageComprehension(MOVIE_NAME) like N'%" + TextBox_MovieSearch.Text + "%' " +
-                         "or MOVIE_NAME like N'%" + TextBox_MovieSearch.Text + "%')";
+                         "or MOVIE_NAME like N'%" + TextBox_MovieSearch.Text + "%') " +
+                         "or (dbo.LanguageComprehension(MOVIE_DIRECTOR) like N'%" + TextBox_MovieSearch.Text + "%' " +
+                         "or MOVIE_DIRECTOR like N'%" + TextBox_MovieSearch.Text + "%') " +
+                         "or (dbo.LanguageComprehension(MOVIE_ACTORS) like N'%" + TextBox_MovieSearch.Text + "%' " +
+                         "or MOVIE_ACTORS like N'%" + TextBox_MovieSearch.Text + "%')";
             }
             //if (CreateResources.Variables.Table != "All")
             //    query += $" and PRODUCT_ID like '{CreateResources.Variables.Table}%'";
@@ -257,11 +270,7 @@ namespace MusicOnline.Forms
         {
             ToolStripMenuItem tsi = (ToolStripMenuItem)sender;
             ResetHomePage($"select * from MOVIE where MOVIE_CATEGORY like N'%{tsi.Text}%'", null);
-        }
-
-        private void ToolStripMenuItem_Category02_Click(object sender, EventArgs e)
-        {
-
+            Label_Breadculum.Text = "Phim " + tsi.Text;
         }
 
         private void Button_MovieCategory_MouseEnter(object sender, EventArgs e)
@@ -320,6 +329,38 @@ namespace MusicOnline.Forms
             char ch = e.KeyChar;
             if (ch == (char)13)
                 FilterMovie();
+        }
+
+        private void ToolStripMenuItem_Country01_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem tsi = (ToolStripMenuItem)sender;
+            ResetHomePage($"select * from MOVIE where MOVIE_NATION like N'%{tsi.Text}%'", null);
+            Label_Breadculum.Text = "Phim " + tsi.Text;
+        }
+
+        private void Button_MovieTM_Click(object sender, EventArgs e)
+        {
+            ResetHomePage($"select * from MOVIE where dbo.LanguageComprehension(MOVIE_STATE) like N'%thuyet minh%'", null);
+            Label_Breadculum.Text = "Phim thuyết minh";
+        }
+
+        private void Button_MovieCR_Click(object sender, EventArgs e)
+        {
+            ResetHomePage($"select * from MOVIE where dbo.LanguageComprehension(MOVIE_CATEGORY) like N'%chieu rap%'", null);
+            Label_Breadculum.Text = "Phim chiếu rạp";
+        }
+
+        private void Button_NewMovie_Click(object sender, EventArgs e)
+        {
+            DropdownMenu_ShowNewMovie.Show(Button_NewMovie, 0, Button_MovieCategory.Height);
+            Label_Breadculum.Text = "Phim mới";
+        }
+
+        private void ToolStripMenuItem_Year_Click(object sender, EventArgs e)
+        {
+            ToolStripMenuItem tsi = (ToolStripMenuItem)sender;
+            ResetHomePage($"select * from MOVIE where MOVIE_YEAR like N'%{tsi.Text.Substring(5)}%'", null);
+            Label_Breadculum.Text = tsi.Text;
         }
     }
 }

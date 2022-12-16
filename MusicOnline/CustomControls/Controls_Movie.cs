@@ -22,12 +22,13 @@ namespace MusicOnline.CustomControls
             InitializeComponent();
         }
 
-        public Controls_Movie(Bitmap img, string id, string name) : this()
+        public Controls_Movie(Bitmap img, string id, string name, string state) : this()
         {
             Panel_ControlMovie.Name = id;
             Panel_ControlMovie.BackColor = Assets.Variables.Colors.BlackOlive;
             PictureBox_ImageMovie.Image = img;
             Label_MovieName.Text = name;
+            Label_Subtitle.Text = state;
         }
 
         private void PictureBox_ImageMovie_MouseEnter(object sender, EventArgs e)

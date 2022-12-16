@@ -102,11 +102,12 @@
             this.Button_RemoveMovie.IconColor = System.Drawing.Color.White;
             this.Button_RemoveMovie.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.Button_RemoveMovie.IconSize = 20;
-            this.Button_RemoveMovie.Location = new System.Drawing.Point(466, 79);
+            this.Button_RemoveMovie.Location = new System.Drawing.Point(447, 79);
             this.Button_RemoveMovie.Name = "Button_RemoveMovie";
             this.Button_RemoveMovie.Size = new System.Drawing.Size(60, 40);
             this.Button_RemoveMovie.TabIndex = 50;
             this.Button_RemoveMovie.UseVisualStyleBackColor = false;
+            this.Button_RemoveMovie.Click += new System.EventHandler(this.Button_RemoveMovie_Click);
             // 
             // Controls_getMovie_Playlist
             // 
@@ -118,7 +119,7 @@
             this.Controls.Add(this.Label_MovieName);
             this.Controls.Add(this.PictureBox_Image);
             this.Name = "Controls_getMovie_Playlist";
-            this.Size = new System.Drawing.Size(542, 135);
+            this.Size = new System.Drawing.Size(521, 135);
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_Image)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

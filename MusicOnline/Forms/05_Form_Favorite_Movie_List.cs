@@ -61,7 +61,7 @@ namespace MusicOnline.Forms
 
         private void Button_ShowAllMovie_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new _08_Form_Watching_list_Movie());
         }
 
         private void Button_RemoveAllMovie_Click(object sender, EventArgs e)
